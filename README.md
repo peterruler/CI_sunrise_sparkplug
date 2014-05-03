@@ -32,5 +32,4 @@ Many thanks to the original creators of both sparkplug and ci sunrise
 * GNU/GPL v3
 * see scaffolding/gpl-3.0.txt
 
-### PHP/MySQL's not dead, codeigniter neighter, as long as cost and stability counts!!
-
+### PHP/MySQL's not dead, codeigniter olé!
