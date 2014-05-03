@@ -28,7 +28,10 @@ Many thanks to the original creators of both sparkplug and ci sunrise
 * MIT
 * see MIT.txt
 * 
+
+## License
 ### Sparkplug :
+
 * GNU/GPL v3
 * see scaffolding/gpl-3.0.txt
 
