@@ -1,0 +1,1 @@
+You should not see this after scaffolding - index controller redirect by default.

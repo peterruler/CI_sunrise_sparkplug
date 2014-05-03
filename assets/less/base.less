@@ -1,0 +1,32 @@
+/**
+ * This is the base LESS file, which imports everything
+ * you'll need. You shouldn't need to modify this file
+ * unless you want to breakout your LESS files.
+ */
+
+/**
+ * Imports Twitter Boostrap.
+ */
+@import '../../bower_components/twitter/less/bootstrap.less';
+@icon-font-path: "../bower_components/twitter/fonts/";
+
+/**
+ * Imports Font Awesome.
+ */
+@import '../../bower_components/font-awesome/less/font-awesome.less';
+@fa-font-path: "../bower_components/font-awesome/fonts";
+
+/**
+ * Imports LESSHat
+ */
+@import '../../bower_components/lesshat/build/lesshat.less';
+
+/**
+ * Globals before modules
+ */
+@import 'globals';
+
+/**
+ * Imports your own custom CSS.
+ */
+@import 'modules/welcome';

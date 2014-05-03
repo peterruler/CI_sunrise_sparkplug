@@ -1,0 +1,27 @@
+{
+  "name": "sunrise",
+  "version": "",
+  "authors": [],
+  "description": "",
+  "homepage": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.10.21"
+  },
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "matchdep": "~0.3.0"
+  }
+}
