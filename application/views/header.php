@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="author" content="">
 
   <title></title>
-
+    <link rel="stylesheet" href="<?php echo base_url('assets/font-awesome.css'); ?>">
   <link href="<?php echo base_url('assets/styles.css'); ?>" rel="stylesheet">
 
-  <script src="<?php echo base_url('bower_components/jquery/dist/jquery.js'); ?>"></script>
-  <script src="<?php echo base_url('bower_components/jquery-ui/ui/jquery-ui.js'); ?>"></script>
-  <script src="<?php echo base_url('bower_components/lodash/dist/lodash.js'); ?>"></script>
-  <script src="<?php echo base_url('bower_components/twitter/dist/js/bootstrap.js'); ?>"></script>
-  <script src="<?php echo base_url('assets/scripts.js'); ?>"></script>
+    <script src="/../../bower_components/modernizr/dist/modernizr.js"></script>
 </head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 <div class="container">
     <div class="row">
         <div style="overflow-x:scroll;overflow-y:visible;" class="col-xl-12">
@@ -24,6 +32,7 @@
         <!-- Static navbar -->
     <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
+            <a class="sr-only" href="#content">Skip to main content</a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>

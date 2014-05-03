@@ -2400,8 +2400,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../bower_components/twitter/fonts/glyphicons-halflings-regular.eot');
-  src: url('../bower_components/twitter/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bower_components/twitter/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bower_components/twitter/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bower_components/twitter/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -7249,9 +7249,7 @@ td.visible-print {
 /**
  * Imports your own custom CSS.
  */
-#pagination {
-    width:100%;
-}
+
 #pagination a, #pagination strong {
     background:#e3e3e3;
     padding:4px 7px;
@@ -7260,11 +7258,24 @@ td.visible-print {
     color:#292929;
     font-size:13px;
 }
+
 #pagination li {
     float:left;
     list-style: none;
 }
+
 #pagination strong {
     font-weight: normal;
     background: #cac9c9;
+}
+
+.fa {
+    font-family: FontAwesome;
+}
+
+.fa-warning:before, .fa-exclamation-triangle:before {
+    content: "\f071";
+    font-size:4.7em;
+    line-height:1.2;
+    margin-left:-175px;
 }

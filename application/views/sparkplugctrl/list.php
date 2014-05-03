@@ -1,4 +1,13 @@
-<p ><?php if($this->session->flashdata('msg')!=""): ?><div class="alert alert-success"><?= $this->session->flashdata('msg') ?></div><?php endif; ?></p>
+<p>
+<?php
+if($this->session->flashdata('msg')!=""):
+?>
+<div class="alert alert-success has-error has-feedback">
+    <?= $this->session->flashdata('msg') ?>
+    <span class="alert alert- glyphicon glyphicon-ok"></span>
+</div>
+<?php endif; ?>
+</p>
 
             <h1>List users</h1>
             <div class="table-responsive">
