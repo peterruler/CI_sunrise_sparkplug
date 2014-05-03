@@ -1096,7 +1096,7 @@ $html .= '
                 <? endforeach; ?>
                 <th>View</th>
                 <th>Edit</th>
-                <th>Delte</th>
+                <th>Delete</th>
                 </tr>
 
             <? foreach ($results as $row): ?>

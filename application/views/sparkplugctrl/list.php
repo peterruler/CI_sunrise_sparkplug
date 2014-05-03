@@ -2,11 +2,14 @@
 
             <h1>List users</h1>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table table table-bordered table-striped table-hover">
                 <tr>
                 <? foreach(array_keys($results[0]) as $key): ?>
                     <th><?= ucfirst($key) ?></th>
                 <? endforeach; ?>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
                 </tr>
 
             <? foreach ($results as $row): ?>
