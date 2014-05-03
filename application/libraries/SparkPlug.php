@@ -1089,7 +1089,7 @@ $html .= '
 
             <h1>List '.(string) $this->table.'</h1>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table table table-bordered table-striped table-hover">
                 <tr>
                 <? foreach(array_keys($results[0]) as $key): ?>
                     <th><?= ucfirst($key) ?></th>
