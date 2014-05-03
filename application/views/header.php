@@ -18,8 +18,10 @@
   <script src="<?php echo base_url('assets/scripts.js'); ?>"></script>
 </head>
 <div class="container">
+    <div class="row">
+        <div style="overflow-x:scroll;overflow-y:visible;" class="col-xl-12">
 
-    <!-- Static navbar -->
+        <!-- Static navbar -->
     <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -56,6 +58,4 @@
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
-    </div>
-    <div class="row">
-        <div style="overflow-x:scroll;overflow-y:visible;" class="col-xl-12">
+    </div><!--/.navbar -->

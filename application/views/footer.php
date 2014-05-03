@@ -1,5 +1,6 @@
-</div> <!-- /row -->
 </div> <!-- /col-xl-12 -->
+</div><!-- /col-xl-12 -->
+</div> <!-- /row -->
 </div> <!-- /container -->
 
 
