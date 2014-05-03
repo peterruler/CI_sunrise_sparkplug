@@ -5,4 +5,4 @@
                 <b><?= ucfirst($field_name) ?>:</b> <?= $field_value ?>
             </p>
             <? endforeach; ?>
-            <?= anchor("SparkPlugCtrl/show_list", "Back", "class='btn btn-lg btn-primary btn-block'") ?>
+            <?= anchor("sparkplugCtrl/show_list", "Back", "class='btn btn-lg btn-primary btn-block'") ?>

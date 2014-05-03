@@ -1,6 +1,6 @@
 <h1>Edit users</h1>
 
-            <?= form_open('SparkPlugCtrl/update') ?>
+            <?= form_open('sparkplugCtrl/update') ?>
             <input type="hidden" name="id" value=<?= $result["id"]?> />
 	<p>
 	<label for="ip_address">Ip_address</label><br/>
@@ -76,4 +76,4 @@
                 <?= form_submit('submit', 'Update', "class='btn btn-lg btn-primary btn-block'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("SparkPlugCtrl/show_list", "Back", "class='btn btn-lg btn-primary btn-block'") ?>
+            <?= anchor("sparkplugCtrl/show_list", "Back", "class='btn btn-lg btn-primary btn-block'") ?>

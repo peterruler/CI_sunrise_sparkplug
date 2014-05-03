@@ -1,6 +1,6 @@
 <h1>New users</h1>
 
-            <?= form_open('SparkPlugCtrl/create') ?>
+            <?= form_open('sparkplugCtrl/create') ?>
             <input type="hidden" name="id" value="" id="id" class="form-control"  />
 	<p>
 	<label for="ip_address">Ip_address</label><br/>
@@ -62,4 +62,4 @@
                 <?= form_submit('submit', 'Create', "class='btn btn-lg btn-primary btn-block'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("SparkPlugCtrl/show_list", "Back", "class='btn btn-lg btn-primary btn-block'") ?>
+            <?= anchor("sparkplugCtrl/show_list", "Back", "class='btn btn-lg btn-primary btn-block'") ?>

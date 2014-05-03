@@ -870,6 +870,16 @@ class SparkPlug {
     function _controller_text() {
         $html=
             '<?php
+ if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+ /*
+ * User: ps
+ # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+ * Date: 02.05.14
+ * Time: 20:33
+ * project: https_docs
+ * file: SparkPlug.php
+ * adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
+ */
             class {ucf_controller} extends CI_Controller {
 
                 var $table = "'.$this->table.'";
@@ -882,11 +892,38 @@ class SparkPlug {
                     $this->load->database();
                     $this->load->model(\'{model}\');
                     $this->load->helper(array(\'form\',\'url\'));
-                    $this->load->library(array(\'session\', \'form_validation\'));
+                    $this->load->library(array(\'session\', \'pagination\', \'form_validation\'));
+
                 }
 
                 public function show_list() {
-                    $data[\'results\'] = $this->{model}->get_all();
+
+                    $config[\'base_url\'] = $this->config->item(\'base_url\')."/{ucf_controller}/show_list";
+                    $config[\'total_rows\'] = $this->db->get("'.$this->table.'")->num_rows();
+                    $config[\'per_page\'] = 10;
+                    $config[\'full_tag_open\'] = \'<ul id="pagination">\';
+                    $config[\'full_tag_close\'] = \'</ul>\';
+
+                    $config[\'next_link\'] = \'&gt;\';
+                    $config[\'prev_link\'] = \'&lt;\';
+
+                    $url_string =xss_clean($this->uri->uri_string());
+                    $segments = explode("/",$url_string);
+                    $segments_length = count($segments);
+                    switch ($segments_length) {
+                        case 4:
+                            $offset = xss_clean($this->uri->segment(4));
+                            break;
+                        case 3:
+                            $offset =xss_clean($this->uri->segment(3));
+                            break;
+                        default:
+                            $offset = 1;
+                            $offset = 1;
+                            break;
+                    }
+                    $this->pagination->initialize($config);
+                    $data[\'results\'] = $this->{model}->get_all("'.$this->table.'",$config["per_page"],$offset);
                     $this->load->view(\'header\');
                     $this->load->view(\'{view_folder}/list\', $data);
                     $this->load->view(\'footer\');
@@ -1007,7 +1044,8 @@ $html .= '
                     return $query->result_array();
                 }
 
-                public function get_all() {
+                public function get_all($table="users", $limit_per_page=10, $offset_limit=1 ) {
+                    $this->db->limit($limit_per_page, $offset_limit);
                     $query = $this->db->get(\'{table}\');
                     return $query->result_array();
                 }
@@ -1069,7 +1107,10 @@ $html .= '
                 </tr>
             <? endforeach; ?>
             </table>
-            </div>
+            <br />
+                <?= $this->pagination->create_links();?>
+                <br />
+            </div><br />
             <div class="col-lg-4 col-md-4 col-sm-12">
             <?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-primary btn-block\'") ?>
             </div>

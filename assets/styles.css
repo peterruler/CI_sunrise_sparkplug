@@ -7249,3 +7249,22 @@ td.visible-print {
 /**
  * Imports your own custom CSS.
  */
+#pagination {
+    width:100%;
+}
+#pagination a, #pagination strong {
+    background:#e3e3e3;
+    padding:4px 7px;
+    text-decoration: none;
+    border:1px solid #cac9c9;
+    color:#292929;
+    font-size:13px;
+}
+#pagination li {
+    float:left;
+    list-style: none;
+}
+#pagination strong {
+    font-weight: normal;
+    background: #cac9c9;
+}

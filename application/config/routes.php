@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "SparkPlugCtrl/scaffolding";
+$route['default_controller'] = "SparkPlugCtrl/show_list";
 $route['404_override'] = '';
 
 

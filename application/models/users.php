@@ -47,7 +47,8 @@
                     return $query->result_array();
                 }
 
-                public function get_all() {
+                public function get_all($table="users", $limit_per_page=10, $offset_limit=1 ) {
+                    $this->db->limit($limit_per_page, $offset_limit);
                     $query = $this->db->get('users');
                     return $query->result_array();
                 }

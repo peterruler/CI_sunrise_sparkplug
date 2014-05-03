@@ -1,9 +1,19 @@
 <?php
-            class SparkPlugCtrl extends CI_Controller {
+ if (! defined('BASEPATH')) exit('No direct script access allowed');
+ /*
+ * User: ps
+ # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+ * Date: 02.05.14
+ * Time: 20:33
+ * project: https_docs
+ * file: SparkPlug.php
+ * adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
+ */
+            class SparkplugCtrl extends CI_Controller {
 
                 var $table = "users";
                 public function index() {
-                    redirect('SparkPlugCtrl/show_list');
+                    redirect('sparkplugCtrl/show_list');
                 }
                 public function __construct() {
                     parent::__construct();
@@ -11,11 +21,38 @@
                     $this->load->database();
                     $this->load->model('Users');
                     $this->load->helper(array('form','url'));
-                    $this->load->library(array('session', 'form_validation'));
+                    $this->load->library(array('session', 'pagination', 'form_validation'));
+
                 }
 
                 public function show_list() {
-                    $data['results'] = $this->Users->get_all();
+
+                    $config['base_url'] = $this->config->item('base_url')."/SparkplugCtrl/show_list";
+                    $config['total_rows'] = $this->db->get("users")->num_rows();
+                    $config['per_page'] = 10;
+                    $config['full_tag_open'] = '<ul id="pagination">';
+                    $config['full_tag_close'] = '</ul>';
+
+                    $config['next_link'] = '&gt;';
+                    $config['prev_link'] = '&lt;';
+
+                    $url_string =xss_clean($this->uri->uri_string());
+                    $segments = explode("/",$url_string);
+                    $segments_length = count($segments);
+                    switch ($segments_length) {
+                        case 4:
+                            $offset = xss_clean($this->uri->segment(4));
+                            break;
+                        case 3:
+                            $offset =xss_clean($this->uri->segment(3));
+                            break;
+                        default:
+                            $offset = 1;
+                            $offset = 1;
+                            break;
+                    }
+                    $this->pagination->initialize($config);
+                    $data['results'] = $this->Users->get_all("users",$config["per_page"],$offset);
                     $this->load->view('header');
                     $this->load->view('sparkplugctrl/list', $data);
                     $this->load->view('footer');
@@ -44,7 +81,7 @@
                     $this->Users->insert();
 
                     $this->session->set_flashdata('msg', 'Entry Created');
-                    redirect('SparkPlugCtrl/show_list');
+                    redirect('sparkplugCtrl/show_list');
                 }
 
                 public function edit($id) {
@@ -71,13 +108,13 @@
                     $this->Users->update();
 
                     $this->session->set_flashdata('msg', 'Entry Updated');
-                    redirect('SparkPlugCtrl/show_list');
+                    redirect('sparkplugCtrl/show_list');
                 }
 
                 public function delete($id) {
                     $this->Users->delete($id);
 
                     $this->session->set_flashdata('msg', 'Entry Deleted');
-                    redirect('SparkPlugCtrl/show_list');
+                    redirect('sparkplugCtrl/show_list');
                 }
             }

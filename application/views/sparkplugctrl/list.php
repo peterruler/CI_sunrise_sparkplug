@@ -14,14 +14,17 @@
                 <? foreach ($row as $field_value): ?>
                     <td><?= $field_value ?></td>
                 <? endforeach; ?>
-                    <td> <?= anchor("SparkPlugCtrl/show/".$row['id'], 'View', "class='btn btn-sm btn-success'") ?></td>
-                    <td> <?= anchor("SparkPlugCtrl/edit/".$row['id'], 'Edit', "class='btn btn-sm btn-warning'") ?></td>
-                    <td> <?= anchor("SparkPlugCtrl/delete/".$row['id'], 'Delete', "class='btn btn-sm btn-danger'") ?></td>
+                    <td> <?= anchor("sparkplugCtrl/show/".$row['id'], 'View', "class='btn btn-sm btn-success'") ?></td>
+                    <td> <?= anchor("sparkplugCtrl/edit/".$row['id'], 'Edit', "class='btn btn-sm btn-warning'") ?></td>
+                    <td> <?= anchor("sparkplugCtrl/delete/".$row['id'], 'Delete', "class='btn btn-sm btn-danger'") ?></td>
                 </tr>
             <? endforeach; ?>
             </table>
-            </div>
+            <br />
+                <?= $this->pagination->create_links();?>
+                <br />
+            </div><br />
             <div class="col-lg-4 col-md-4 col-sm-12">
-            <?= anchor("SparkPlugCtrl/new_entry", "New", "class='btn btn-lg btn-primary btn-block'") ?>
+            <?= anchor("sparkplugCtrl/new_entry", "New", "class='btn btn-lg btn-primary btn-block'") ?>
             </div>
             
