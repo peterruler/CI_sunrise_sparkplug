@@ -1006,6 +1006,94 @@ $html .= '
                     $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
                     redirect(\'{controller}/show_list\');
                 }
+
+                public function setRules() {
+                    $query = $this->db->get($this->table);
+                    $fields = $this->db->list_fields($this->table);
+                $rules = "";
+                 <? foreach ($fields as $field) : ?>
+                 swtich( $field ) :
+                 case "email" :
+                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'valid_email|trim|required|min_length[5]|max_length[500]|xss_clean\');
+                 break;
+                 case "phone":
+                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[15]|xss_clean\');
+                 break;
+                 case "date":
+                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'valid_date[d/m/y,/]|trim|required|min_length[5]|max_length[500]|xss_clean\');
+                 break;
+                 case "password"
+                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'matches[passconf]|trim|required|min_length[5]|max_length[500]|xss_clean\');
+                       $rules .= $this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');
+                 break;
+                 default:
+                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');
+                  break;
+                  endswitch:
+                  <? endforeach; ?>
+                  $html .= $rules;
+                }
+                /**
+                 * @desc Validates a date format
+                 * @params format,delimiter
+                 * e.g. d/m/y,/ or y-m-d,-
+                 * http://tutsforweb.blogspot.ch/2012/05/date-validation-for-codeigniter-2.html
+                 */
+                 function valid_date($str, $params)
+                 {
+                  // setup
+                  $CI =&get_instance();
+                  $params = explode(",", $params);
+                  $delimiter = $params[1];
+                  $date_parts = explode($delimiter, $params[0]);
+
+                  // get the index (0, 1 or 2) for each part
+                  $di = $this->valid_date_part_index($date_parts, "d");
+                  $mi = $this->valid_date_part_index($date_parts, "m");
+                  $yi = $this->valid_date_part_index($date_parts, "y");
+
+                  // regex setup
+                  $dre =   "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)";
+                  $mre = "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12)";
+                  $yre = "([0-9]{4})";
+                  $red = "".$delimiter; // escape delimiter for regex
+                  $rex = "/^[0]{$red}[1]{$red}[2]/";
+
+                  // do replacements at correct positions
+                  $rex = str_replace("[{$di}]", $dre, $rex);
+                  $rex = str_replace("[{$mi}]", $mre, $rex);
+                  $rex = str_replace("[{$yi}]", $yre, $rex);
+
+                  if (preg_match($rex, $str, $matches))
+                  {
+                   // skip 0 as it contains full match, check the date is logically valid
+                   if (checkdate($matches[$mi + 1], $matches[$di + 1], $matches[$yi + 1]))
+                   {
+                    return true;
+                   }
+                   else
+                   {
+                    // match but logically invalid
+                    $CI->form_validation->set_message("valid_date", "The date is invalid.");
+                    return false;
+                   }
+                  }
+
+                  // no match
+                  $CI->form_validation->set_message("valid_date", "The date format is invalid. Use {$params[0]}");
+                  return false;
+                 }
+
+                 function valid_date_part_index($parts, $search)
+                 {
+                  for ($i = 0; $i <= count($parts); $i++)
+                  {
+                   if ($parts[$i] == $search)
+                   {
+                    return $i;
+                   }
+                  }
+                 }
             }';
 
         return $html;
