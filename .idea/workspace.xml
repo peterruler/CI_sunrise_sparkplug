@@ -23,21 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/header.php">
+      <file leaf-file-name="SparkPlug.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/libraries/SparkPlug.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="26" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.8746518" vertical-offset="272" max-vertical-offset="990">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="1098" column="25" selection-start="36823" selection-end="36823" vertical-scroll-proportion="0.38106796" vertical-offset="16313" max-vertical-offset="17580">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/footer.php">
+      <file leaf-file-name="SparkPlugCtrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/SparkPlugCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="100" selection-end="100" vertical-scroll-proportion="-1.9565217" vertical-offset="0" max-vertical-offset="270">
+            <state line="23" column="1" selection-start="710" selection-end="710" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkPlugController.bak.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/SparkPlugController.bak.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="335" selection-end="699" vertical-scroll-proportion="-7.304348" vertical-offset="27" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -68,10 +75,10 @@
         <option value="$PROJECT_DIR$/assets/styles.css" />
         <option value="$PROJECT_DIR$/application/models/users.php" />
         <option value="$PROJECT_DIR$/application/views/sparkplugctrl/list.php" />
-        <option value="$PROJECT_DIR$/application/libraries/SparkPlug.php" />
-        <option value="$PROJECT_DIR$/application/controllers/SparkPlugCtrl.php" />
         <option value="$PROJECT_DIR$/application/views/header.php" />
         <option value="$PROJECT_DIR$/application/views/footer.php" />
+        <option value="$PROJECT_DIR$/application/controllers/SparkPlugCtrl.php" />
+        <option value="$PROJECT_DIR$/application/libraries/SparkPlug.php" />
       </list>
     </option>
   </component>
@@ -155,7 +162,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="https_docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="https_docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,7 +251,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -289,11 +314,7 @@
     <entry file="file://$PROJECT_DIR$/application/libraries/SparkPlug.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="36" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="15870">
-          <folding>
-            <marker date="1399105806000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399105806000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399105806000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -414,44 +435,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/SparkPlugController.bak.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="335" selection-end="699" vertical-scroll-proportion="0.44622424" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/SparkPlug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1046" column="91" selection-start="35036" selection-end="35036" vertical-scroll-proportion="-0.5985401" vertical-offset="15936" max-vertical-offset="17535">
-          <folding>
-            <marker date="1399105806000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399105806000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399105806000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/SparkPlugCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="345" selection-end="345" vertical-scroll-proportion="0.38659793" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="100" selection-end="100" vertical-scroll-proportion="-1.9565217" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="26" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.8746518" vertical-offset="272" max-vertical-offset="990">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0626741" vertical-offset="0" max-vertical-offset="718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/SparkPlugController.bak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="335" selection-end="699" vertical-scroll-proportion="-7.304348" vertical-offset="27" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/SparkPlugCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="1" selection-start="710" selection-end="710" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/SparkPlug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1098" column="25" selection-start="36823" selection-end="36823" vertical-scroll-proportion="0.38106796" vertical-offset="16313" max-vertical-offset="17580">
+          <folding />
         </state>
       </provider>
     </entry>

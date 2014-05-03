@@ -1094,6 +1094,9 @@ $html .= '
                 <? foreach(array_keys($results[0]) as $key): ?>
                     <th><?= ucfirst($key) ?></th>
                 <? endforeach; ?>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delte</th>
                 </tr>
 
             <? foreach ($results as $row): ?>
