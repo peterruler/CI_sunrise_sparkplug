@@ -1,4 +1,4 @@
-<h1>Edit jobs</h1>
+<h1>Edit Jobs</h1>
             <? if (validation_errors() != ""): ?>
                 <div class="alert alert-danger has-error has-feedback">
                     <span class="alert glyphicon glyphicon-warning-sign"></span>
@@ -16,7 +16,7 @@
                     <div class="clearfix"></div>
                 </div>
             <?php endif; ?>
-            <?= form_open("SparkPlugCtrl/update/".$result["id"],"formnovalidate=formnovalidate") ?>
+            <?= form_open("Jobs/update/".$result["id"],"formnovalidate=formnovalidate") ?>
             
 	
 <input type="hidden" name="id" value="" />
@@ -54,4 +54,4 @@
                 <?= form_submit('submit', 'Update', "formnovalidate  class='btn btn-lg btn-default btn-block'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("SparkPlugCtrl/show_list", "Back", "class='btn btn-lg btn-default btn-block'") ?>
+            <?= anchor("Jobs/show_list", "Back", "class='btn btn-lg btn-default btn-block'") ?>

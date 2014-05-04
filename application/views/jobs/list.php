@@ -1,4 +1,4 @@
-<h1>List jobs</h1>
+<h1>List Jobs</h1>
             <p>
             <?php
             if ($this->session->flashdata("msg") != ""):
@@ -25,9 +25,9 @@
                 <? foreach ($row as $field_value): ?>
                     <td><?= $field_value ?></td>
                 <? endforeach; ?>
-                    <td> <?= anchor("SparkPlugCtrl/show/".$row['id'], 'View', "class='btn btn-sm btn-success'") ?></td>
-                    <td> <?= anchor("SparkPlugCtrl/edit/".$row['id'], 'Edit', "class='btn btn-sm btn-warning'") ?></td>
-                    <td> <?= anchor("SparkPlugCtrl/delete/".$row['id'], 'Delete', "class='btn btn-sm btn-danger'") ?></td>
+                    <td> <?= anchor("Jobs/show/".$row['id'], 'View', "class='btn btn-sm btn-success'") ?></td>
+                    <td> <?= anchor("Jobs/edit/".$row['id'], 'Edit', "class='btn btn-sm btn-warning'") ?></td>
+                    <td> <?= anchor("Jobs/delete/".$row['id'], 'Delete', "class='btn btn-sm btn-danger'") ?></td>
                 </tr>
             <? endforeach; ?>
             </table>
@@ -36,6 +36,6 @@
                 <br />
             </div><br />
             <div class="col-lg-4 col-md-4 col-sm-12">
-            <?= anchor("SparkPlugCtrl/new_entry", "New", "class='btn btn-lg btn-default btn-block'") ?>
+            <?= anchor("Jobs/new_entry", "New", "class='btn btn-lg btn-default btn-block'") ?>
             </div>
             

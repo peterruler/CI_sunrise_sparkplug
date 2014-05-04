@@ -1,14 +1,14 @@
 <?php
- if (! defined('BASEPATH')) exit('No direct script access allowed');
- /*
- * User: ps
- # copyright 2014 keepitnative.ch, io, all rights reserved to the author
- * Date: 02.05.14
- * Time: 20:33
- * project: https_docs
- * file: SparkPlug.php
- * adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
- */
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+/*
+* User: ps
+# copyright 2014 keepitnative.ch, io, all rights reserved to the author
+* Date: 02.05.14
+* Time: 20:33
+* project: https_docs
+* file: SparkPlug.php
+* adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
+*/
 
 /**
  * SparkPlug
@@ -24,56 +24,82 @@
  * @author Pascal Kriete
  *
  **/
-
-class SparkPlug {
-    var $CI;				// CI Super Object
-    var $table;				// Table specified in the constructor
+class SparkPlug
+{
+    var $CI; // CI Super Object
+    var $table; // Table specified in the constructor
 
     /* Generated */
-    var $ucf_controller;	//Name of controller (ucfirst)
-    var $controller;		// What the route says the controller's name is
-    var $model_name;		// Name of the model (strtolower, ucfirst)
+    var $ucf_controller; //Name of controller (ucfirst)
+    var $controller; // What the route says the controller's name is
+    var $model_name; // Name of the model (strtolower, ucfirst)
 
     /* Dynamic */
-    var $base_uri;		// URI string of the calling constructor/function (all forms submit to this uri)
-    var $request;			// Array of added segments
+    var $base_uri; // URI string of the calling constructor/function (all forms submit to this uri)
+    var $request; // Array of added segments
 
 
     /**
      * Constructor
      */
-    function SparkPlug($table='users') {
+    function SparkPlug()
+    {
         $this->CI =& get_instance();
 
         $this->CI->load->database();
-        $this->CI->load->library('session');
+        $this->CI->load->library('session', 'database');
         $this->CI->load->helper('form');
         $this->CI->load->helper('url');
 
+        $table = $this->getTable();
         if (!$this->CI->db->table_exists($table)) {
-            die('Table <strong>'.$table.'</strong> does not exist.');
+            die('Table <strong>' . $table . '</strong> does not exist.');
         }
 
         $this->table = $table;
     }
 
+    private function getTable()
+    {
+        $url_string = xss_clean($this->CI->uri->uri_string());
+        $segments = explode("/", $url_string);
+        $segments_length = count($segments);
+        if ($segments_length > 0) {
+            try {
+                $table = xss_clean($this->CI->uri->segment(1));
+                if ($table != '' || !empty($table)) {
+                    return $table;
+                } else {
+                    throw new \Exception("Controller in url not specified, please choose analog to view name, e.g http://domain.com/{controller-tablename}/scaffolding/{tablename}");
+
+                }
+            } catch (\Exception $e) {
+                echo "<h3>An error occured!</h3><p>{$e->getMessage()}</p><p>" . str_replace("\n", "<br />", $e->getTraceAsString()) . "</p>";
+            }
+        } else {
+            throw new \Exception("Controller in url not specified, please choose controller analog to view name, e.g http://domain.com/{controller-tablename}/scaffolding/{tablename}");
+        }
+    }
 
     /**
      * Public Function
      *
      * Starts the dynamic scaffolding process
      */
-    function scaffold() {
+    function scaffold()
+    {
         /* Get rid of the CI default nonsense and set real path */
         $route =& load_class('Router');
         $base_url = $this->CI->config->site_url();
-        if ($route->directory != '') { $base_url .= '/'; }
+        if ($route->directory != '') {
+            $base_url .= '/';
+        }
 
-        $this->base_uri = $route->directory.'/'.$route->class.'/'.$route->method;
+        $this->base_uri = $route->directory . '/' . $route->class . '/' . $route->method;
 
         /* Did we call a subfunction - catch it here */
         $segs = $this->CI->uri->segment_array();
-        $last = array_search($route->method, $segs);	// Everything beyond this is ours
+        $last = array_search($route->method, $segs); // Everything beyond this is ours
 
         $this->request = array('');
         if ($last < count($segs)) {
@@ -91,7 +117,8 @@ class SparkPlug {
      *
      * Starts the code generation process
      */
-    function generate() {
+    function generate()
+    {
         /* Create model name based on table */
         $this->model_name = ucfirst(strtolower($this->table));
 
@@ -100,7 +127,7 @@ class SparkPlug {
         $this->controller = $route->class;
         $this->ucf_controller = ucfirst($route->class);
 
-        $this->_generate();  //** FUNCTION FOUND BELOW (l.370) **//
+        $this->_generate(); //** FUNCTION FOUND BELOW (l.370) **//
     }
 
 
@@ -115,10 +142,11 @@ class SparkPlug {
      *
      * If we have no extra segments we check if anything was submitted
      */
-    function _processRequest() {
+    function _processRequest()
+    {
 
         /* Check if something was submitted */
-        $action = xss_clean($this->CI->input->post('action',TRUE));
+        $action = xss_clean($this->CI->input->post('action', TRUE));
 
         switch ($action) {
             case 'add':
@@ -128,7 +156,7 @@ class SparkPlug {
                 $this->_db_edit();
                 break;
             case 'delete':
-                $id = (int) xss_clean($this->input->post("id",TRUE));
+                $id = (int)xss_clean($this->input->post("id", TRUE));
                 $this->_db_delete($id);
                 break;
         }
@@ -153,12 +181,13 @@ class SparkPlug {
         }
     }
 
-    /*****								*****/
-    /*****		PROCESS DB ACTIONS		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        PROCESS DB ACTIONS        *****/
+    /*****                                *****/
 
-    function _db_insert() {
-        $post = xss_clean($this->input->post('',TRUE));
+    function _db_insert()
+    {
+        $post = xss_clean($this->input->post('', TRUE));
         unset($post['action']);
         unset($post['submit']);
 
@@ -168,8 +197,9 @@ class SparkPlug {
         redirect($this->base_uri);
     }
 
-    function _db_edit() {
-        $post = xss_clean($this->input->post('',TRUE));
+    function _db_edit()
+    {
+        $post = xss_clean($this->input->post('', TRUE));
         unset($post['action']);
         unset($post['submit']);
 
@@ -180,8 +210,9 @@ class SparkPlug {
         redirect($this->base_uri);
     }
 
-    function _db_delete($id) {
-        $id= (int) xss_clean($id);
+    function _db_delete($id)
+    {
+        $id = (int)xss_clean($id);
         $this->CI->db->where('id', $id);
         $this->CI->db->delete($this->table);
 
@@ -190,11 +221,12 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****		SHOW FORMS AND DATA		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        SHOW FORMS AND DATA        *****/
+    /*****                                *****/
 
-    function _dynamic($action = 'list') {	//action comes from _processRequests
+    function _dynamic($action = 'list')
+    { //action comes from _processRequests
 
         switch ($action) {
             case 'list':
@@ -218,36 +250,37 @@ class SparkPlug {
     }
 
     //Special case - here so that "Delete" can be a link instead of a button
-    function _delete() {
+    function _delete()
+    {
         $id = $this->request[1];
         $this->_db_delete($id);
     }
 
-    function _list() {
+    function _list()
+    {
         $query = $this->CI->db->get($this->table);
         $fields = $this->CI->db->list_fields($this->table);
 
         $this->_header();
-        echo "<h1>List ".(string) $this->table."</h1>";
+        echo "<h1>List " . (string)$this->table . "</h1>";
         $table = '<div class="table-responsive">';
         $table .= '<table class="table"><tr>';
         foreach ($fields as $field)
-            $table .= '<th>'.ucfirst($field).'</th>';
-        $table.= '</tr>';
+            $table .= '<th>' . ucfirst($field) . '</th>';
+        $table .= '</tr>';
 
-        foreach ($query->result_array() as $row)
-        {
-            $table.= '<tr>';
+        foreach ($query->result_array() as $row) {
+            $table .= '<tr>';
             foreach ($fields as $field)
-                $table.= '<td>'.$row[$field].'</td>';
+                $table .= '<td>' . $row[$field] . '</td>';
 
-            $table.= '<td>'.$this->_show_link($row['id']).'</td>'.
-                '<td>'.$this->_edit_link($row['id']).'</td>'.
-                '<td>'.$this->_delete_link($row['id']).'</td>';
+            $table .= '<td>' . $this->_show_link($row['id']) . '</td>' .
+                '<td>' . $this->_edit_link($row['id']) . '</td>' .
+                '<td>' . $this->_delete_link($row['id']) . '</td>';
 
-            $table.= '</tr>';
+            $table .= '</tr>';
         }
-        $table.= '</table></div>';
+        $table .= '</table></div>';
         echo $table;
 
         echo $this->_insert_link();
@@ -255,9 +288,10 @@ class SparkPlug {
 
     }
 
-    function _show() {
-        echo $this->load->view('header','',TRUE);
-        echo '<h1>Show '.(string) $this->table.'</h1>';
+    function _show()
+    {
+        echo $this->load->view('header', '', TRUE);
+        echo '<h1>Show ' . (string)$this->table . '</h1>';
 
         $id = $this->request[1];
         $this->CI->db->where('id', $id);
@@ -267,36 +301,38 @@ class SparkPlug {
 
         foreach ($data[0] as $field_name => $field_value) {
             echo '<p>
-			  <b>'.ucfirst($field_name).':</b>'.$field_value.'
+			  <b>' . ucfirst($field_name) . ':</b>' . $field_value . '
 			  </p>';
         }
         echo $this->_back_link();
 
-        echo $this->load->view('footer','',TRUE);
+        echo $this->load->view('footer', '', TRUE);
     }
 
-    function _insert() {
+    function _insert()
+    {
         echo '<h1>New</h1>';
 
         $fields = $this->CI->db->field_data($this->table);
         $form = form_open($this->base_uri);
 
-        foreach($fields as $field) {
+        foreach ($fields as $field) {
             $form .= $this->_insertMarkup($field);
         }
 
         $form .= form_hidden('action', 'add');
-        $form .= form_submit('submit', 'Insert').'</p>';
+        $form .= form_submit('submit', 'Insert', "formnovalidate ") . '</p>';
         $form .= form_close();
         echo $form;
 
         echo $this->_back_link();
     }
 
-    function _edit() {
+    function _edit()
+    {
         echo '<h1>Edit</h1>';
 
-        $id = $this->request[1];
+        $id = xss_clean($this->request[1]);
         $this->CI->db->where('id', $id);
         $query = $this->CI->db->get($this->table);
 
@@ -306,13 +342,13 @@ class SparkPlug {
 
         $form = form_open($this->base_uri);
 
-        foreach($fields as $field) {
+        foreach ($fields as $field) {
             $form .= $this->_editMarkup($field, $data[0]);
         }
 
         $form .= form_hidden('action', 'edit');
-        $form .= '<p>'.$this->_back_link();
-        $form .= form_submit('submit', 'Update').'</p>';
+        $form .= '<p>' . $this->_back_link();
+        $form .= form_submit('submit', 'Update', "formnovalidate ") . '</p>';
         $form .= form_close();
         echo $form;
     }
@@ -321,48 +357,216 @@ class SparkPlug {
      * Dynamic Forms
      */
 
-    function _insertMarkup($field) {
+    function _insertMarkup($field)
+    {
+        $form_markup = '';
+        $form_markup .= "\n\t";
         if ($field->primary_key) {
-            return '<input type="hidden" name="'.$field->name.'" value="" />';
-        }
+            $form_markup .= form_hidden($field->name, "");
+            $form_markup .= "\n\t";
+        } else {
+            if ($field->type != 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "<br/>\n\t";
+            } else if ($field->type == 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
+                $form_markup .= "<br/>\n\t";
+            }
 
-        else {
-
-            $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
-            $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
                 case 'int':
-                    $form_markup .= form_input($field->name, '');
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,""),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "number",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+
+                    switch ($field->primary_key) :
+                        case 'id':
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        default:
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                    endswitch;
                     break;
                 case 'string':
-                    $form_markup .= form_input($field->name, '');
+                    $name = strtolower($field->name);
+                    switch ($name) :
+                        case 'email':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,""),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "email",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        case 'url':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,""),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "url",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        case 'password':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,""),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_password("'" . $field->name . "'", $options);
+                            $form_markup .= "\n\t";
+                            $options = array(
+                                "name" => "passconf",
+                                "id" => "passconf",
+                                "value" => set_value($field->name,""),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => "passconf",
+                                "required" => "required");
+                            $form_markup .= form_password("passconf", $options);
+
+                            break;
+                        case 'phone':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,""),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "tel",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        default:
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,""),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "text",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                    endswitch;
                     break;
+                case 'text':
                 case 'blob':
-                    $form_markup .= form_textarea($field->name, '');
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,""),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "cols" => 50,
+                        "row" => 20,
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+                    $form_markup .= form_textarea("'" . $field->name . "'", $options);
                     break;
-                case 'datetime':
-                    $form_markup .= form_input($field->name, date("Y-m-d H:i:s"));
+                case 'datetime' :
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,""),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "datetime",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+                    $form_markup .= form_input("'" . $field->name . "'", $options);
+
+                    break;
+                case 'boolean':
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,""),
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "radio",
+                        "checked" => FALSE,
+                        "style" => "margin:10px",
+                        "required" => "required");
+                    $form_markup .= form_radio("'" . $field->name . "'", $options);
+
+                    break;
+                default :
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,""),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "text",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+                    $form_markup .= form_input("'" . $field->name . "'", $options);
+
                     break;
             }
-
-            $form_markup .= "\t</p>\n";
-            return $form_markup;
-
         }
-
+        return $form_markup;
     }
 
-    function _editMarkup($field, $data) {
-        if ($field->primary_key) {
-            return '<input type="hidden" name="'.$field->name.'" value="'.$data[$field->name].'" />';
-        }
+    function _editMarkup($field, $data)
+    {
 
-        else {
+        /*
+        if ($field->primary_key) {
+            return '<input type="hidden" name="' . $field->name . '" value="' . $data[$field->name] . '" />';
+        } else {
 
             $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
+            $form_markup .= '	<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
             $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
@@ -384,48 +588,266 @@ class SparkPlug {
             return $form_markup;
 
         }
+        */
+
+/*
+            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                "name" => "' . $field->name . '",
+                "id" => "' . $field->name . '",
+                "value" => set_value("' . $field->name . '", "' . $data[$field->name] . '"),
+                "maxlength" => "' . $field->max_length . '",
+                "size" => "50",
+                "style" => "width:100%",
+                "class" => "form-control",
+                "type" => "text",
+                "placeholder" "' . $field->name . '",
+                "required" => "required");';
+            $form_markup .= "\n\t";*/
+        $form_markup = '';
+        $form_markup .= "\n\t";
+        if ($field->primary_key) {
+            $form_markup .= form_hidden("' . $field->name . '", "'".$data[$field->name]."'");
+            $form_markup .= "\n\t";
+        } else {
+            if ($field->type != 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "<br/>\n\t";
+            } else if ($field->type == 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
+                $form_markup .= "<br/>\n\t";
+            }
+
+
+            switch ($field->type) {
+                case 'int':
+                    $options = array(
+                        "name" => "'" . $field->name . "'",
+                        "id" => "'" . $field->name . "'",
+                        "value" => set_value("'{$field->name}'","'{$data[$field->name]}'"),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "number",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+
+                    switch ($field->primary_key) :
+                        case 'id':
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        default:
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                    endswitch;
+                    break;
+                case 'string':
+                    switch ($field->name) :
+                        case 'email':
+                            $options = array(
+                                "name" => "'" . $field->name . "'",
+                                "id" => "'" . $field->name . "'",
+                                "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "email",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        case 'url':
+                            $options = array(
+                                "name" => "'" . $field->name . "'",
+                                "id" => "'" . $field->name . "'",
+                                "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "url",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        case 'password':
+                            $options = array(
+                                "name" => "'" . $field->name . "'",
+                                "id" => "'" . $field->name . "'",
+                                "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_password("'" . $field->name . "'", $options);
+                            $form_markup .= "\n\t";
+                            $options = array(
+                                "name" => "passconf",
+                                "id" => "passconf",
+                                "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => "passconf",
+                                "required" => "required");
+                            $form_markup .= form_password("passconf", $options);
+
+                            break;
+                        case 'phone':
+                            $options = array(
+                                "name" => "'" . $field->name . "'",
+                                "id" => "'" . $field->name . "'",
+                                "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "tel",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                        default:
+                            $options = array(
+                                "name" => "'" . $field->name . "'",
+                                "id" => "'" . $field->name . "'",
+                                "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                                "maxlength" => "'" . $field->max_length . "'",
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "text",
+                                "placeholder" => "'" . $field->name . "'",
+                                "required" => "required");
+                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            break;
+                    endswitch;
+                    break;
+                case 'text':
+                case 'blob':
+                    $options = array(
+                        "name" => "'" . $field->name . "'",
+                        "id" => "'" . $field->name . "'",
+                        "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "cols" => 50,
+                        "row" => 20,
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+                    $form_markup .= form_textarea("'" . $field->name . "'", $options);
+                    break;
+                case 'datetime' :
+                    $formattedDate = date("Y-m-d", strtotime($data[$field->name]));
+                    $options = array(
+                        "name" => "'" . $field->name . "'",
+                        "id" => "'" . $field->name . "'",
+                        "value" => set_value("{$field->name}","{$formattedDate}"),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "datetime",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+                    $form_markup .= form_input("'" . $field->name . "'", $options);
+
+                    break;
+                case 'boolean':
+                    $options = array(
+                        "name" => "'" . $field->name . "'",
+                        "id" => "'" . $field->name . "'",
+                        "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "radio",
+                        "checked" => FALSE,
+                        "style" => "margin:10px",
+                        "required" => "required");
+                    $form_markup .= form_radio("'" . $field->name . "'", $options);
+
+                    break;
+                default :
+                    $options = array(
+                        "name" => "'" . $field->name . "'",
+                        "id" => "'" . $field->name . "'",
+                        "value" => set_value("{$field->name}","{$data[$field->name]}"),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "text",
+                        "placeholder" => "'" . $field->name . "'",
+                        "required" => "required");
+                    $form_markup .= form_input("'" . $field->name . "'", $options);
+
+                    break;
+            }
+        }
+        return $form_markup;
     }
 
-    /*****								*****/
-    /*****		HELPER FUNCTIONS		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        HELPER FUNCTIONS        *****/
+    /*****                                *****/
 
-    function _delete_link($id) {
-        return anchor($this->base_uri.'/delete/'.$id, 'Delete', "class='btn btn-sm btn-danger'");
+    function _delete_link($id)
+    {
+        return anchor($this->base_uri . '/delete/' . $id, 'Delete', "class='btn btn-sm btn-danger'");
     }
 
-    function _edit_link($id) {
-        return anchor($this->base_uri.'/edit/'.$id, 'Edit', "class='btn btn-sm btn-warning'");
+    function _edit_link($id)
+    {
+        return anchor($this->base_uri . '/edit/' . $id, 'Edit', "class='btn btn-sm btn-warning'");
     }
 
-    function _show_link($id) {
-        return anchor($this->base_uri.'/show/'.$id, 'View', "class='btn btn-sm btn-success'");
+    function _show_link($id)
+    {
+        return anchor($this->base_uri . '/show/' . $id, 'View', "class='btn btn-sm btn-success'");
     }
 
-    function _insert_link() {
-        return anchor($this->base_uri.'/add', 'New', "class='btn btn-lg btn-default btn-block'");
+    function _insert_link()
+    {
+        return anchor($this->base_uri . '/add', 'New', "class='btn btn-lg btn-default btn-block'");
     }
 
-    function _back_link() {
+    function _back_link()
+    {
         return anchor($this->base_uri, 'Back', "class='btn btn-lg btn-default btn-block'");
     }
 
-    function _header() {
+    function _header()
+    {
         echo '<!DOCTYPE html>"
 				<html lang="en">
 				<head>
 				<meta charset=utf-8">
 				<meta name="Developer" content="Pascal Kriete" />
-				<title>Scaffolding - '.ucfirst($this->table).'</title>
+				<title>Scaffolding - ' . ucfirst($this->table) . '</title>
 				</head>
 				<body>
 				<p>';
         echo " <?= if( $this->CI->session->flashdata('msg') !='' ) :?>";
-            echo '<div class="alert alert-success">'.$this->CI->session->flashdata('msg').'</div></p>';
+        echo '<div class="alert alert-success">' . $this->CI->session->flashdata('msg') . '</div></p>';
         echo "endif;";
     }
 
-    function _footer() {
+    function _footer()
+    {
         echo '</body></html>';
     }
 
@@ -443,45 +865,46 @@ class SparkPlug {
      * Calls part-generators
      * Creates files
      */
-    function _generate() {
+    function _generate()
+    {
         /* Make crud model */
 
         echo "<h3>Running SparkPlug...</h3>";
 
-        $model_path = APPPATH.'models/'.$this->table.'.php';
+        $model_path = APPPATH . 'models/' . $this->table . '_model.php';
         $model_text = $this->_generate_model();
 
         file_put_contents($model_path, $model_text);
-        echo $model_path.' created<br/>';
+        echo $model_path . ' created<br/>';
 
         /* Generate views for crud functions in subfolder */
 
-        $view_folder = APPPATH.'views/'.strtolower($this->controller);
+        $view_folder = APPPATH . 'views/' . strtolower($this->controller);
         $view_text = $this->_generate_views();
 
         $dir_created = mkdir($view_folder);
-        echo $dir_created ? $view_folder.' created<br/>' : $view_folder.' already exists - no need to create<br/>';
+        echo $dir_created ? $view_folder . ' created<br/>' : $view_folder . ' already exists - no need to create<br/>';
 
         foreach ($view_text as $view_name => $view) {
-            $view_path = $view_folder.'/'.$view_name.'.php';
+            $view_path = $view_folder . '/' . $view_name . '.php';
 
             file_put_contents($view_path, $view);
-            echo $view_path.' created<br/>';
+            echo $view_path . ' created<br/>';
         }
 
         /* Create the controller to tie it all up */
 
-        $controller_path = APPPATH.'controllers/'.$this->ucf_controller.'.php';
+        $controller_path = APPPATH . 'controllers/' . $this->ucf_controller . '.php';
         $controller_text = $this->_generate_controller();
         file_put_contents($controller_path, $controller_text);
-        echo $controller_path.' created<br/>';
+        echo $controller_path . ' created<br/>';
 
-        echo '<br/>Scaffold completed.  Click '.anchor($this->controller."/show_list", 'here').' to get started.';
+        echo '<br/>Scaffold completed.  Click ' . anchor($this->controller . "/show_list", 'here') . ' to get started.';
     }
 
-    /*****								*****/
-    /*****			MODEL				*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            MODEL                *****/
+    /*****                                *****/
 
     /**
      * Generates the model code
@@ -490,13 +913,14 @@ class SparkPlug {
      * Replaces all tags
      * Calls _fix_indent for multi-line replacements
      */
-    function _generate_model() {
+    function _generate_model()
+    {
 
         $model_text = $this->_model_text();
         $fields = $this->CI->db->list_fields($this->table);
 
         /* REPLACE TAGS */
-        $model_text = str_replace("{model_name}", $this->model_name, $model_text);
+        $model_text = str_replace("{model_name}", $this->model_name . "_model", $model_text);
         $model_text = str_replace("{table}", $this->table, $model_text);
 
 
@@ -505,7 +929,7 @@ class SparkPlug {
 
         $var_init = '';
         foreach ($fields as $field) {
-            $var_init .= $indent.'public $'.$field."	= '';\n";
+            $var_init .= $indent . 'public $' . $field . "	= '';\n";
         }
         $model_text = str_replace("{variables}\n", $var_init, $model_text);
 
@@ -515,7 +939,16 @@ class SparkPlug {
 
         $var_set = '';
         foreach ($fields as $field) {
-            $var_set .= $indent.'$this->'.$field.'	= xss_clean($this->input->post(\''.$field."',TRUE));\n";
+            if ($field == "password") {
+                $var_set .= '$password = $this->encrypt->sha1(xss_clean($this->input->post("password",TRUE)));' . "\n";
+                $var_set .= $indent . '$this->password	= $password;' . "\n";
+            } elseif ($field == "passconf") {
+                $var_set .= '$passconf = $this->encrypt->sha1(xss_clean($this->input->post("passconf",TRUE)));' . "\n";
+                $var_set .= $indent . '$this->passconf	= $passconf;' . "\n";
+
+            } else {
+                $var_set .= $indent . '$this->' . $field . '	= xss_clean($this->input->post(\'' . $field . "',TRUE));" . "\n";
+            }
         }
         $model_text = str_replace("{set_variables_from_post}\n", $var_set, $model_text);
 
@@ -524,9 +957,9 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****			VIEWS				*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            VIEWS                *****/
+    /*****                                *****/
 
     /**
      * Generates the View Files
@@ -534,7 +967,8 @@ class SparkPlug {
      * Grabs all of the view templates as defined in the array
      * Replaces tags
      */
-    function _generate_views() {
+    function _generate_views()
+    {
 
         /* Template function = _<viewname>_view */
         $views = array('index', 'edit', 'list', 'new', 'show');
@@ -542,7 +976,7 @@ class SparkPlug {
         $view_text = array();
 
         foreach ($views as $view) {
-            $view_funct = '_'.$view.'_view';
+            $view_funct = '_' . $view . '_view';
 
             if (method_exists($this, $view_funct)) {
                 //$view_text[$view] = $this->_header();
@@ -559,9 +993,9 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****			CONTROLLER			*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            CONTROLLER            *****/
+    /*****                                *****/
 
     /**
      * Generates the controller
@@ -569,20 +1003,24 @@ class SparkPlug {
      * Gets controller template
      * Replaces tags
      */
-    function _generate_controller() {
+    function _generate_controller()
+    {
         $text = $this->_controller_text();
 
         $text = str_replace('{ucf_controller}', $this->ucf_controller, $text);
         $text = str_replace('{controller}', $this->controller, $text);
-        $text = str_replace('{model}', $this->model_name, $text);
+        $text = str_replace("{uc_model_name}", ucfirst($this->controller) . '_model', $text);
+
+        $text = str_replace('{model}', $this->model_name . '_model', $text);
         $text = str_replace('{view_folder}', strtolower($this->controller), $text);
+        $text = str_replace('{set_rules}', $this->_setRules_form_validation(), $text);
         return $text;
     }
 
 
-    /*****								*****/
-    /*****		HELPER FUNCTIONS		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        HELPER FUNCTIONS        *****/
+    /*****                                *****/
 
     /**
      * Function to fix indentation for multi-line replacements
@@ -590,13 +1028,14 @@ class SparkPlug {
      * Cuts the indent off the tag and applies to to all lines
      * that replace it.
      */
-    function _fix_indent($text, $tag) {
-        $pattern = '/\n[\t ]*?\{'.$tag.'\}/';
+    function _fix_indent($text, $tag)
+    {
+        $pattern = '/\n[\t ]*?\{' . $tag . '\}/';
         preg_match($pattern, $text, $matches);
         $indent = str_replace("\n", '', $matches[0]);
-        $indent = str_replace('{'.$tag.'}', '', $indent);
+        $indent = str_replace('{' . $tag . '}', '', $indent);
         // Remove tag indent to fix first one
-        $text = preg_replace($pattern, "\n{".$tag."}", $text);
+        $text = preg_replace($pattern, "\n{" . $tag . "}", $text);
 
         return array($text, $indent);
     }
@@ -606,13 +1045,14 @@ class SparkPlug {
      *
      * Calls markup functions to create meta-type relevant fields
      */
-    function _form_fields($action) {
+    function _form_fields($action)
+    {
 
         $query = $this->CI->db->get($this->table);
         $fields = $this->CI->db->field_data($this->table);
         $form = '';
 
-        foreach($fields as $field) {
+        foreach ($fields as $field) {
             if ($action == 'update')
                 $form .= $this->_getEditMarkup($field);
             else
@@ -628,115 +1068,203 @@ class SparkPlug {
      * Adds *NOW* to datetime field
      * Indents elements for clean html
      */
-    function _getMarkup($field) {
+    function _getMarkup($field)
+    {
+        $form_markup = '';
+        $form_markup .= "\n\t";
         if ($field->primary_key) {
-            $options01 = array(
-                'name'=> $field->name,
-                'id' => $field->name,
-                'value' => set_value('id', ''),
-                'class' => 'form-control',
-                'type' => 'hidden');
-            return form_input($options01);
-        }
+            $form_markup .= form_hidden($field->name, "");
+            $form_markup .= "\n\t";
+        } else {
+            if ($field->type != 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "<br/>\n\t";
+            } else if ($field->type == 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
+                $form_markup .= "<br/>\n\t";
+            }
 
-        else {
-
-            $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
-            $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
                 case 'int':
-                    $options02 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($options02);
-                    break;
-                case 'string':
-                    $options03 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($options03);
-                    break;
-                case 'blob':
-                    $options04 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => '500',
-                        'rows' => '3',
-                        'cols' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'textarea',
-                        'required' => '');
-                    $form_markup .= form_textarea($options04);
-                    break;
-                case 'datetime':
-                    $options05 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => '',
-                        'value' => '<?= date("Y-m-d H:i:s") ?>',
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'date',
-                        'required' => '');
-                    $form_markup .= form_input($options05);
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                        "maxlength" => $field->max_length,
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "number",
+                        "placeholder" => $field->name ,
+                        "required" => "required");
+
+                    switch ($field->primary_key) :
+                        case 'id':
+                            $form_markup .= form_input(  $options);
+                            break;
+                        default:
+                            $form_markup .= form_input(  $options);
+                            break;
+                    endswitch;
                     break;
                 case 'varchar':
-                    $options06 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($options06);
+                case 'string':
+                    $name = strtolower($field->name);
+                    switch ($name) :
+                        case 'email':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "email",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input(  $options);
+                            break;
+                        case 'url':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "url",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input(  $options);
+                            break;
+                        case 'password':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_password( $options);
+                            $form_markup .= "\n\t";
+                            $options = array(
+                                "name" => "passconf",
+                                "id" => "passconf",
+                                "value" => set_value($field->name,'<?= xss_clean($this->input->post("passconf"));?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => "passconf",
+                                "required" => "required");
+                            $form_markup .= form_password( $options);
+
+                            break;
+                        case 'phone':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "tel",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input( $options);
+                            break;
+                        default:
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "text",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input($options);
+                            break;
+                    endswitch;
                     break;
-                default:
-                    $options07 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($options07);
+                case 'text':
+                case 'blob':
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                        "maxlength" => $field->max_length,
+                        "cols" => 50,
+                        "row" => 20,
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "placeholder" => $field->name,
+                        "required" => "required");
+                    $form_markup .= form_textarea( $options);
+                    break;
+                case 'datetime' :
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "date",
+                        "placeholder" => $field->name);
+                    $form_markup .= form_input($options);
+
+                    break;
+                case 'boolean':
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "radio",
+                        "checked" => FALSE,
+                        "style" => "margin:10px",
+                        "required" => "required");
+                    $form_markup .= form_radio( $options);
+
+                    break;
+                default :
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= xss_clean($this->input->post("'.$field->name.'"));?>'),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "text",
+                        "placeholder" => $field->name,
+                        "required" => "required");
+                    $form_markup .= form_input(  $options);
+
                     break;
             }
-
-            $form_markup .= "\t</p>\n";
-            return $form_markup;
-
         }
+        return $form_markup;
     }
 
     /**
@@ -744,135 +1272,279 @@ class SparkPlug {
      *
      * Adds existing data to each element
      */
-    function _getEditMarkup($field) {
+    function _getEditMarkup($field)
+    {
+        $form_markup = '';
+        $form_markup .= "\n\t";
         if ($field->primary_key) {
-            return '<input type="hidden" name="'.$field->name.'" value=<?= $result["'.$field->name.'"]?> />';
-        }
+            $form_markup .= form_hidden($field->name, "");
+            $form_markup .= "\n\t";
+        } else {
+            if ($field->type != 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "<br/>\n\t";
+            } else if ($field->type == 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
+                $form_markup .= "<br/>\n\t";
+            }
 
-        else {
-
-            $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
-            $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
                 case 'int':
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                        "maxlength" => $field->max_length,
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "number",
+                        "placeholder" => $field->name ,
+                        "required" => "required");
 
-                    $opt01 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($opt01);
-                    break;
-                case 'string':
-
-                    $opt02 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($opt02);
-                    break;
-                case 'blob':
-
-                    $opt03 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", '<?= $result ["'.$field->name.'"]?>'),
-                        'maxlength' => '400',
-                        'rows' => '12',
-                        'cols' => '90',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'textarea',
-                        'required' => '');
-                    $form_markup .= form_textarea($opt03);;
-                    break;
-                case 'datetime':
-                    $opt04 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => '',
-                        'value' => set_value("'".$field->name."'", '<?= $result ["'.$field->name.'"]?>'),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'date',
-                        'required' => '');
-                    $form_markup .= form_input($opt04);
+                    switch ($field->primary_key) :
+                        case 'id':
+                            $form_markup .= form_input(  $options);
+                            break;
+                        default:
+                            $form_markup .= form_input(  $options);
+                            break;
+                    endswitch;
                     break;
                 case 'varchar':
+                case 'string':
+                    $name = strtolower($field->name);
+                    switch ($name) :
+                        case 'email':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "email",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input(  $options);
+                            break;
+                        case 'url':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "url",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input(  $options);
+                            break;
+                        case 'password':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_password( $options);
+                            $form_markup .= "\n\t";
+                            $options = array(
+                                "name" => "passconf",
+                                "id" => "passconf",
+                                "value" => set_value('passconf','<?= $result["'.$field->name.'"];?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "password",
+                                "placeholder" => "passconf",
+                                "required" => "required");
+                            $form_markup .= form_password( $options);
 
-                    $opt06 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($opt06);
+                            break;
+                        case 'phone':
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "tel",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input( $options);
+                            break;
+                        default:
+                            $options = array(
+                                "name" => $field->name,
+                                "id" => $field->name,
+                                "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                                "maxlength" => $field->max_length,
+                                "size" => "50",
+                                "style" => "width:100%",
+                                "class" => "form-control",
+                                "type" => "text",
+                                "placeholder" => $field->name,
+                                "required" => "required");
+                            $form_markup .= form_input($options);
+                            break;
+                    endswitch;
                     break;
-                default:
+                case 'text':
+                case 'blob':
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                        "cols" => 50,
+                        "row" => 20,
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "placeholder" => $field->name);
+                    $form_markup .= form_textarea( $options);
+                    break;
+                case 'datetime' :
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "date",
+                        "placeholder" => date("Y:m:D"));
+                    $form_markup .= form_input($options);
 
-                    $opt07 = array(
-                        'name' => $field->name,
-                        'id' => $field->name,
-                        'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
-                        'maxlength' => '500',
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'text',
-                        'required' => '');
-                    $form_markup .= form_input($opt07);
+                    break;
+                case 'boolean':
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "radio",
+                        "checked" => FALSE,
+                        "style" => "margin:10px",
+                        "required" => "required");
+                    $form_markup .= form_radio( $options);
 
+                    break;
+                default :
+                    $options = array(
+                        "name" => $field->name,
+                        "id" => $field->name,
+                        "value" => set_value($field->name,'<?= $result["'.$field->name.'"];?>'),
+                        "maxlength" => "'" . $field->max_length . "'",
+                        "size" => "50",
+                        "style" => "width:100%",
+                        "class" => "form-control",
+                        "type" => "text",
+                        "placeholder" => $field->name,
+                        "required" => "required");
+                    $form_markup .= form_input(  $options);
+
+                    break;
             }
-            $form_markup .= "\n\t</p>\n";
-            return $form_markup;
-
         }
+        return $form_markup;
     }
 
-    /*****								*****/
-    /*****			TEMPLATES			*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            TEMPLATES            *****/
+    /*****                                *****/
+
+    function _setRules_form_validation()
+    {
+        //$query = $this->db->query("Custom query");
+        $fields = $this->CI->db->field_data($this->table);
+
+        $html = "";
+        $rules = "";
+        foreach ($fields as $field) :
+            switch ($field->type) :
+                case "varchar" :
+                    switch ($field->name) :
+                        case "email" :
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            break;
+                        case "phone" :
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            break;
+                        case "password" :
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
+                            break;
+                        default:
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            break;
+                    endswitch;
+                    break;
+                case "int" :
+                    if ($field->primary_key) :
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->table . $field->primary_key . ']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                    else :
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                    endif;
+                    break;
+                case "datetime" :
+                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');'."\n\r";
+                    break;
+                case "text" :
+                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');'."\n\r";
+                    break;
+            endswitch;
+        endforeach;
+        return $rules;
+    }
 
     /**
      * Controller Template - Tags:
      *
-     * {model}						= model name
-     * {ucf_controller}				= UC controller name
-     * {controller}					= controller name formated for url
-     * {view_folder}				= name of the generated view folder
+     * {model}                        = model name
+     * {ucf_controller}                = UC controller name
+     * {controller}                    = controller name formated for url
+     * {view_folder}                = name of the generated view folder
+     * {set_rules}                      = formvalidation rules per table
      *
      */
 
-    function _controller_text() {
-        $html=
+    function _controller_text()
+    {
+        $html =
             '<?php
+             if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+             /*
+             * User: ps
+             # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+             * Date: 02.05.14
+             * Time: 20:33
+             * project: sparkplug
+             * file: application/controllers/{ucf_controller}.php
+             * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
+             */
             class {ucf_controller} extends CI_Controller {
 
-                var $table = "'.$this->table.'";
+                private $table = "{controller}";
                 public function index() {
                     redirect(\'{controller}/show_list\');
                 }
@@ -880,95 +1552,186 @@ class SparkPlug {
                     parent::__construct();
 
                     $this->load->database();
-                    $this->load->model(\'{model}\');
-                    $this->load->helper(array(\'form\',\'url\'));
-                    $this->load->library(array(\'session\', \'form_validation\'));
+                    $this->load->model(\'{uc_model_name}\');
+                    $this->load->helper(array(\'form\',\'url\',\'security\'));
+                    $this->load->library(array(\'session\', \'pagination\', \'form_validation\',\'encrypt\'));
+
                 }
 
                 public function show_list() {
-                    $data[\'results\'] = $this->{model}->get_all();
+
+                    $config[\'base_url\'] = $this->config->item(\'base_url\')."/{ucf_controller}/show_list";
+                    $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
+                    $config[\'per_page\'] = 10;
+                    $config[\'full_tag_open\'] = \'<ul id="pagination">\';
+                    $config[\'full_tag_close\'] = \'</ul>\';
+
+                    $config[\'next_link\'] = \'&gt;\';
+                    $config[\'prev_link\'] = \'&lt;\';
+
+                    $url_string =xss_clean($this->uri->uri_string());
+                    $segments = explode("/",$url_string);
+                    $segments_length = count($segments);
+                    switch ($segments_length) {
+                        case 4:
+                            $offset = xss_clean($this->uri->segment(4));
+                            break;
+                        case 3:
+                            $offset = xss_clean($this->uri->segment(3));
+                            break;
+                        default:
+                            $offset = 1;
+                            break;
+                    }
+                    $this->pagination->initialize($config);
+                    $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config["per_page"],$offset);
                     $this->load->view(\'header\');
                     $this->load->view(\'{view_folder}/list\', $data);
                     $this->load->view(\'footer\');
                 }
 
                 public function show($id) {
-                    $data[\'result\'] = $this->{model}->get($id);
+                    $data[\'result\'] = $this->{uc_model_name}->get($id);
 
                     $this->load->view(\'header\');
                     $this->load->view(\'{view_folder}/show\', $data);
                     $this->load->view(\'footer\');
                 }
 
-                public function new_entry() {';
+                public function new_entry() {
 
+                    {set_rules}
 
-        $query = $this->CI->db->get($this->table);
-        $fields = $this->CI->db->list_fields($this->table);
+                    if ($this->form_validation->run() == FALSE) {
 
-        foreach ($fields as $field) {
-            $html .= '$this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');';
-
-        }
-$html .= '
-        if ($this->form_validation->run() == FALSE) {
-
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/new\');
-                    $this->load->view(\'footer\');
-        } else {
-                    redirect(\'SparkPlugCtrl/show_list\');
-        }';
-
-
-        $html .='
+                                $this->load->view(\'header\');
+                                $this->load->view(\'{view_folder}/new\');
+                                $this->load->view(\'footer\');
+                    } else {
+                                redirect(\'{controller}/show_list\');
+                   }
                 }
 
                 public function create() {
-                    $this->{model}->insert();
 
-                    $this->session->set_flashdata(\'msg\', \'Entry Created\');
-                    redirect(\'{controller}/show_list\');
+                    {set_rules}
+                    if ($this->form_validation->run() == FALSE) {
+                            $this->session->set_flashdata(\'msg\', \'Error\');
+                            $this->load->view(\'header\');
+                            $this->load->view(\'{view_folder}/new\');
+                            $this->load->view(\'footer\');
+                        } else {
+                            $this->{uc_model_name}->insert();
+                            $this->session->set_flashdata(\'msg\', \'Entry Created\');
+                            redirect(\'{controller}/show_list\');
+                        }
                 }
 
                 public function edit($id) {
-                    $res = $this->{model}->get($id);
+
+                    $res = $this->{uc_model_name}->get($id);
                     $data[\'result\'] = $res[0];
-                ';
 
-$html .='
-        $query = $this->db->get($this->table);
-        $fields = $this->db->list_fields($this->table);
+                    {set_rules}
 
-        foreach ($fields as $field) {
-        ';
-
-            $html .= '$this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');
-
-        }';
-$html .= '
-        if ($this->form_validation->run() == FALSE) {
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/edit\', $data);
-                    $this->load->view(\'footer\');
-        } else {
-                    redirect(\'SparkPlugCtrl/show_list\');
-        }
+                    if ($this->form_validation->run() == FALSE) {
+                                $this->load->view(\'header\');
+                                $this->load->view(\'{view_folder}/edit\', $data);
+                                $this->load->view(\'footer\');
+                    } else {
+                                redirect(\'{controller}/show_list\');
+                    }
                 }
 
-                public function update() {
-                    $this->{model}->update();
+                public function update($id) {
+                    {set_rules}
 
-                    $this->session->set_flashdata(\'msg\', \'Entry Updated\');
-                    redirect(\'{controller}/show_list\');
+                    if ($this->form_validation->run() == FALSE)
+                    {
+                        $res = $this->{uc_model_name}->get($id);
+                        $data["result"] = $res[0];
+
+                        $this->session->set_flashdata(\'msg\', \'Error\');
+                        $this->load->view(\'header\');
+                        $this->load->view(\'{controller}/edit\', $data);
+                        $this->load->view(\'footer\');
+                    }
+                    else
+                    {
+                        $post = $this->input->post();
+                        $this->{uc_model_name}->update($id);
+                        $this->session->set_flashdata(\'msg\', \'Entry Updated\');
+                        redirect(\'{controller}/show_list\');
+                    }
                 }
 
                 public function delete($id) {
-                    $this->{model}->delete($id);
+                    $this->{uc_model_name}->delete($id);
 
                     $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
                     redirect(\'{controller}/show_list\');
                 }
+                /**
+                 * @desc Validates a date format
+                 * @params format,delimiter
+                 * e.g. d/m/y,/ or y-m-d,-
+                 * http://tutsforweb.blogspot.ch/2012/05/date-validation-for-codeigniter-2.html
+                 */
+                 function valid_date($str, $params)
+                 {
+                  // setup
+                  $CI =&get_instance();
+                  $params = explode(",", $params);
+                  $delimiter = $params[1];
+                  $date_parts = explode($delimiter, $params[0]);
+
+                  // get the index (0, 1 or 2) for each part
+                  $di = $this->valid_date_part_index($date_parts, "d");
+                  $mi = $this->valid_date_part_index($date_parts, "m");
+                  $yi = $this->valid_date_part_index($date_parts, "y");
+
+                  // regex setup
+                  $dre =   "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)";
+                  $mre = "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12)";
+                  $yre = "([0-9]{4})";
+                  $red = "".$delimiter; // escape delimiter for regex
+                  $rex = "/^[0]{$red}[1]{$red}[2]/";
+
+                  // do replacements at correct positions
+                  $rex = str_replace("[{$di}]", $dre, $rex);
+                  $rex = str_replace("[{$mi}]", $mre, $rex);
+                  $rex = str_replace("[{$yi}]", $yre, $rex);
+
+                  if (preg_match($rex, $str, $matches))
+                  {
+                   // skip 0 as it contains full match, check the date is logically valid
+                   if (checkdate($matches[$mi + 1], $matches[$di + 1], $matches[$yi + 1]))
+                   {
+                    return true;
+                   }
+                   else
+                   {
+                    // match but logically invalid
+                    $CI->form_validation->set_message("valid_date", "The date is invalid.");
+                    return false;
+                   }
+                  }
+
+                  // no match
+                  $CI->form_validation->set_message("valid_date", "The date format is invalid. Use {$params[0]}");
+                  return false;
+                 }
+
+                 function valid_date_part_index($parts, $search)
+                 {
+                  for ($i = 0; $i <= count($parts); $i++)
+                  {
+                   if ($parts[$i] == $search)
+                   {
+                    return $i;
+                   }
+                  }
+                 }
             }';
 
         return $html;
@@ -977,22 +1740,35 @@ $html .= '
     /**
      * Model Template - Tags:
      *
-     * {model_name}					= $this->model_name (by default: ucfirst(strlower({table})))
-     * {table}						= table name
-     * {variables}					= variable initilizations
-     * {set_variables_from_post}	= all variables set equal to their POST counterparts
+     * {model_name}                    = $this->model_name (by default: {uc_model_name}
+     * {table}                        = table name
+     * {variables}                    = variable initilizations
+     * {set_variables_from_post}    = all variables set equal to their POST counterparts
      *
      */
 
-    function _model_text() {
+    function _model_text()
+    {
         return
             '<?php
+             if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+             /*
+             * User: ps
+             # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+             * Date: 02.05.14
+             * Time: 20:33
+             * project: sparkplug
+             * file: application/models/{ucf_controller}.php
+             * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
+             */
+
             class {model_name} extends CI_Model {
                 {variables}
 
                 public function {model_name}() {
                     parent::__construct();
                     $this->load->helper(array("security"));
+                    $this->load->library(array("encrypt"));
                 }
 
                 public function insert() {
@@ -1007,7 +1783,8 @@ $html .= '
                     return $query->result_array();
                 }
 
-                public function get_all() {
+                public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1 ) {
+                    $this->db->limit($limit_per_page, $offset_limit);
                     $query = $this->db->get(\'{table}\');
                     return $query->result_array();
                 }
@@ -1016,10 +1793,12 @@ $html .= '
                     return $this->db->field_data(\'{table}\');
                 }
 
-                public function update() {
+                public function update($id) {
                     {set_variables_from_post}
 
-                    $this->db->update(\'{table}\', $this, array(\'id\' => xss_clean($this->input->post(\'id\', TRUE))));
+                    $this->db->set($this);
+                    $this->db->where( \'id\' ,$this->id);
+                    $this->db->update(\'{table}\', $this);
                 }
 
                 public function delete($id) {
@@ -1028,7 +1807,6 @@ $html .= '
                 }
             }';
     }
-
     /**
      * View Templates
      *
@@ -1038,24 +1816,37 @@ $html .= '
      */
 
     /* INDEX */
-    function _index_view() {
+    function _index_view()
+    {
 
-        return 'You should not see this after scaffolding - index controller redirect by default.';
+        return "You should not see this after scaffolding - index controller redirect by default.";
 
     }
 
     /* LIST */
-    function _list_view() {
+    function _list_view()
+    {
         return
-            '<p ><?php if($this->session->flashdata(\'msg\')!=""): ?><div class="alert alert-success"><?= $this->session->flashdata(\'msg\') ?></div><?php endif; ?></p>
-
-            <h1>List '.(string) $this->table.'</h1>
+            '<h1>List ' . (string)$this->table . '</h1>
+            <p>
+            <?php
+            if ($this->session->flashdata("msg") != ""):
+            ?>
+            <div class="alert alert-success has-error has-feedback">
+            <?= $this->session->flashdata("msg") ?>
+            <span class="alert glyphicon glyphicon-ok"></span>
+            </div>
+            <?php endif; ?>
+            </p>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table table table-bordered table-striped table-hover">
                 <tr>
                 <? foreach(array_keys($results[0]) as $key): ?>
                     <th><?= ucfirst($key) ?></th>
                 <? endforeach; ?>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
                 </tr>
 
             <? foreach ($results as $row): ?>
@@ -1069,54 +1860,90 @@ $html .= '
                 </tr>
             <? endforeach; ?>
             </table>
-            </div>
+            <br />
+                <?= $this->pagination->create_links();?>
+                <br />
+            </div><br />
             <div class="col-lg-4 col-md-4 col-sm-12">
-            <?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-primary btn-block\'") ?>
+            <?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-default btn-block\'") ?>
             </div>
             ';
-
-
     }
 
     /* SHOW */
-    function _show_view() {
+    function _show_view()
+    {
         return
-            '<h1>Show '.(string) $this->table.'</h1>
-
+            '<h1>Show ' . (string)$this->table . '</h1>
             <? foreach ($result[0] as $field_name => $field_value): ?>
             <p>
                 <b><?= ucfirst($field_name) ?>:</b> <?= $field_value ?>
             </p>
             <? endforeach; ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-primary btn-block\'") ?>';
+            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
     /* EDIT */
-    function _edit_view() {
-        return
-            '<h1>Edit '.(string) $this->table.'</h1>
+    function _edit_view()
+    {
 
-            <?= form_open(\'{controller}/update\') ?>
+        return
+            '<h1>Edit ' . (string)$this->table . '</h1>
+            <? if (validation_errors() != ""): ?>
+                <div class="alert alert-danger has-error has-feedback">
+                    <span class="alert glyphicon glyphicon-warning-sign"></span>
+                    <?php
+                    if ($this->session->flashdata("msg") != ""):
+                        ?>
+
+                        <div style="display:block;float: left;width:60%">
+                            <h3><?= $this->session->flashdata("msg") ?></h3>
+                        </div>
+                    <?php endif; ?>
+                    <div style="display:block;float: left;width:60%">
+                        <?= validation_errors(); ?>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            <?php endif; ?>
+            <?= form_open("{controller}/update/".$result["id"],"formnovalidate=formnovalidate") ?>
             {form_fields_update}
             <p>
-                <?= form_submit(\'submit\', \'Update\', "class=\'btn btn-lg btn-primary btn-block\'") ?>
+                <?= form_submit(\'submit\', \'Update\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-primary btn-block\'") ?>';
+            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
     /* NEW */
-    function _new_view() {
+    function _new_view()
+    {
         return
-            '<h1>New '.(string) $this->table.'</h1>
+            '<h1>New ' . (string)$this->table . '</h1>
+             <? if (validation_errors() != ""): ?>
+                <div class="alert alert-danger has-error has-feedback">
+                    <span class="alert glyphicon glyphicon-warning-sign"></span>
+                    <?php
+                    if ($this->session->flashdata("msg") != ""):
+                        ?>
 
-            <?= form_open(\'{controller}/create\') ?>
+                        <div style="display:block;float: left;width:60%">
+                            <h3><?= $this->session->flashdata("msg") ?></h3>
+                        </div>
+                    <?php endif; ?>
+                    <div style="display:block;float: left;width:60%">
+                        <?= validation_errors(); ?>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            <?php endif; ?>
+            <?= form_open(\'{controller}/create\',"formnovalidate") ?>
             {form_fields_create}
             <p>
-                <?= form_submit(\'submit\', \'Create\', "class=\'btn btn-lg btn-primary btn-block\'") ?>
+                <?= form_submit(\'submit\', \'Create\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-primary btn-block\'") ?>';
+            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
 }
