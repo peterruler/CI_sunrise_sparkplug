@@ -7,7 +7,7 @@
 /**
  * Imports Twitter Boostrap.
  */
-@import '../../bower_components/twitter/less/bootstrap.less';
+@import '../../bower_components/bootstrap/less/bootstrap.less';
 @icon-font-path: "../bower_components/bootstrap/fonts/";
 
 /**
@@ -31,6 +31,7 @@
  */
 @import 'modules/welcome';
 
+
 #pagination a, #pagination strong {
   background:#e3e3e3;
   padding:4px 7px;
@@ -52,11 +53,36 @@
 
 .fa {
   font-family: FontAwesome;
+  float:left;
+  line-height:1.6;
+}
+
+.fa-warning {
+  float:left;
 }
 
 .fa-warning:before, .fa-exclamation-triangle:before {
   content: "\f071";
-  font-size:4.7em;
-  line-height:1.2;
-  margin-left:-175px;
+  font-size:2.7em;
+}
+
+.navbar-fixed-top {
+  position:fixed;
+}
+
+.alert{
+  .border-top-radius(5px);
+  .border-right-radius(5px);
+  .border-bottom-radius(5px);
+  .border-left-radius(5px);
+}
+
+.glyphicon-warning-sign {
+  float:left;
+  line-height: 2.3;
+}
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
 }

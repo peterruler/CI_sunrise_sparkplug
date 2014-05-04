@@ -27,11 +27,10 @@
 <![endif]-->
 <div class="container">
     <div class="row">
-        <div style="overflow-x:scroll;overflow-y:visible;" class="col-xl-12">
-
-        <!-- Static navbar -->
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
+    <div class="col-xl-12">
+       <!-- Fixed navbar -->
+       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div class="container-fluid">
             <a class="sr-only" href="#content">Skip to main content</a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -68,3 +67,4 @@
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </div><!--/.navbar -->
+    <div style="overflow-x:scroll;overflow-y:visible;" class="col-xl-12">

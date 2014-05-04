@@ -78,6 +78,7 @@ class SparkplugCtrl extends CI_Controller
     public function new_entry()
     {
         $this->setRules();
+
         if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('header');
@@ -90,10 +91,19 @@ class SparkplugCtrl extends CI_Controller
 
     public function create()
     {
-        $this->Users->insert();
-
-        $this->session->set_flashdata('msg', 'Entry Created');
-        redirect('sparkplugCtrl/show_list');
+        if ($this->form_validation->run() == FALSE)
+        {
+            $this->session->set_flashdata('msg', 'Error');
+            $this->load->view('header');
+            $this->load->view('sparkplugctrl/new');
+            $this->load->view('footer');
+        }
+        else
+        {
+            $this->Users->insert();
+            $this->session->set_flashdata('msg', 'Entry Created');
+            redirect('SparkPlugCtrl/show_list');
+        }
     }
 
     public function edit($id)
@@ -112,6 +122,34 @@ class SparkplugCtrl extends CI_Controller
         {
             redirect('SparkPlugCtrl/show_list');
         }
+    }
+    public function update($id)
+    {
+        $this->setRules();
+        if ($this->form_validation->run() == FALSE)
+        {
+
+            $res = $this->Users->get($id);
+            $data['result'] = $res[0];
+            $this->session->set_flashdata('msg', 'Error');
+            $this->load->view('header');
+            $this->load->view('sparkplugctrl/edit', $data);
+            $this->load->view('footer');
+        }
+        else
+        {
+            $this->Users->update();
+            $this->session->set_flashdata('msg', 'Entry Updated');
+            redirect('SparkPlugCtrl/show_list');
+        }
+    }
+
+    public function delete($id)
+    {
+        $this->Users->delete($id);
+
+        $this->session->set_flashdata('msg', 'Entry Deleted');
+        redirect('sparkplugCtrl/show_list');
     }
 
     public function setRules() {
@@ -133,33 +171,5 @@ class SparkplugCtrl extends CI_Controller
         $this->form_validation->set_rules('company', 'company', 'trim|required|min_length[5]|max_length[500]|xss_clean');
         $this->form_validation->set_rules('phone', 'phone', 'trim|required|min_length[5]|max_length[500]|xss_clean');
 
-    }
-    public function update($id)
-    {
-        $this->setRules();
-        $this->Users->update();
-        if ($this->form_validation->run() == FALSE)
-        {
-
-            $res = $this->Users->get($id);
-            $data['result'] = $res[0];
-            $this->session->set_flashdata('msg', 'Error');
-            $this->load->view('header');
-            $this->load->view('sparkplugctrl/edit', $data);
-            $this->load->view('footer');
-        }
-        else
-        {
-            $this->session->set_flashdata('msg', 'Entry Updated');
-            redirect('SparkPlugCtrl/show_list');
-        }
-    }
-
-    public function delete($id)
-    {
-        $this->Users->delete($id);
-
-        $this->session->set_flashdata('msg', 'Entry Deleted');
-        redirect('sparkplugCtrl/show_list');
     }
 }

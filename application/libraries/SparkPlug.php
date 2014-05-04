@@ -322,6 +322,9 @@ class SparkPlug {
      */
 
     function _insertMarkup($field) {
+        /**
+        *@FIXME options in output to file as text not php parsed
+        */
         if ($field->primary_key) {
             return '<input type="hidden" name="'.$field->name.'" value="" />';
         }
@@ -332,18 +335,127 @@ class SparkPlug {
             $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
             $form_markup .= "<br/>\n\t";
 
+            $options = array(
+                'name' => "'".$field->name."'",
+                'id' => "'".$field->name."'",
+                'value' => set_value("'".$field->name."'", ''),
+                'maxlength' => "'".$field->max_length."'",
+                'size' => '50',
+                'style' => 'width:100%',
+                'class' => 'form-control',
+                'type' => 'text',
+                'placeholder' => "'".$field->name."'",
+                'required' => '');
+
             switch ($field->type) {
                 case 'int':
-                    $form_markup .= form_input($field->name, '');
+                    $options = array(
+                        'name' => "'".$field->name."'",
+                        'id' => "'".$field->name."'",
+                        'value' => set_value("'".$field->name."'", ''),
+                        'maxlength' => "'".$field->max_length."'",
+                        'size' => '50',
+                        'style' => 'width:100%',
+                        'class' => 'form-control',
+                        'type' => 'number',
+                        'placeholder' => "'".$field->name."'",
+                        'required' => '');
+                        switch ($field->primary_key) :
+                            case 'id':
+                                $form_markup .= "{form_input(".$field->name.", $options)}";
+                            break;
+                            default:
+                                $form_markup .= "{form_input(".$field->name.", $options)}";
+                            break;
+                        endswitch;
                     break;
                 case 'string':
-                    $form_markup .= form_input($field->name, '');
+                    switch ($field->name) :
+                        case 'password':
+                            $options = array(
+                                'name' => "'".$field->name."'",
+                                'id' => "'".$field->name."'",
+                                'value' => set_value("'".$field->name."'", ''),
+                                'maxlength' => "'".$field->max_length."'",
+                                'size' => '50',
+                                'style' => 'width:100%',
+                                'class' => 'form-control',
+                                'type' => 'password',
+                                'placeholder' => "'".$field->name."'",
+                                'required' => '');
+                            $form_markup .= "{form_password('".$field->name."', $options)}";
+                            $options = array(
+                                'name' => 'passconf',
+                                'id'  => 'passconf',
+                                'value' => set_value("passconf", ''),
+                                'maxlength' => "'".$field->max_length."'",
+                                'size' => '50',
+                                'style' => 'width:100%',
+                                'class' => 'form-control',
+                                'type' => 'password',
+                                'placeholder'  => 'passconf',
+                                'required' => '');
+                            $form_markup .= "{form_password('passconf', $options)}";
+                        break;
+                        case 'phone':
+                            $options = array(
+                                'name' => "'".$field->name."'",
+                                'id' => "'".$field->name."'",
+                                'value' => set_value("'".$field->name."'", ''),
+                                'maxlength' => "'".$field->max_length."'",
+                                'size' => '50',
+                                'style' => 'width:100%',
+                                'class' => 'form-control',
+                                'type' => 'tel',
+                                'placeholder' => "'".$field->name."'",
+                                'required' => '');
+                            $form_markup .= "{form_input(".$field->name.", $options)}";
+                            break;
+                        default:
+                            $form_markup .= "{form_input(".$field->name.", $options)}";
+                        break;
+                    endswitch;
                     break;
                 case 'blob':
-                    $form_markup .= form_textarea($field->name, '');
+                    $options = array(
+                        'name' => "'".$field->name."'",
+                        'id' => "'".$field->name."'",
+                        'value' => set_value("'".$field->name."'", ''),
+                        'maxlength' => "'".$field->max_length."'",
+                        'size' => '50',
+                        'style' => 'width:100%',
+                        'class' => 'form-control',
+                        'placeholder' => "'".$field->name."'",
+                        'required' => '');
+                    $form_markup .= "{form_textarea(".$field->name.", $options)}";
+                    break;
+                case 'text':
+                    $options = array(
+                        'name' => "'".$field->name."'",
+                        'id' => "'".$field->name."'",
+                        'value' => set_value("'".$field->name."'", ''),
+                        'maxlength' => "'".$field->max_length."'",
+                        'size' => '50',
+                        'style' => 'width:100%',
+                        'class' => 'form-control',
+                        'placeholder' => "'".$field->name."'",
+                        'required' => '');
+                    $form_markup .= "{form_textarea(".$field->name.", $options)}";
                     break;
                 case 'datetime':
-                    $form_markup .= form_input($field->name, date("Y-m-d H:i:s"));
+
+                    $options = array(
+                        'name' => "'".$field->name."'",
+                        'id' => "'".$field->name."'",
+                        'value' => set_value("'".$field->name."'", date("Y-m-d H:i:s")),
+                        'maxlength' => "'".$field->max_length."'",
+                        'size' => '50',
+                        'style' => 'width:100%',
+                        'class' => 'form-control',
+                        'type' => 'datetime',
+                        'placeholder' => "'".$field->name."'",
+                        'required' => '');
+                    $form_markup .= '{form_input('.$field->name.',$options ))}';
                     break;
             }
 
@@ -870,19 +982,19 @@ class SparkPlug {
     function _controller_text() {
         $html=
             '<?php
- if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
- /*
- * User: ps
- # copyright 2014 keepitnative.ch, io, all rights reserved to the author
- * Date: 02.05.14
- * Time: 20:33
- * project: https_docs
- * file: SparkPlug.php
- * adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
- */
+             if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+             /*
+             * User: ps
+             # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+             * Date: 02.05.14
+             * Time: 20:33
+             * project: https_docs
+             * file: SparkPlug.php
+             * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
+             */
             class {ucf_controller} extends CI_Controller {
 
-                var $table = "'.$this->table.'";
+                private $table = "'.$this->table.'";
                 public function index() {
                     redirect(\'{controller}/show_list\');
                 }
@@ -915,10 +1027,9 @@ class SparkPlug {
                             $offset = xss_clean($this->uri->segment(4));
                             break;
                         case 3:
-                            $offset =xss_clean($this->uri->segment(3));
+                            $offset = xss_clean($this->uri->segment(3));
                             break;
                         default:
-                            $offset = 1;
                             $offset = 1;
                             break;
                     }
@@ -937,28 +1048,18 @@ class SparkPlug {
                     $this->load->view(\'footer\');
                 }
 
-                public function new_entry() {';
+                public function new_entry() {
 
+                    $this->setRules();
 
-        $query = $this->CI->db->get($this->table);
-        $fields = $this->CI->db->list_fields($this->table);
+                    if ($this->form_validation->run() == FALSE) {
 
-        foreach ($fields as $field) {
-            $html .= '$this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');';
-
-        }
-$html .= '
-        if ($this->form_validation->run() == FALSE) {
-
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/new\');
-                    $this->load->view(\'footer\');
-        } else {
-                    redirect(\'SparkPlugCtrl/show_list\');
-        }';
-
-
-        $html .='
+                                $this->load->view(\'header\');
+                                $this->load->view(\'{view_folder}/new\');
+                                $this->load->view(\'footer\');
+                    } else {
+                                redirect(\'SparkPlugCtrl/show_list\');
+                   }
                 }
 
                 public function create() {
@@ -969,35 +1070,44 @@ $html .= '
                 }
 
                 public function edit($id) {
+
                     $res = $this->{model}->get($id);
                     $data[\'result\'] = $res[0];
-                ';
 
-$html .='
-        $query = $this->db->get($this->table);
-        $fields = $this->db->list_fields($this->table);
+                    $this->setRules();
 
-        foreach ($fields as $field) {
-        ';
-
-            $html .= '$this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');
-
-        }';
-$html .= '
-        if ($this->form_validation->run() == FALSE) {
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/edit\', $data);
-                    $this->load->view(\'footer\');
-        } else {
-                    redirect(\'SparkPlugCtrl/show_list\');
-        }
+                    if ($this->form_validation->run() == FALSE) {
+                                $this->load->view(\'header\');
+                                $this->load->view(\'{view_folder}/edit\', $data);
+                                $this->load->view(\'footer\');
+                    } else {
+                                redirect(\'SparkPlugCtrl/show_list\');
+                    }
                 }
 
-                public function update() {
+                public function update($id) {
+
+
+                    $this->setRules();
                     $this->{model}->update();
 
-                    $this->session->set_flashdata(\'msg\', \'Entry Updated\');
-                    redirect(\'{controller}/show_list\');
+
+                    if ($this->form_validation->run() == FALSE)
+                    {
+
+                        $res = $this->Users->get($id);
+                        $data["result"] = $res[0];
+
+                        $this->session->set_flashdata(\'msg\', \'Error\');
+                        $this->load->view(\'header\');
+                        $this->load->view(\'sparkplugctrl/edit\', $data);
+                        $this->load->view(\'footer\');
+                    }
+                    else
+                    {
+                        $this->session->set_flashdata(\'msg\', \'Entry Updated\');
+                        redirect(\'SparkPlugCtrl/show_list\');
+                    }
                 }
 
                 public function delete($id) {
@@ -1007,31 +1117,47 @@ $html .= '
                     redirect(\'{controller}/show_list\');
                 }
 
-                public function setRules() {
-                    $query = $this->db->get($this->table);
-                    $fields = $this->db->list_fields($this->table);
+                private function setRules() {
+                    //$query = $this->db->query("Custom query");
+                    $fields = $this->db->field_data($this->table);
+
+
                 $rules = "";
                  <? foreach ($fields as $field) : ?>
-                 swtich( $field ) :
-                 case "email" :
-                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'valid_email|trim|required|min_length[5]|max_length[500]|xss_clean\');
-                 break;
-                 case "phone":
-                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[15]|xss_clean\');
-                 break;
-                 case "date":
-                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'valid_date[d/m/y,/]|trim|required|min_length[5]|max_length[500]|xss_clean\');
-                 break;
-                 case "password"
-                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'matches[passconf]|trim|required|min_length[5]|max_length[500]|xss_clean\');
-                       $rules .= $this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');
-                 break;
-                 default:
-                       $rules .= $this->form_validation->set_rules(\''.$field.'\', \''.$field.'\', \'trim|required|min_length[5]|max_length[500]|xss_clean\');
-                  break;
-                  endswitch:
-                  <? endforeach; ?>
-                  $html .= $rules;
+                 switch( $field->type ) :
+                         case "varchar" :
+                                switch( $field->name ) :
+                                       case "email" :
+                                            $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'valid_email|trim|required|min_length[5]|max_length[$field->max_length]|xss_clean\');
+                                       break;
+                                       case "phone":
+                                            $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                                        break;
+                                        case "password"
+                                           $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'matches[passconf]|trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                                           $rules .= $this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                                        break;
+                                        default:
+                                            $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                                        break;
+                                endswitch;
+                         break;
+                         case "int"
+                                if( $field->primary_key ) :
+                                        $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'is_unique[{$this->table}.{$field->primary_key}]|numeric|trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                                else :
+                                        $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'numeric|trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                                endif;
+                         break;
+                         case "datetime" :
+                                        $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                         break;
+                         case "text" :
+                                        $rules .= $this->form_validation->set_rules(\'{$field->name}\', \'{$field->name}\', \'trim|required|min_length[5]|max_length[{$field->max_length}]|xss_clean\');
+                         break;
+                 endswitch:
+                <? endforeach; ?>
+                $html .= $rules;
                 }
                 /**
                  * @desc Validates a date format
@@ -1173,9 +1299,17 @@ $html .= '
     /* LIST */
     function _list_view() {
         return
-            '<p ><?php if($this->session->flashdata(\'msg\')!=""): ?><div class="alert alert-success"><?= $this->session->flashdata(\'msg\') ?></div><?php endif; ?></p>
-
-            <h1>List '.(string) $this->table.'</h1>
+            '<h1>List '.(string) $this->table.'</h1>
+            <p>
+            <?php
+            if ($this->session->flashdata("msg") != ""):
+            ?>
+            <div class="alert alert-success has-error has-feedback">
+            <?= $this->session->flashdata("msg") ?>
+            <span class="alert glyphicon glyphicon-ok"></span>
+            </div>
+            <?php endif; ?>
+            </p>
             <div class="table-responsive">
             <table class="table table table-bordered table-striped table-hover">
                 <tr>
@@ -1203,52 +1337,81 @@ $html .= '
                 <br />
             </div><br />
             <div class="col-lg-4 col-md-4 col-sm-12">
-            <?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-primary btn-block\'") ?>
+            <?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-default btn-block\'") ?>
             </div>
             ';
-
-
     }
 
     /* SHOW */
     function _show_view() {
         return
             '<h1>Show '.(string) $this->table.'</h1>
-
             <? foreach ($result[0] as $field_name => $field_value): ?>
             <p>
                 <b><?= ucfirst($field_name) ?>:</b> <?= $field_value ?>
             </p>
             <? endforeach; ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-primary btn-block\'") ?>';
+            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
     /* EDIT */
     function _edit_view() {
         return
             '<h1>Edit '.(string) $this->table.'</h1>
+            <? if (validation_errors() != ""): ?>
+                <div class="alert alert-danger has-error has-feedback">
+                    <span class="alert glyphicon glyphicon-warning-sign"></span>
+                    <?php
+                    if ($this->session->flashdata("msg") != ""):
+                        ?>
 
-            <?= form_open(\'{controller}/update\') ?>
+                        <div style="display:block;float: left;width:60%">
+                            <h3><?= $this->session->flashdata("msg") ?></h3>
+                        </div>
+                    <?php endif; ?>
+                    <div style="display:block;float: left;width:60%">
+                        <?= validation_errors(); ?>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            <?php endif; ?>
+            <?= form_open(\'{controller}/update/{$result["id"]}\',"formnovalidate=formnovalidate") ?>
             {form_fields_update}
             <p>
-                <?= form_submit(\'submit\', \'Update\', "class=\'btn btn-lg btn-primary btn-block\'") ?>
+                <?= form_submit(\'submit\', \'Update\', "class=\'btn btn-lg btn-default btn-block\'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-primary btn-block\'") ?>';
+            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
     /* NEW */
     function _new_view() {
         return
             '<h1>New '.(string) $this->table.'</h1>
+             <? if (validation_errors() != ""): ?>
+                <div class="alert alert-danger has-error has-feedback">
+                    <span class="alert glyphicon glyphicon-warning-sign"></span>
+                    <?php
+                    if ($this->session->flashdata("msg") != ""):
+                        ?>
 
-            <?= form_open(\'{controller}/create\') ?>
+                        <div style="display:block;float: left;width:60%">
+                            <h3><?= $this->session->flashdata("msg") ?></h3>
+                        </div>
+                    <?php endif; ?>
+                    <div style="display:block;float: left;width:60%">
+                        <?= validation_errors(); ?>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            <?php endif; ?>
+            <?= form_open(\'{controller}/create\',"formnovalidate=formnovalidate") ?>
             {form_fields_create}
             <p>
-                <?= form_submit(\'submit\', \'Create\', "class=\'btn btn-lg btn-primary btn-block\'") ?>
+                <?= form_submit(\'submit\', \'Create\', "class=\'btn btn-lg btn-default btn-block\'") ?>
             </p>
             <?= form_close() ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-primary btn-block\'") ?>';
+            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
 }
