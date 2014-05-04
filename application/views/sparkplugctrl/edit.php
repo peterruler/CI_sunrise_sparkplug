@@ -106,7 +106,10 @@
     <input type="tel" name="phone" value="<?= $result ["phone"] ?>" id="phone" placeholder="phone" maxlength="500"
            size="50" style="width:100%" class="form-control"/>
 </p>
-
+<p>
+    <label for="phone">tinymce test</label><br/>
+    <textarea cols="20" rows="10"><?= $result ["first_name"] ?></textarea>
+</p>
 <p>
     <?= form_submit('submit', 'Update', "class='btn btn-lg btn-default btn-block'") ?>
 </p>

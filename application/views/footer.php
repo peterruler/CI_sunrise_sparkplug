@@ -31,6 +31,10 @@
 <script src="<?php echo base_url('bower_components/lodash/dist/lodash.js'); ?>"></script>
 <script src="<?php echo base_url('bower_components/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/scripts.js'); ?>"></script>
+<script src="/../../bower_components/tinymce/js/tinymce/tinymce.min.js"></script>
+<script>
+    tinymce.init({selector:'textarea'});
+</script>
 </head>
 </body>
 </html>

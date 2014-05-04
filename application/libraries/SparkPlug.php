@@ -1,14 +1,14 @@
 <?php
- if (! defined('BASEPATH')) exit('No direct script access allowed');
- /*
- * User: ps
- # copyright 2014 keepitnative.ch, io, all rights reserved to the author
- * Date: 02.05.14
- * Time: 20:33
- * project: https_docs
- * file: SparkPlug.php
- * adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
- */
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+/*
+* User: ps
+# copyright 2014 keepitnative.ch, io, all rights reserved to the author
+* Date: 02.05.14
+* Time: 20:33
+* project: https_docs
+* file: SparkPlug.php
+* adaption to twitter bootstrap 3, html5 form elements and serverside validation and xss sanitize
+*/
 
 /**
  * SparkPlug
@@ -24,25 +24,26 @@
  * @author Pascal Kriete
  *
  **/
-
-class SparkPlug {
-    var $CI;				// CI Super Object
-    var $table;				// Table specified in the constructor
+class SparkPlug
+{
+    var $CI; // CI Super Object
+    var $table; // Table specified in the constructor
 
     /* Generated */
-    var $ucf_controller;	//Name of controller (ucfirst)
-    var $controller;		// What the route says the controller's name is
-    var $model_name;		// Name of the model (strtolower, ucfirst)
+    var $ucf_controller; //Name of controller (ucfirst)
+    var $controller; // What the route says the controller's name is
+    var $model_name; // Name of the model (strtolower, ucfirst)
 
     /* Dynamic */
-    var $base_uri;		// URI string of the calling constructor/function (all forms submit to this uri)
-    var $request;			// Array of added segments
+    var $base_uri; // URI string of the calling constructor/function (all forms submit to this uri)
+    var $request; // Array of added segments
 
 
     /**
      * Constructor
      */
-    function SparkPlug($table='users') {
+    function SparkPlug($table = 'users')
+    {
         $this->CI =& get_instance();
 
         $this->CI->load->database();
@@ -51,7 +52,7 @@ class SparkPlug {
         $this->CI->load->helper('url');
 
         if (!$this->CI->db->table_exists($table)) {
-            die('Table <strong>'.$table.'</strong> does not exist.');
+            die('Table <strong>' . $table . '</strong> does not exist.');
         }
 
         $this->table = $table;
@@ -63,17 +64,20 @@ class SparkPlug {
      *
      * Starts the dynamic scaffolding process
      */
-    function scaffold() {
+    function scaffold()
+    {
         /* Get rid of the CI default nonsense and set real path */
         $route =& load_class('Router');
         $base_url = $this->CI->config->site_url();
-        if ($route->directory != '') { $base_url .= '/'; }
+        if ($route->directory != '') {
+            $base_url .= '/';
+        }
 
-        $this->base_uri = $route->directory.'/'.$route->class.'/'.$route->method;
+        $this->base_uri = $route->directory . '/' . $route->class . '/' . $route->method;
 
         /* Did we call a subfunction - catch it here */
         $segs = $this->CI->uri->segment_array();
-        $last = array_search($route->method, $segs);	// Everything beyond this is ours
+        $last = array_search($route->method, $segs); // Everything beyond this is ours
 
         $this->request = array('');
         if ($last < count($segs)) {
@@ -91,7 +95,8 @@ class SparkPlug {
      *
      * Starts the code generation process
      */
-    function generate() {
+    function generate()
+    {
         /* Create model name based on table */
         $this->model_name = ucfirst(strtolower($this->table));
 
@@ -100,7 +105,7 @@ class SparkPlug {
         $this->controller = $route->class;
         $this->ucf_controller = ucfirst($route->class);
 
-        $this->_generate();  //** FUNCTION FOUND BELOW (l.370) **//
+        $this->_generate(); //** FUNCTION FOUND BELOW (l.370) **//
     }
 
 
@@ -115,10 +120,11 @@ class SparkPlug {
      *
      * If we have no extra segments we check if anything was submitted
      */
-    function _processRequest() {
+    function _processRequest()
+    {
 
         /* Check if something was submitted */
-        $action = xss_clean($this->CI->input->post('action',TRUE));
+        $action = xss_clean($this->CI->input->post('action', TRUE));
 
         switch ($action) {
             case 'add':
@@ -128,7 +134,7 @@ class SparkPlug {
                 $this->_db_edit();
                 break;
             case 'delete':
-                $id = (int) xss_clean($this->input->post("id",TRUE));
+                $id = (int)xss_clean($this->input->post("id", TRUE));
                 $this->_db_delete($id);
                 break;
         }
@@ -153,12 +159,13 @@ class SparkPlug {
         }
     }
 
-    /*****								*****/
-    /*****		PROCESS DB ACTIONS		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        PROCESS DB ACTIONS        *****/
+    /*****                                *****/
 
-    function _db_insert() {
-        $post = xss_clean($this->input->post('',TRUE));
+    function _db_insert()
+    {
+        $post = xss_clean($this->input->post('', TRUE));
         unset($post['action']);
         unset($post['submit']);
 
@@ -168,8 +175,9 @@ class SparkPlug {
         redirect($this->base_uri);
     }
 
-    function _db_edit() {
-        $post = xss_clean($this->input->post('',TRUE));
+    function _db_edit()
+    {
+        $post = xss_clean($this->input->post('', TRUE));
         unset($post['action']);
         unset($post['submit']);
 
@@ -180,8 +188,9 @@ class SparkPlug {
         redirect($this->base_uri);
     }
 
-    function _db_delete($id) {
-        $id= (int) xss_clean($id);
+    function _db_delete($id)
+    {
+        $id = (int)xss_clean($id);
         $this->CI->db->where('id', $id);
         $this->CI->db->delete($this->table);
 
@@ -190,11 +199,12 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****		SHOW FORMS AND DATA		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        SHOW FORMS AND DATA        *****/
+    /*****                                *****/
 
-    function _dynamic($action = 'list') {	//action comes from _processRequests
+    function _dynamic($action = 'list')
+    { //action comes from _processRequests
 
         switch ($action) {
             case 'list':
@@ -218,36 +228,37 @@ class SparkPlug {
     }
 
     //Special case - here so that "Delete" can be a link instead of a button
-    function _delete() {
+    function _delete()
+    {
         $id = $this->request[1];
         $this->_db_delete($id);
     }
 
-    function _list() {
+    function _list()
+    {
         $query = $this->CI->db->get($this->table);
         $fields = $this->CI->db->list_fields($this->table);
 
         $this->_header();
-        echo "<h1>List ".(string) $this->table."</h1>";
+        echo "<h1>List " . (string)$this->table . "</h1>";
         $table = '<div class="table-responsive">';
         $table .= '<table class="table"><tr>';
         foreach ($fields as $field)
-            $table .= '<th>'.ucfirst($field).'</th>';
-        $table.= '</tr>';
+            $table .= '<th>' . ucfirst($field) . '</th>';
+        $table .= '</tr>';
 
-        foreach ($query->result_array() as $row)
-        {
-            $table.= '<tr>';
+        foreach ($query->result_array() as $row) {
+            $table .= '<tr>';
             foreach ($fields as $field)
-                $table.= '<td>'.$row[$field].'</td>';
+                $table .= '<td>' . $row[$field] . '</td>';
 
-            $table.= '<td>'.$this->_show_link($row['id']).'</td>'.
-                '<td>'.$this->_edit_link($row['id']).'</td>'.
-                '<td>'.$this->_delete_link($row['id']).'</td>';
+            $table .= '<td>' . $this->_show_link($row['id']) . '</td>' .
+                '<td>' . $this->_edit_link($row['id']) . '</td>' .
+                '<td>' . $this->_delete_link($row['id']) . '</td>';
 
-            $table.= '</tr>';
+            $table .= '</tr>';
         }
-        $table.= '</table></div>';
+        $table .= '</table></div>';
         echo $table;
 
         echo $this->_insert_link();
@@ -255,9 +266,10 @@ class SparkPlug {
 
     }
 
-    function _show() {
-        echo $this->load->view('header','',TRUE);
-        echo '<h1>Show '.(string) $this->table.'</h1>';
+    function _show()
+    {
+        echo $this->load->view('header', '', TRUE);
+        echo '<h1>Show ' . (string)$this->table . '</h1>';
 
         $id = $this->request[1];
         $this->CI->db->where('id', $id);
@@ -267,33 +279,35 @@ class SparkPlug {
 
         foreach ($data[0] as $field_name => $field_value) {
             echo '<p>
-			  <b>'.ucfirst($field_name).':</b>'.$field_value.'
+			  <b>' . ucfirst($field_name) . ':</b>' . $field_value . '
 			  </p>';
         }
         echo $this->_back_link();
 
-        echo $this->load->view('footer','',TRUE);
+        echo $this->load->view('footer', '', TRUE);
     }
 
-    function _insert() {
+    function _insert()
+    {
         echo '<h1>New</h1>';
 
         $fields = $this->CI->db->field_data($this->table);
         $form = form_open($this->base_uri);
 
-        foreach($fields as $field) {
+        foreach ($fields as $field) {
             $form .= $this->_insertMarkup($field);
         }
 
         $form .= form_hidden('action', 'add');
-        $form .= form_submit('submit', 'Insert').'</p>';
+        $form .= form_submit('submit', 'Insert') . '</p>';
         $form .= form_close();
         echo $form;
 
         echo $this->_back_link();
     }
 
-    function _edit() {
+    function _edit()
+    {
         echo '<h1>Edit</h1>';
 
         $id = $this->request[1];
@@ -306,13 +320,13 @@ class SparkPlug {
 
         $form = form_open($this->base_uri);
 
-        foreach($fields as $field) {
+        foreach ($fields as $field) {
             $form .= $this->_editMarkup($field, $data[0]);
         }
 
         $form .= form_hidden('action', 'edit');
-        $form .= '<p>'.$this->_back_link();
-        $form .= form_submit('submit', 'Update').'</p>';
+        $form .= '<p>' . $this->_back_link();
+        $form .= form_submit('submit', 'Update') . '</p>';
         $form .= form_close();
         echo $form;
     }
@@ -321,160 +335,274 @@ class SparkPlug {
      * Dynamic Forms
      */
 
-    function _insertMarkup($field) {
-        /**
-        *@FIXME options in output to file as text not php parsed
-        */
+    function _insertMarkup($field)
+    {
+        $form_markup = '';
+        $form_markup .= "\n\t";
         if ($field->primary_key) {
-            return '<input type="hidden" name="'.$field->name.'" value="" />';
-        }
+            $form_markup .= 'form_hidden("' . $field->name . '", "");';
+            $form_markup .= "\n\t";
+        } else {
+            if($field->type != 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "<br/>\n\t";
+            } else if($field->type =='boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
+                $form_markup .= "<br/>\n\t";
+            }
 
-        else {
-
-            $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
-            $form_markup .= "<br/>\n\t";
-
-            $options = array(
-                'name' => "'".$field->name."'",
-                'id' => "'".$field->name."'",
-                'value' => set_value("'".$field->name."'", ''),
-                'maxlength' => "'".$field->max_length."'",
-                'size' => '50',
-                'style' => 'width:100%',
-                'class' => 'form-control',
-                'type' => 'text',
-                'placeholder' => "'".$field->name."'",
-                'required' => '');
+            $form_markup .= '$options'.$this->table.$field->name.' = array(
+                "name" => "' . $field->name . '",
+                "id" => "' . $field->name . '",
+                "value" => set_value("'.$field->name.'", ""),
+                "maxlength" => "'.$field->max_length.'",
+                "size" => "50",
+                "style" => "width:100%",
+                "class" => "form-control",
+                "type" => "text",
+                "placeholder" "' . $field->name . '",
+                "required" => "required");';
+            $form_markup .= "\n\t";
 
             switch ($field->type) {
                 case 'int':
-                    $options = array(
-                        'name' => "'".$field->name."'",
-                        'id' => "'".$field->name."'",
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => "'".$field->max_length."'",
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'number',
-                        'placeholder' => "'".$field->name."'",
-                        'required' => '');
-                        switch ($field->primary_key) :
-                            case 'id':
-                                $form_markup .= "{form_input(".$field->name.", $options)}";
-                            break;
-                            default:
-                                $form_markup .= "{form_input(".$field->name.", $options)}";
-                            break;
-                        endswitch;
-                    break;
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                    "name" => "' . $field->name . '",
+                    "id" "' . $field->name . '",
+                    "value" => set_value("' . $field->name . '", ""),
+                    "maxlength" => "' . $field->max_length . '",
+                    "size" => "50",
+                    "style" => "width:100%",
+                    "class" => "form-control",
+                    "type" => "number",
+                    "placeholder" "' . $field->name . '",
+                    "required" => "required");';
+                    $form_markup .= "\n\t";
+                    switch ($field->primary_key) :
+                        case 'id':
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                        break;
+                        default:
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                        break;
+                    endswitch;
+                break;
                 case 'string':
                     switch ($field->name) :
+                        case 'email':
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "email",
+                            "placeholder" => "' . $field->name . '",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                        break;
+                        case 'url':
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "url",
+                            "placeholder" => "' . $field->name . '",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                        break;
                         case 'password':
-                            $options = array(
-                                'name' => "'".$field->name."'",
-                                'id' => "'".$field->name."'",
-                                'value' => set_value("'".$field->name."'", ''),
-                                'maxlength' => "'".$field->max_length."'",
-                                'size' => '50',
-                                'style' => 'width:100%',
-                                'class' => 'form-control',
-                                'type' => 'password',
-                                'placeholder' => "'".$field->name."'",
-                                'required' => '');
-                            $form_markup .= "{form_password('".$field->name."', $options)}";
-                            $options = array(
-                                'name' => 'passconf',
-                                'id'  => 'passconf',
-                                'value' => set_value("passconf", ''),
-                                'maxlength' => "'".$field->max_length."'",
-                                'size' => '50',
-                                'style' => 'width:100%',
-                                'class' => 'form-control',
-                                'type' => 'password',
-                                'placeholder'  => 'passconf',
-                                'required' => '');
-                            $form_markup .= "{form_password('passconf', $options)}";
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "password",
+                            "placeholder" => "' . $field->name . '",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_password("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "password",
+                            "placeholder" => "passconf",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_password("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
                         break;
                         case 'phone':
-                            $options = array(
-                                'name' => "'".$field->name."'",
-                                'id' => "'".$field->name."'",
-                                'value' => set_value("'".$field->name."'", ''),
-                                'maxlength' => "'".$field->max_length."'",
-                                'size' => '50',
-                                'style' => 'width:100%',
-                                'class' => 'form-control',
-                                'type' => 'tel',
-                                'placeholder' => "'".$field->name."'",
-                                'required' => '');
-                            $form_markup .= "{form_input(".$field->name.", $options)}";
-                            break;
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "tel",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                        break;
                         default:
-                            $form_markup .= "{form_input(".$field->name.", $options)}";
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "text",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
                         break;
                     endswitch;
                     break;
                 case 'blob':
-                    $options = array(
-                        'name' => "'".$field->name."'",
-                        'id' => "'".$field->name."'",
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => "'".$field->max_length."'",
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'placeholder' => "'".$field->name."'",
-                        'required' => '');
-                    $form_markup .= "{form_textarea(".$field->name.", $options)}";
+                    $form_markup .= '$options{$this->table}{$field->name} = array(
+                            "name" => "{$field->name}",
+                            "id" => "{$field->name}",
+                            "value" => set_value("{$field->name}", ""),
+                            "maxlength" => "{$field->max_length}",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= '{form_textarea("{$field->name}, $options{$this->table}{$field->name})}';
+                    $form_markup .= "\n\t";
                     break;
                 case 'text':
-                    $options = array(
-                        'name' => "'".$field->name."'",
-                        'id' => "'".$field->name."'",
-                        'value' => set_value("'".$field->name."'", ''),
-                        'maxlength' => "'".$field->max_length."'",
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'placeholder' => "'".$field->name."'",
-                        'required' => '');
-                    $form_markup .= "{form_textarea(".$field->name.", $options)}";
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_textarea("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                    $form_markup .= "\n\t";
                     break;
                 case 'datetime':
-
-                    $options = array(
-                        'name' => "'".$field->name."'",
-                        'id' => "'".$field->name."'",
-                        'value' => set_value("'".$field->name."'", date("Y-m-d H:i:s")),
-                        'maxlength' => "'".$field->max_length."'",
-                        'size' => '50',
-                        'style' => 'width:100%',
-                        'class' => 'form-control',
-                        'type' => 'datetime',
-                        'placeholder' => "'".$field->name."'",
-                        'required' => '');
-                    $form_markup .= '{form_input('.$field->name.',$options ))}';
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "{$field->name}",
+                            "id" => "{$field->name}",
+                            "value" => set_value("' . $field->name . '", date("Y-m-d H:i:s")),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "placeholder" => "' . $field->name . '",
+                            "type" => "datetime",
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                    $form_markup .= "\n\t";
                     break;
+                case 'boolean':
+                            $form_markup .= '$options' . $this->table . $field->name . '1 = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", 1),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" ="radio",
+                            "checked"     => FALSE,
+                            "style"       => "margin:10px",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_radio("' . $field->name . ', $options' . $this->table . $field->name . '1)';
+                            $form_markup .= "\n\t";
+                            $form_markup .= '$options' . $this->table . $field->name . '0 = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", 0),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" ="radio",
+                            "checked"     => TRUE,
+                            "style"       => "margin:10px",
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_radio("' . $field->name . ', $options' . $this->table . $field->name . '0)';
+                    $form_markup .= "\n\t";
+                break;
+                default :
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "text",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                    $form_markup .= "\n\t";
+                break;
             }
-
             $form_markup .= "\t</p>\n";
             return $form_markup;
-
         }
-
     }
 
-    function _editMarkup($field, $data) {
-        if ($field->primary_key) {
-            return '<input type="hidden" name="'.$field->name.'" value="'.$data[$field->name].'" />';
-        }
+    function _editMarkup($field, $data)
+    {
 
-        else {
+        /*
+        if ($field->primary_key) {
+            return '<input type="hidden" name="' . $field->name . '" value="' . $data[$field->name] . '" />';
+        } else {
 
             $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
+            $form_markup .= '	<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
             $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
@@ -496,48 +624,312 @@ class SparkPlug {
             return $form_markup;
 
         }
+        */
+        $form_markup = '';
+        $form_markup .= "\n\t";
+        if ($field->primary_key) {
+            $form_markup .= 'form_hidden("' . $field->name . '", "'.$data[$field->name].'");';
+            $form_markup .= "\n\t";
+        } else {
+            if($field->type != 'boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "<br/>\n\t";
+            } else if($field->type =='boolean') {
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
+                $form_markup .= "\n\t<p>\n";
+                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
+                $form_markup .= "<br/>\n\t";
+            }
+
+            $form_markup .= '$options'.$this->table.$field->name.' = array(
+                "name" => "' . $field->name . '",
+                "id" => "' . $field->name . '",
+                "value" => set_value("'.$field->name.'", "'.$data[$field->name].'"),
+                "maxlength" => "'.$field->max_length.'",
+                "size" => "50",
+                "style" => "width:100%",
+                "class" => "form-control",
+                "type" => "text",
+                "placeholder" "' . $field->name . '",
+                "required" => "required");';
+            $form_markup .= "\n\t";
+
+            switch ($field->type) {
+                case 'int':
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                    "name" => "' . $field->name . '",
+                    "id" "' . $field->name . '",
+                    "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                    "maxlength" => "' . $field->max_length . '",
+                    "size" => "50",
+                    "style" => "width:100%",
+                    "class" => "form-control",
+                    "type" => "number",
+                    "placeholder" "' . $field->name . '",
+                    "required" => "required");';
+                    $form_markup .= "\n\t";
+                    switch ($field->primary_key) :
+                        case 'id':
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                        default:
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                    endswitch;
+                    break;
+                case 'string':
+                    switch ($field->name) :
+                        case 'email':
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "email",
+                            "placeholder" => "' . $field->name . '",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                        case 'url':
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "url",
+                            "placeholder" => "' . $field->name . '",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                        case 'password':
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "password",
+                            "placeholder" => "' . $field->name . '",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_password("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", ""),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "password",
+                            "placeholder" => "passconf",
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_password("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                        case 'phone':
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "tel",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                        default:
+                            $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "text",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                            $form_markup .= "\n\t";
+                            break;
+                    endswitch;
+                    break;
+                case 'blob':
+                    $form_markup .= '$options{$this->table}{$field->name} = array(
+                            "name" => "{$field->name}",
+                            "id" => "{$field->name}",
+                            "value" => set_value("{$field->name}", "'.$data[$field->name].'"),
+                            "maxlength" => "{$field->max_length}",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= '{form_textarea("{$field->name}, $options{$this->table}{$field->name})}';
+                    $form_markup .= "\n\t";
+                    break;
+                case 'text':
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_textarea("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                    $form_markup .= "\n\t";
+                    break;
+                case 'datetime':
+                    $form_markup .= '$date' . $this->table . $field->name . '= date("Y-m-d", strtotime('.$data[$field->name].'));';
+                    $form_markup .= "\n\t";
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "{$field->name}",
+                            "id" => "{$field->name}",
+                            "value" => set_value("' . $field->name . '", $date' . $this->table . $field->name . '),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "placeholder" => "' . $field->name . '",
+                            "type" => "datetime",
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                    $form_markup .= "\n\t";
+                    break;
+                case 'boolean':
+                    $form_markup .= '$options' . $this->table . $field->name . '1 = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", 1),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" ="radio",
+                            "checked"     => FALSE,
+                            "style"       => "margin:10px",
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_radio("' . $field->name . ', $options' . $this->table . $field->name . '1)';
+                    $form_markup .= "\n\t";
+                    $form_markup .= '$options' . $this->table . $field->name . '0 = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", 0),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" ="radio",
+                            "checked"     => TRUE,
+                            "style"       => "margin:10px",
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_radio("' . $field->name . ', $options' . $this->table . $field->name . '0)';
+                    $form_markup .= "\n\t";
+                    break;
+                default :
+                    $form_markup .= '$options' . $this->table . $field->name . ' = array(
+                            "name" => "' . $field->name . '",
+                            "id" => "' . $field->name . '",
+                            "value" => set_value("' . $field->name . '", "'.$data[$field->name].'"),
+                            "maxlength" => "' . $field->max_length . '",
+                            "size" => "50",
+                            "style" => "width:100%",
+                            "class" => "form-control",
+                            "type" => "text",
+                            "placeholder" => ' . $field->name . ',
+                            "required" => "required");';
+                    $form_markup .= "\n\t";
+                    $form_markup .= 'form_input("' . $field->name . ', $options' . $this->table . $field->name . ')';
+                    $form_markup .= "\n\t";
+                    break;
+            }
+            $form_markup .= "\t</p>\n";
+            return $form_markup;
+        }
     }
 
-    /*****								*****/
-    /*****		HELPER FUNCTIONS		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        HELPER FUNCTIONS        *****/
+    /*****                                *****/
 
-    function _delete_link($id) {
-        return anchor($this->base_uri.'/delete/'.$id, 'Delete', "class='btn btn-sm btn-danger'");
+    function _delete_link($id)
+    {
+        return anchor($this->base_uri . '/delete/' . $id, 'Delete', "class='btn btn-sm btn-danger'");
     }
 
-    function _edit_link($id) {
-        return anchor($this->base_uri.'/edit/'.$id, 'Edit', "class='btn btn-sm btn-warning'");
+    function _edit_link($id)
+    {
+        return anchor($this->base_uri . '/edit/' . $id, 'Edit', "class='btn btn-sm btn-warning'");
     }
 
-    function _show_link($id) {
-        return anchor($this->base_uri.'/show/'.$id, 'View', "class='btn btn-sm btn-success'");
+    function _show_link($id)
+    {
+        return anchor($this->base_uri . '/show/' . $id, 'View', "class='btn btn-sm btn-success'");
     }
 
-    function _insert_link() {
-        return anchor($this->base_uri.'/add', 'New', "class='btn btn-lg btn-default btn-block'");
+    function _insert_link()
+    {
+        return anchor($this->base_uri . '/add', 'New', "class='btn btn-lg btn-default btn-block'");
     }
 
-    function _back_link() {
+    function _back_link()
+    {
         return anchor($this->base_uri, 'Back', "class='btn btn-lg btn-default btn-block'");
     }
 
-    function _header() {
+    function _header()
+    {
         echo '<!DOCTYPE html>"
 				<html lang="en">
 				<head>
 				<meta charset=utf-8">
 				<meta name="Developer" content="Pascal Kriete" />
-				<title>Scaffolding - '.ucfirst($this->table).'</title>
+				<title>Scaffolding - ' . ucfirst($this->table) . '</title>
 				</head>
 				<body>
 				<p>';
         echo " <?= if( $this->CI->session->flashdata('msg') !='' ) :?>";
-            echo '<div class="alert alert-success">'.$this->CI->session->flashdata('msg').'</div></p>';
+        echo '<div class="alert alert-success">' . $this->CI->session->flashdata('msg') . '</div></p>';
         echo "endif;";
     }
 
-    function _footer() {
+    function _footer()
+    {
         echo '</body></html>';
     }
 
@@ -555,45 +947,46 @@ class SparkPlug {
      * Calls part-generators
      * Creates files
      */
-    function _generate() {
+    function _generate()
+    {
         /* Make crud model */
 
         echo "<h3>Running SparkPlug...</h3>";
 
-        $model_path = APPPATH.'models/'.$this->table.'.php';
+        $model_path = APPPATH . 'models/' . $this->table . '.php';
         $model_text = $this->_generate_model();
 
         file_put_contents($model_path, $model_text);
-        echo $model_path.' created<br/>';
+        echo $model_path . ' created<br/>';
 
         /* Generate views for crud functions in subfolder */
 
-        $view_folder = APPPATH.'views/'.strtolower($this->controller);
+        $view_folder = APPPATH . 'views/' . strtolower($this->controller);
         $view_text = $this->_generate_views();
 
         $dir_created = mkdir($view_folder);
-        echo $dir_created ? $view_folder.' created<br/>' : $view_folder.' already exists - no need to create<br/>';
+        echo $dir_created ? $view_folder . ' created<br/>' : $view_folder . ' already exists - no need to create<br/>';
 
         foreach ($view_text as $view_name => $view) {
-            $view_path = $view_folder.'/'.$view_name.'.php';
+            $view_path = $view_folder . '/' . $view_name . '.php';
 
             file_put_contents($view_path, $view);
-            echo $view_path.' created<br/>';
+            echo $view_path . ' created<br/>';
         }
 
         /* Create the controller to tie it all up */
 
-        $controller_path = APPPATH.'controllers/'.$this->ucf_controller.'.php';
+        $controller_path = APPPATH . 'controllers/' . $this->ucf_controller . '.php';
         $controller_text = $this->_generate_controller();
         file_put_contents($controller_path, $controller_text);
-        echo $controller_path.' created<br/>';
+        echo $controller_path . ' created<br/>';
 
-        echo '<br/>Scaffold completed.  Click '.anchor($this->controller."/show_list", 'here').' to get started.';
+        echo '<br/>Scaffold completed.  Click ' . anchor($this->controller . "/show_list", 'here') . ' to get started.';
     }
 
-    /*****								*****/
-    /*****			MODEL				*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            MODEL                *****/
+    /*****                                *****/
 
     /**
      * Generates the model code
@@ -602,7 +995,8 @@ class SparkPlug {
      * Replaces all tags
      * Calls _fix_indent for multi-line replacements
      */
-    function _generate_model() {
+    function _generate_model()
+    {
 
         $model_text = $this->_model_text();
         $fields = $this->CI->db->list_fields($this->table);
@@ -617,7 +1011,7 @@ class SparkPlug {
 
         $var_init = '';
         foreach ($fields as $field) {
-            $var_init .= $indent.'public $'.$field."	= '';\n";
+            $var_init .= $indent . 'public $' . $field . "	= '';\n";
         }
         $model_text = str_replace("{variables}\n", $var_init, $model_text);
 
@@ -627,7 +1021,16 @@ class SparkPlug {
 
         $var_set = '';
         foreach ($fields as $field) {
-            $var_set .= $indent.'$this->'.$field.'	= xss_clean($this->input->post(\''.$field."',TRUE));\n";
+            if ($field == "password") {
+                $var_set .= '$password = $this->encrypt->sha1({xss_clean($this->input->post("password",TRUE)));\n';
+                $var_set .= $indent . '$this->password	= $password\n';
+            } elseif ($field == "passconf") {
+                $var_set .= '$passconf = $this->encrypt->sha1({xss_clean($this->input->post("passconf",TRUE)));\n';
+                $var_set .= $indent . '$this->passconf	= $passconf\n';
+
+            } else {
+                $var_set .= $indent . '$this->' . $field . '	= xss_clean($this->input->post(\'' . $field . "',TRUE));\n";
+            }
         }
         $model_text = str_replace("{set_variables_from_post}\n", $var_set, $model_text);
 
@@ -636,9 +1039,9 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****			VIEWS				*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            VIEWS                *****/
+    /*****                                *****/
 
     /**
      * Generates the View Files
@@ -646,7 +1049,8 @@ class SparkPlug {
      * Grabs all of the view templates as defined in the array
      * Replaces tags
      */
-    function _generate_views() {
+    function _generate_views()
+    {
 
         /* Template function = _<viewname>_view */
         $views = array('index', 'edit', 'list', 'new', 'show');
@@ -654,7 +1058,7 @@ class SparkPlug {
         $view_text = array();
 
         foreach ($views as $view) {
-            $view_funct = '_'.$view.'_view';
+            $view_funct = '_' . $view . '_view';
 
             if (method_exists($this, $view_funct)) {
                 //$view_text[$view] = $this->_header();
@@ -671,9 +1075,9 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****			CONTROLLER			*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            CONTROLLER            *****/
+    /*****                                *****/
 
     /**
      * Generates the controller
@@ -681,7 +1085,8 @@ class SparkPlug {
      * Gets controller template
      * Replaces tags
      */
-    function _generate_controller() {
+    function _generate_controller()
+    {
         $text = $this->_controller_text();
 
         $text = str_replace('{ucf_controller}', $this->ucf_controller, $text);
@@ -692,9 +1097,9 @@ class SparkPlug {
     }
 
 
-    /*****								*****/
-    /*****		HELPER FUNCTIONS		*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****        HELPER FUNCTIONS        *****/
+    /*****                                *****/
 
     /**
      * Function to fix indentation for multi-line replacements
@@ -702,13 +1107,14 @@ class SparkPlug {
      * Cuts the indent off the tag and applies to to all lines
      * that replace it.
      */
-    function _fix_indent($text, $tag) {
-        $pattern = '/\n[\t ]*?\{'.$tag.'\}/';
+    function _fix_indent($text, $tag)
+    {
+        $pattern = '/\n[\t ]*?\{' . $tag . '\}/';
         preg_match($pattern, $text, $matches);
         $indent = str_replace("\n", '', $matches[0]);
-        $indent = str_replace('{'.$tag.'}', '', $indent);
+        $indent = str_replace('{' . $tag . '}', '', $indent);
         // Remove tag indent to fix first one
-        $text = preg_replace($pattern, "\n{".$tag."}", $text);
+        $text = preg_replace($pattern, "\n{" . $tag . "}", $text);
 
         return array($text, $indent);
     }
@@ -718,13 +1124,14 @@ class SparkPlug {
      *
      * Calls markup functions to create meta-type relevant fields
      */
-    function _form_fields($action) {
+    function _form_fields($action)
+    {
 
         $query = $this->CI->db->get($this->table);
         $fields = $this->CI->db->field_data($this->table);
         $form = '';
 
-        foreach($fields as $field) {
+        foreach ($fields as $field) {
             if ($action == 'update')
                 $form .= $this->_getEditMarkup($field);
             else
@@ -740,21 +1147,20 @@ class SparkPlug {
      * Adds *NOW* to datetime field
      * Indents elements for clean html
      */
-    function _getMarkup($field) {
+    function _getMarkup($field)
+    {
         if ($field->primary_key) {
             $options01 = array(
-                'name'=> $field->name,
+                'name' => $field->name,
                 'id' => $field->name,
                 'value' => set_value('id', ''),
                 'class' => 'form-control',
                 'type' => 'hidden');
             return form_input($options01);
-        }
-
-        else {
+        } else {
 
             $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
+            $form_markup .= '	<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
             $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
@@ -763,7 +1169,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
+                        'value' => set_value("'" . $field->name . "'", ''),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -777,7 +1183,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
+                        'value' => set_value("'" . $field->name . "'", ''),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -791,7 +1197,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
+                        'value' => set_value("'" . $field->name . "'", ''),
                         'maxlength' => '500',
                         'rows' => '3',
                         'cols' => '50',
@@ -820,7 +1226,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
+                        'value' => set_value("'" . $field->name . "'", ''),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -834,7 +1240,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", ''),
+                        'value' => set_value("'" . $field->name . "'", ''),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -856,15 +1262,14 @@ class SparkPlug {
      *
      * Adds existing data to each element
      */
-    function _getEditMarkup($field) {
+    function _getEditMarkup($field)
+    {
         if ($field->primary_key) {
-            return '<input type="hidden" name="'.$field->name.'" value=<?= $result["'.$field->name.'"]?> />';
-        }
-
-        else {
+            return '<input type="hidden" name="' . $field->name . '" value=<?= $result["' . $field->name . '"]?> />';
+        } else {
 
             $form_markup = "\n\t<p>\n";
-            $form_markup .= '	<label for="'.$field->name.'">'.ucfirst($field->name).'</label>';
+            $form_markup .= '	<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
             $form_markup .= "<br/>\n\t";
 
             switch ($field->type) {
@@ -874,7 +1279,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
+                        'value' => set_value('"' . $field->name . '"', '<?= $result ["' . $field->name . '"]?>'),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -889,7 +1294,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
+                        'value' => set_value('"' . $field->name . '"', '<?= $result ["' . $field->name . '"]?>'),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -904,7 +1309,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value("'".$field->name."'", '<?= $result ["'.$field->name.'"]?>'),
+                        'value' => set_value("'" . $field->name . "'", '<?= $result ["' . $field->name . '"]?>'),
                         'maxlength' => '400',
                         'rows' => '12',
                         'cols' => '90',
@@ -919,7 +1324,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => '',
-                        'value' => set_value("'".$field->name."'", '<?= $result ["'.$field->name.'"]?>'),
+                        'value' => set_value("'" . $field->name . "'", '<?= $result ["' . $field->name . '"]?>'),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -934,7 +1339,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
+                        'value' => set_value('"' . $field->name . '"', '<?= $result ["' . $field->name . '"]?>'),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -949,7 +1354,7 @@ class SparkPlug {
                         'name' => $field->name,
                         'id' => $field->name,
                         'placeholder' => $field->name,
-                        'value' => set_value('"'.$field->name.'"', '<?= $result ["'.$field->name.'"]?>'),
+                        'value' => set_value('"' . $field->name . '"', '<?= $result ["' . $field->name . '"]?>'),
                         'maxlength' => '500',
                         'size' => '50',
                         'style' => 'width:100%',
@@ -965,22 +1370,23 @@ class SparkPlug {
         }
     }
 
-    /*****								*****/
-    /*****			TEMPLATES			*****/
-    /*****								*****/
+    /*****                                *****/
+    /*****            TEMPLATES            *****/
+    /*****                                *****/
 
     /**
      * Controller Template - Tags:
      *
-     * {model}						= model name
-     * {ucf_controller}				= UC controller name
-     * {controller}					= controller name formated for url
-     * {view_folder}				= name of the generated view folder
+     * {model}                        = model name
+     * {ucf_controller}                = UC controller name
+     * {controller}                    = controller name formated for url
+     * {view_folder}                = name of the generated view folder
      *
      */
 
-    function _controller_text() {
-        $html=
+    function _controller_text()
+    {
+        $html =
             '<?php
              if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
              /*
@@ -994,7 +1400,7 @@ class SparkPlug {
              */
             class {ucf_controller} extends CI_Controller {
 
-                private $table = "'.$this->table.'";
+                private $table = "' . $this->table . '";
                 public function index() {
                     redirect(\'{controller}/show_list\');
                 }
@@ -1003,15 +1409,15 @@ class SparkPlug {
 
                     $this->load->database();
                     $this->load->model(\'{model}\');
-                    $this->load->helper(array(\'form\',\'url\'));
-                    $this->load->library(array(\'session\', \'pagination\', \'form_validation\'));
+                    $this->load->helper(array(\'form\',\'url\',\'security\'));
+                    $this->load->library(array(\'session\', \'pagination\', \'form_validation\',\'encrypt\'));
 
                 }
 
                 public function show_list() {
 
                     $config[\'base_url\'] = $this->config->item(\'base_url\')."/{ucf_controller}/show_list";
-                    $config[\'total_rows\'] = $this->db->get("'.$this->table.'")->num_rows();
+                    $config[\'total_rows\'] = $this->db->get("' . $this->table . '")->num_rows();
                     $config[\'per_page\'] = 10;
                     $config[\'full_tag_open\'] = \'<ul id="pagination">\';
                     $config[\'full_tag_close\'] = \'</ul>\';
@@ -1034,7 +1440,7 @@ class SparkPlug {
                             break;
                     }
                     $this->pagination->initialize($config);
-                    $data[\'results\'] = $this->{model}->get_all("'.$this->table.'",$config["per_page"],$offset);
+                    $data[\'results\'] = $this->{model}->get_all("' . $this->table . '",$config["per_page"],$offset);
                     $this->load->view(\'header\');
                     $this->load->view(\'{view_folder}/list\', $data);
                     $this->load->view(\'footer\');
@@ -1228,14 +1634,15 @@ class SparkPlug {
     /**
      * Model Template - Tags:
      *
-     * {model_name}					= $this->model_name (by default: ucfirst(strlower({table})))
-     * {table}						= table name
-     * {variables}					= variable initilizations
-     * {set_variables_from_post}	= all variables set equal to their POST counterparts
+     * {model_name}                    = $this->model_name (by default: ucfirst(strlower({table})))
+     * {table}                        = table name
+     * {variables}                    = variable initilizations
+     * {set_variables_from_post}    = all variables set equal to their POST counterparts
      *
      */
 
-    function _model_text() {
+    function _model_text()
+    {
         return
             '<?php
             class {model_name} extends CI_Model {
@@ -1244,6 +1651,7 @@ class SparkPlug {
                 public function {model_name}() {
                     parent::__construct();
                     $this->load->helper(array("security"));
+                    $this->load->library(array("encrypt"));
                 }
 
                 public function insert() {
@@ -1270,7 +1678,6 @@ class SparkPlug {
 
                 public function update() {
                     {set_variables_from_post}
-
                     $this->db->update(\'{table}\', $this, array(\'id\' => xss_clean($this->input->post(\'id\', TRUE))));
                 }
 
@@ -1290,16 +1697,18 @@ class SparkPlug {
      */
 
     /* INDEX */
-    function _index_view() {
+    function _index_view()
+    {
 
         return 'You should not see this after scaffolding - index controller redirect by default.';
 
     }
 
     /* LIST */
-    function _list_view() {
+    function _list_view()
+    {
         return
-            '<h1>List '.(string) $this->table.'</h1>
+            '<h1>List ' . (string)$this->table . '</h1>
             <p>
             <?php
             if ($this->session->flashdata("msg") != ""):
@@ -1343,9 +1752,10 @@ class SparkPlug {
     }
 
     /* SHOW */
-    function _show_view() {
+    function _show_view()
+    {
         return
-            '<h1>Show '.(string) $this->table.'</h1>
+            '<h1>Show ' . (string)$this->table . '</h1>
             <? foreach ($result[0] as $field_name => $field_value): ?>
             <p>
                 <b><?= ucfirst($field_name) ?>:</b> <?= $field_value ?>
@@ -1355,9 +1765,10 @@ class SparkPlug {
     }
 
     /* EDIT */
-    function _edit_view() {
+    function _edit_view()
+    {
         return
-            '<h1>Edit '.(string) $this->table.'</h1>
+            '<h1>Edit ' . (string)$this->table . '</h1>
             <? if (validation_errors() != ""): ?>
                 <div class="alert alert-danger has-error has-feedback">
                     <span class="alert glyphicon glyphicon-warning-sign"></span>
@@ -1385,9 +1796,10 @@ class SparkPlug {
     }
 
     /* NEW */
-    function _new_view() {
+    function _new_view()
+    {
         return
-            '<h1>New '.(string) $this->table.'</h1>
+            '<h1>New ' . (string)$this->table . '</h1>
              <? if (validation_errors() != ""): ?>
                 <div class="alert alert-danger has-error has-feedback">
                     <span class="alert glyphicon glyphicon-warning-sign"></span>
