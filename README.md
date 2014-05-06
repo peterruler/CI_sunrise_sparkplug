@@ -3,10 +3,15 @@
 A changed version of the ci sunrise  (Codeigniter and twitter bootstrap 3)
 a changed version of the sparkplug rails inspired crud scaffolding.
 
-## copyright to the original creators
 
-* https://code.google.com/p/sparkplug/
-* https://github.com/sjlu/CodeIgniter-Sunrise
+## DEPENDENCIES
+* nodejs.org win/mac installer, http://nodejs.org/
+* grunt, npm install grunt
+* bower, npm install bower
+please install those via ../install.sh
+and run npm init, bower install and grunt command
+
+
 
 ## Changes are
 * twitter bootstrap 3 markup (buttons, alerts, tables, flashmessages, fixed navtop layout sample by twitter bootstrap)
@@ -35,4 +40,9 @@ Many thanks to the original creators of both sparkplug and ci sunrise
 * GNU/GPL v3
 * see scaffolding/gpl-3.0.txt
 
-### PHP/MySQL's not dead, codeigniter olé!
+
+## copyright to the original creators
+
+* https://code.google.com/p/sparkplug/
+* https://github.com/sjlu/CodeIgniter-Sunrise
+
