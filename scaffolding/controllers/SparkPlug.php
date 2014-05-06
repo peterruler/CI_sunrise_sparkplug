@@ -53,7 +53,7 @@ class SparkPlug
 
         $table = $this->getTable();
         if (!$this->CI->db->table_exists($table)) {
-            die('Table <strong>' . $table . '</strong> does not exist.');
+            //die('Table <strong>' . $table . '</strong> does not exist.');
         }
 
         $this->table = $table;
@@ -882,7 +882,7 @@ class SparkPlug
         $view_folder = APPPATH . 'views/' . strtolower($this->controller);
         $view_text = $this->_generate_views();
 
-        $dir_created = mkdir($view_folder);
+        $dir_created = @mkdir($view_folder);
         echo $dir_created ? $view_folder . ' created<br/>' : $view_folder . ' already exists - no need to create<br/>';
 
         foreach ($view_text as $view_name => $view) {
@@ -1485,32 +1485,32 @@ class SparkPlug
                 case "varchar" :
                     switch ($field->name) :
                         case "email" :
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
                             break;
                         case "phone" :
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
                             break;
                         case "password" :
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
-                            $rules .= '$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
+                            $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            $rules .= "\t".'$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
                             break;
                         default:
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                            $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
                             break;
                     endswitch;
                     break;
                 case "int" :
                     if ($field->primary_key) :
-                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->table . $field->primary_key . ']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                        $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->table . $field->primary_key . ']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
                     else :
-                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
+                        $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');'."\n\r";
                     endif;
                     break;
                 case "datetime" :
-                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');'."\n\r";
+                    $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');'."\n\r";
                     break;
                 case "text" :
-                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');'."\n\r";
+                    $rules .= "\t".'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');'."\n\r";
                     break;
             endswitch;
         endforeach;
@@ -1530,8 +1530,7 @@ class SparkPlug
 
     function _controller_text()
     {
-        $html =
-            '<?php
+        $html ='<?php
              if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
              /*
              * User: ps
@@ -1585,6 +1584,14 @@ class SparkPlug
                     }
                     $this->pagination->initialize($config);
                     $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config["per_page"],$offset);
+                    $index = 0;
+                    if(!isset($data["results"][0]["id"])) {
+                        foreach($data["results"] as $row) {
+                            //add record primary key assigned to id
+                            $data["results"][$index]["id"] = current($row);
+                            $index++;
+                        }
+                    }
                     $this->load->view(\'header\');
                     $this->load->view(\'{view_folder}/list\', $data);
                     $this->load->view(\'footer\');
@@ -1592,6 +1599,13 @@ class SparkPlug
 
                 public function show($id) {
                     $data[\'result\'] = $this->{uc_model_name}->get($id);
+
+                    if(!isset($data["result"]["id"])) {
+                        foreach($data["result"] as $row) {
+                            //add record primary key assigned to id
+                            $data["result"]["id"] = current($row);
+                        }
+                    }
 
                     $this->load->view(\'header\');
                     $this->load->view(\'{view_folder}/show\', $data);
@@ -1630,8 +1644,13 @@ class SparkPlug
                 public function edit($id) {
 
                     $res = $this->{uc_model_name}->get($id);
-                    $data[\'result\'] = $res[0];
-
+                    $data["result"] = $res[0];
+                    if(!isset($data["result"]["id"])) {
+                        foreach($data["result"] as $row) {
+                            //add record primary key assigned to id
+                            $data["result"]["id"] = $row[0];
+                        }
+                    }
                     {set_rules}
 
                     if ($this->form_validation->run() == FALSE) {
@@ -1771,6 +1790,13 @@ class SparkPlug
                     $this->load->library(array("encrypt"));
                 }
 
+                public function getPrimaryKeyFieldName() {
+                 $fields = $this->db->field_data("'.$this->table.'");
+
+                    $primary_key_name = $fields[0]->name;
+                    return $primary_key_name;
+                }
+
                 public function insert() {
                     {set_variables_from_post}
 
@@ -1779,7 +1805,9 @@ class SparkPlug
 
                 public function get($id) {
                     $id = (int) $id;
-                    $query = $this->db->get_where(\'{table}\', array(\'id\' => (int) xss_clean($id)));
+                    $primary_key = $this->getPrimaryKeyFieldName();
+
+                    $query = $this->db->get_where(\'{table}\', array("$primary_key" => (int) xss_clean($id)));
                     return $query->result_array();
                 }
 
@@ -1796,14 +1824,17 @@ class SparkPlug
                 public function update($id) {
                     {set_variables_from_post}
 
+                    $primary_key = $this->getPrimaryKeyFieldName();
+
                     $this->db->set($this);
-                    $this->db->where( \'id\' ,$this->id);
+                    $this->db->where( "$primary_key" ,$id);//@FIMXE sec? $this->$primary_key
                     $this->db->update(\'{table}\', $this);
                 }
 
                 public function delete($id) {
                     $id = (int) $id;
-                    $this->db->delete(\'{table}\', array(\'id\' => xss_clean($id)));
+                    $primary_key = $this->getPrimaryKeyFieldName();
+                    $this->db->delete(\'{table}\', array("$primary_key" => xss_clean($id)));
                 }
             }';
     }
@@ -1841,15 +1872,21 @@ class SparkPlug
             <div class="table-responsive">
             <table class="table table table-bordered table-striped table-hover">
                 <tr>
-                <? foreach(array_keys($results[0]) as $key): ?>
+                <?
+                if(count($results) != 0) :
+                foreach(array_keys($results[0]) as $key): ?>
                     <th><?= ucfirst($key) ?></th>
-                <? endforeach; ?>
+                <? endforeach;
+                endif;
+                ?>
                 <th>View</th>
                 <th>Edit</th>
                 <th>Delete</th>
                 </tr>
-
-            <? foreach ($results as $row): ?>
+           <?
+           if(count($results) != 0) :
+           foreach ($results as $row):
+                ?>
                 <tr>
                 <? foreach ($row as $field_value): ?>
                     <td><?= $field_value ?></td>
@@ -1858,7 +1895,9 @@ class SparkPlug
                     <td> <?= anchor("{controller}/edit/".$row[\'id\'], \'Edit\', "class=\'btn btn-sm btn-warning\'") ?></td>
                     <td> <?= anchor("{controller}/delete/".$row[\'id\'], \'Delete\', "class=\'btn btn-sm btn-danger\'") ?></td>
                 </tr>
-            <? endforeach; ?>
+            <? endforeach;
+            endif;
+            ?>
             </table>
             <br />
                 <?= $this->pagination->create_links();?>

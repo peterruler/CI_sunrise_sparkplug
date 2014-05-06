@@ -6,20 +6,20 @@
              * Date: 02.05.14
              * Time: 20:33
              * project: sparkplug
-             * file: application/controllers/Jobs.php
+             * file: application/controllers/Captcha.php
              * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
              */
-            class Jobs extends CI_Controller {
+            class Captcha extends CI_Controller {
 
-                private $table = "Jobs";
+                private $table = "captcha";
                 public function index() {
-                    redirect('Jobs/show_list');
+                    redirect('captcha/show_list');
                 }
                 public function __construct() {
                     parent::__construct();
 
                     $this->load->database();
-                    $this->load->model('Jobs_model');
+                    $this->load->model('Captcha_model');
                     $this->load->helper(array('form','url','security'));
                     $this->load->library(array('session', 'pagination', 'form_validation','encrypt'));
 
@@ -27,8 +27,8 @@
 
                 public function show_list() {
 
-                    $config['base_url'] = $this->config->item('base_url')."/Jobs/show_list";
-                    $config['total_rows'] = $this->db->get("Jobs")->num_rows();
+                    $config['base_url'] = $this->config->item('base_url')."/Captcha/show_list";
+                    $config['total_rows'] = $this->db->get("captcha")->num_rows();
                     $config['per_page'] = 10;
                     $config['full_tag_open'] = '<ul id="pagination">';
                     $config['full_tag_close'] = '</ul>';
@@ -51,124 +51,124 @@
                             break;
                     }
                     $this->pagination->initialize($config);
-                    $data['results'] = $this->Jobs_model->get_all("Jobs",$config["per_page"],$offset);
+                    $data['results'] = $this->Captcha_model->get_all("captcha",$config["per_page"],$offset);
+                    $index = 0;
+                    if(!isset($data["results"][0]["id"])) {
+                        foreach($data["results"] as $row) {
+                            //add record primary key assigned to id
+                            $data["results"][$index]["id"] = current($row);
+                            $index++;
+                        }
+                    }
                     $this->load->view('header');
-                    $this->load->view('jobs/list', $data);
+                    $this->load->view('captcha/list', $data);
                     $this->load->view('footer');
                 }
 
                 public function show($id) {
-                    $data['result'] = $this->Jobs_model->get($id);
+                    $data['result'] = $this->Captcha_model->get($id);
+
+                    if(!isset($data["result"]["id"])) {
+                        foreach($data["result"] as $row) {
+                            //add record primary key assigned to id
+                            $data["result"]["id"] = current($row);
+                        }
+                    }
 
                     $this->load->view('header');
-                    $this->load->view('jobs/show', $data);
+                    $this->load->view('captcha/show', $data);
                     $this->load->view('footer');
                 }
 
                 public function new_entry() {
 
-                    $this->form_validation->set_rules('id', 'id', 'is_unique[Jobs1]|numeric|trim|min_length[5]|max_length[11]|xss_clean');
-$this->form_validation->set_rules('name', 'name', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('contact_person', 'contact_person', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('startdate', 'startdate', 'trim|xss_clean');
-$this->form_validation->set_rules('enddate', 'enddate', 'trim|xss_clean');
-$this->form_validation->set_rules('notes', 'notes', 'trim|xss_clean');
-$this->form_validation->set_rules('phone', 'phone', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('email', 'email', 'valid_email|trim|required|min_length[5]|max_length[75]|xss_clean');
+                    	$this->form_validation->set_rules('captcha_time', 'captcha_time', 'numeric|trim|required|min_length[5]|max_length[10]|xss_clean');
+	$this->form_validation->set_rules('ip_address', 'ip_address', 'trim|required|min_length[5]|max_length[16]|xss_clean');
+	$this->form_validation->set_rules('word', 'word', 'trim|required|min_length[5]|max_length[20]|xss_clean');
 
 
                     if ($this->form_validation->run() == FALSE) {
 
                                 $this->load->view('header');
-                                $this->load->view('jobs/new');
+                                $this->load->view('captcha/new');
                                 $this->load->view('footer');
                     } else {
-                                redirect('Jobs/show_list');
+                                redirect('captcha/show_list');
                    }
                 }
 
                 public function create() {
 
-                    $this->form_validation->set_rules('id', 'id', 'is_unique[Jobs1]|numeric|trim|min_length[5]|max_length[11]|xss_clean');
-$this->form_validation->set_rules('name', 'name', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('contact_person', 'contact_person', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('startdate', 'startdate', 'trim|xss_clean');
-$this->form_validation->set_rules('enddate', 'enddate', 'trim|xss_clean');
-$this->form_validation->set_rules('notes', 'notes', 'trim|xss_clean');
-$this->form_validation->set_rules('phone', 'phone', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('email', 'email', 'valid_email|trim|required|min_length[5]|max_length[75]|xss_clean');
+                    	$this->form_validation->set_rules('captcha_time', 'captcha_time', 'numeric|trim|required|min_length[5]|max_length[10]|xss_clean');
+	$this->form_validation->set_rules('ip_address', 'ip_address', 'trim|required|min_length[5]|max_length[16]|xss_clean');
+	$this->form_validation->set_rules('word', 'word', 'trim|required|min_length[5]|max_length[20]|xss_clean');
 
                     if ($this->form_validation->run() == FALSE) {
                             $this->session->set_flashdata('msg', 'Error');
                             $this->load->view('header');
-                            $this->load->view('jobs/new');
+                            $this->load->view('captcha/new');
                             $this->load->view('footer');
                         } else {
-                            $this->Jobs_model->insert();
+                            $this->Captcha_model->insert();
                             $this->session->set_flashdata('msg', 'Entry Created');
-                            redirect('Jobs/show_list');
+                            redirect('captcha/show_list');
                         }
                 }
 
                 public function edit($id) {
 
-                    $res = $this->Jobs_model->get($id);
-                    $data['result'] = $res[0];
-
-                    $this->form_validation->set_rules('id', 'id', 'is_unique[Jobs1]|numeric|trim|min_length[5]|max_length[11]|xss_clean');
-$this->form_validation->set_rules('name', 'name', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('contact_person', 'contact_person', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('startdate', 'startdate', 'trim|xss_clean');
-$this->form_validation->set_rules('enddate', 'enddate', 'trim|xss_clean');
-$this->form_validation->set_rules('notes', 'notes', 'trim|xss_clean');
-$this->form_validation->set_rules('phone', 'phone', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('email', 'email', 'valid_email|trim|required|min_length[5]|max_length[75]|xss_clean');
+                    $res = $this->Captcha_model->get($id);
+                    $data["result"] = $res[0];
+                    if(!isset($data["result"]["id"])) {
+                        foreach($data["result"] as $row) {
+                            //add record primary key assigned to id
+                            $data["result"]["id"] = $row[0];
+                        }
+                    }
+                    	$this->form_validation->set_rules('captcha_time', 'captcha_time', 'numeric|trim|required|min_length[5]|max_length[10]|xss_clean');
+	$this->form_validation->set_rules('ip_address', 'ip_address', 'trim|required|min_length[5]|max_length[16]|xss_clean');
+	$this->form_validation->set_rules('word', 'word', 'trim|required|min_length[5]|max_length[20]|xss_clean');
 
 
                     if ($this->form_validation->run() == FALSE) {
                                 $this->load->view('header');
-                                $this->load->view('jobs/edit', $data);
+                                $this->load->view('captcha/edit', $data);
                                 $this->load->view('footer');
                     } else {
-                                redirect('Jobs/show_list');
+                                redirect('captcha/show_list');
                     }
                 }
 
                 public function update($id) {
-                    $this->form_validation->set_rules('id', 'id', 'is_unique[Jobs1]|numeric|trim|min_length[5]|max_length[11]|xss_clean');
-$this->form_validation->set_rules('name', 'name', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('contact_person', 'contact_person', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('startdate', 'startdate', 'trim|xss_clean');
-$this->form_validation->set_rules('enddate', 'enddate', 'trim|xss_clean');
-$this->form_validation->set_rules('notes', 'notes', 'trim|xss_clean');
-$this->form_validation->set_rules('phone', 'phone', 'trim|required|min_length[5]|max_length[75]|xss_clean');
-$this->form_validation->set_rules('email', 'email', 'valid_email|trim|required|min_length[5]|max_length[75]|xss_clean');
+                    	$this->form_validation->set_rules('captcha_time', 'captcha_time', 'numeric|trim|required|min_length[5]|max_length[10]|xss_clean');
+	$this->form_validation->set_rules('ip_address', 'ip_address', 'trim|required|min_length[5]|max_length[16]|xss_clean');
+	$this->form_validation->set_rules('word', 'word', 'trim|required|min_length[5]|max_length[20]|xss_clean');
 
 
                     if ($this->form_validation->run() == FALSE)
                     {
-                        $res = $this->Jobs_model->get($id);
+                        $res = $this->Captcha_model->get($id);
                         $data["result"] = $res[0];
 
                         $this->session->set_flashdata('msg', 'Error');
                         $this->load->view('header');
-                        $this->load->view('Jobs/edit', $data);
+                        $this->load->view('captcha/edit', $data);
                         $this->load->view('footer');
                     }
                     else
                     {
                         $post = $this->input->post();
-                        $this->Jobs_model->update($id);
+                        $this->Captcha_model->update($id);
                         $this->session->set_flashdata('msg', 'Entry Updated');
-                        redirect('Jobs/show_list');
+                        redirect('captcha/show_list');
                     }
                 }
 
                 public function delete($id) {
-                    $this->Jobs_model->delete($id);
+                    $this->Captcha_model->delete($id);
 
                     $this->session->set_flashdata('msg', 'Entry Deleted');
-                    redirect('Jobs/show_list');
+                    redirect('captcha/show_list');
                 }
                 /**
                  * @desc Validates a date format
