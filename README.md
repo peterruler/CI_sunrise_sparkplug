@@ -6,43 +6,57 @@ a changed version of the sparkplug rails inspired crud scaffolding.
 
 ## DEPENDENCIES
 * nodejs.org win/mac installer, http://nodejs.org/
-* grunt, npm install grunt
-* bower, npm install bower
-please install those via ../install.sh
-and run npm init, bower install and grunt command
+* run npm init
+* run npm install
+* run npm install bower --save-dev
+* grunt: npm install grunt  --save-dev
+* grunt: npm install grunt-cli  --save-dev
+* or install with the sunrise script via ../shell.sh, to get grunt and bower installed
+* compile the webpage via 'grunt' command
+
 * composer, see https://getcomposer.org/ for installation notes
-
-
+* to install phpunit, run $php composer.phar install
+* then for testing, run script via $php tests/run
+* alternatively usage of [sparks Codeigniter package manager](http://getsparks.org/)
 
 ## Changes are
 * twitter bootstrap 3 markup (buttons, alerts, tables, flashmessages, fixed navtop layout sample by twitter bootstrap)
 * html5 form elements markup
 * serverside validation
 * xss cleanup
-* simple header footer inclusion templating
-* use of fontawesome
+* simple header footer inclusion templating, (@todo using theme)
+* dependency of fontawesome included
 
-https://github.com/sjlu/CodeIgniter-Sunrise/blob/master/README.md
+For the usage of getting the needed dependencies for CI_Sunrise see:
+* see [CI_sunrise installatoin notes](https://github.com/sjlu/CodeIgniter-Sunrise/blob/master/README.md)
 
-For a the usage use the original page:
-https://code.google.com/p/sparkplug/wiki/Usage
-
-Many thanks to the original creators of both sparkplug and ci sunrise
+For the usage use of the generator see the original page:
+* see [sparkplug documentation](https://code.google.com/p/sparkplug/wiki/Usage)
 
 ## License
 ### CodeIgniter Sunrise :
 * MIT
-* see MIT.txt
+* see [license agreement](https://github.com/peterruler/CI_sunrise_sparkplug/blob/master/MIT.txt)
 
 ## License
 ### Sparkplug :
 
 * GNU/GPL v3
-* see scaffolding/gpl-3.0.txt
-
+* see [license agreement](https://github.com/peterruler/CI_sunrise_sparkplug/blob/master/scaffolding/gpl-3.0.txt)
+## License
+### Codeigniter :
+* Open Software License ("OSL") v 3.0
+* see [license agreement](https://github.com/peterruler/CI_sunrise_sparkplug/blob/master/oslicense.txt)
 
 ## copyright to the original creators
 
-* https://code.google.com/p/sparkplug/
-* https://github.com/sjlu/CodeIgniter-Sunrise
+
+* see [sparkplug src on google code](https://code.google.com/p/sparkplug/)
+* see [CI_sunrise, ready to test installation src](https://github.com/sjlu/CodeIgniter-Sunrise)
+* see [Codeigniter on github, dev version](https://github.com/EllisLab/CodeIgniter/)
+
+##For writing unittests
+* see [original codeigniter unittests](https://github.com/peterruler/CI_sunrise_sparkplug/blob/master/tests/README.md)
+
+Many thanks to the original creators of codeigniter, sparkplug and ci sunrise
 
