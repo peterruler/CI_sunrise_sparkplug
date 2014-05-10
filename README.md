@@ -10,6 +10,7 @@ a changed version of the sparkplug rails inspired crud scaffolding.
 * bower, npm install bower
 please install those via ../install.sh
 and run npm init, bower install and grunt command
+* composer, see https://getcomposer.org/ for installation notes
 
 
 
@@ -32,7 +33,6 @@ Many thanks to the original creators of both sparkplug and ci sunrise
 ### CodeIgniter Sunrise :
 * MIT
 * see MIT.txt
-* 
 
 ## License
 ### Sparkplug :

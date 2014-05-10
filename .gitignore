@@ -1,7 +1,6 @@
 node_modules
 bower_components
 application/cache/*
-vendor
 .idea
 .DS_Store
 .DS_Store?
@@ -12,3 +11,25 @@ Icon?
 ehthumbs.db
 Thumbs.db
 .dropbox
+vendor
+conmposer.phar
+#ignore all files
+application/controllers/*
+#but not
+index.html
+sparkplugctrl.php
+welcome.php
+gpl-3.0.txt
+#ignore all files
+application/models/*
+#but not
+index.html
+#ignore all files
+application/views/*
+#but not
+pages
+SparkPlugCtrl.php
+#@todo header/footer will get changed
+header.php
+footer.php
+
