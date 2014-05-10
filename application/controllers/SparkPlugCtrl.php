@@ -84,8 +84,7 @@ class '.ucfirst($table).' extends CI_Controller {
     $this->sparkplug->generate();
 }
 }';
-
-        if ( ! write_file(APPPATH."controllers/".$table.".php", $data))
+        if ( ! write_file(preg_replace('/system\//','',BASEPATH.APPPATH.'controllers/'.$table.'.php'), $data))
         {
             echo "Unable to write the file";
         }

@@ -1,0 +1,15 @@
+{
+    "require": {
+        "easybook/geshi": "dev-master",
+        "ezyang/htmlpurifier": "~4.6.0",
+        "monolog/monolog": "1.9.1",
+        "phpunit/phpunit": "~4.0.20",
+        "phpunit/php-code-coverage": "~2.0.6",
+        "phpunit/phpunit-selenium": "~1.3.3",
+        "phpunit/phpunit-skeleton-generator": "2.0.*@dev",
+        "doctrine/common": "2.4.*@dev",
+        "doctrine/dbal": "2.5.*@dev",
+        "doctrine/orm": "2.5.*@dev",
+        "zendframework/zend-permissions-acl": "2.3.*@dev"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "vendor_name/package_name",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "config": {
+        "vendor-dir": "vendor/"
+    },
+    "authors": [
+        {
+            "name": "author's name",
+            "email": "email@example.com"
+        }
+    ], "require": {
+
+    "monolog/monolog": "1.9.1",
+    "phpunit/phpunit": "~4.0.20",
+    "phpunit/php-code-coverage": "~2.0.6",
+    "phpunit/phpunit-selenium": "~1.3.3",
+    "phpunit/phpunit-skeleton-generator": "2.0.*@dev",
+    "doctrine/common": "2.4.*@dev",
+    "doctrine/dbal": "2.5.*@dev",
+    "doctrine/orm": "2.5.*@dev",
+    "league/oauth2-server": "3.0",
+    "mikey179/vfsStream": "1.1.0",
+    "ezyang/htmlpurifier": "dev-master",
+    "twig/twig": "1.15.1",
+    "zendframework/zend-config": "2.2.2",
+    "zendframework/zend-http": "2.2.2",
+    "zendframework/zend-permissions-acl": "2.2.2"
+}
+}

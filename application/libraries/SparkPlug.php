@@ -1530,228 +1530,228 @@ class SparkPlug
 
     function _controller_text()
     {
-        $html ='<?php
-             if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
-             /*
-             * User: ps
-             # copyright 2014 keepitnative.ch, io, all rights reserved to the author
-             * Date: 02.05.14
-             * Time: 20:33
-             * project: sparkplug
-             * file: application/controllers/{ucf_controller}.php
-             * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
-             */
-            class {ucf_controller} extends CI_Controller {
 
-                private $table = "{controller}";
-                public function index() {
-                    redirect(\'{controller}/show_list\');
-                }
-                public function __construct() {
-                    parent::__construct();
+$html ='<?php if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+ /*
+ * User: ps
+ # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+ * Date: 02.05.14
+ * Time: 20:33
+ * project: sparkplug
+ * file: application/controllers/{ucf_controller}.php
+ * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
+ */
+class {ucf_controller} extends CI_Controller {
 
-                    $this->load->database();
-                    $this->load->model(\'{uc_model_name}\');
-                    $this->load->helper(array(\'form\',\'url\',\'security\'));
-                    $this->load->library(array(\'session\', \'pagination\', \'form_validation\',\'encrypt\'));
+    private $table = "{controller}";
+    public function index() {
+        redirect(\'{controller}/show_list\');
+    }
+    public function __construct() {
+        parent::__construct();
 
-                }
+        $this->load->database();
+        $this->load->model(\'{uc_model_name}\');
+        $this->load->helper(array(\'form\',\'url\',\'security\'));
+        $this->load->library(array(\'session\', \'pagination\', \'form_validation\',\'encrypt\'));
 
-                public function show_list() {
+    }
 
-                    $config[\'base_url\'] = $this->config->item(\'base_url\')."/{ucf_controller}/show_list";
-                    $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
-                    $config[\'per_page\'] = 10;
-                    $config[\'full_tag_open\'] = \'<ul id="pagination">\';
-                    $config[\'full_tag_close\'] = \'</ul>\';
+    public function show_list() {
 
-                    $config[\'next_link\'] = \'&gt;\';
-                    $config[\'prev_link\'] = \'&lt;\';
+        $config[\'base_url\'] = $this->config->item(\'base_url\')."/{ucf_controller}/show_list";
+        $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
+        $config[\'per_page\'] = 10;
+        $config[\'full_tag_open\'] = \'<ul id="pagination">\';
+        $config[\'full_tag_close\'] = \'</ul>\';
 
-                    $url_string =xss_clean($this->uri->uri_string());
-                    $segments = explode("/",$url_string);
-                    $segments_length = count($segments);
-                    switch ($segments_length) {
-                        case 4:
-                            $offset = xss_clean($this->uri->segment(4));
-                            break;
-                        case 3:
-                            $offset = xss_clean($this->uri->segment(3));
-                            break;
-                        default:
-                            $offset = 1;
-                            break;
-                    }
-                    $this->pagination->initialize($config);
-                    $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config["per_page"],$offset);
-                    $index = 0;
-                    if(!isset($data["results"][0]["id"])) {
-                        foreach($data["results"] as $row) {
-                            //add record primary key assigned to id
-                            $data["results"][$index]["id"] = current($row);
-                            $index++;
-                        }
-                    }
+        $config[\'next_link\'] = \'&gt;\';
+        $config[\'prev_link\'] = \'&lt;\';
+
+        $url_string =xss_clean($this->uri->uri_string());
+        $segments = explode("/",$url_string);
+        $segments_length = count($segments);
+        switch ($segments_length) {
+            case 4:
+                $offset = xss_clean($this->uri->segment(4));
+                break;
+            case 3:
+                $offset = xss_clean($this->uri->segment(3));
+                break;
+            default:
+                $offset = 1;
+                break;
+        }
+        $this->pagination->initialize($config);
+        $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config["per_page"],$offset);
+        $index = 0;
+        if(!isset($data["results"][0]["id"])) {
+            foreach($data["results"] as $row) {
+                //add record primary key assigned to id
+                $data["results"][$index]["id"] = current($row);
+                $index++;
+            }
+        }
+        $this->load->view(\'header\');
+        $this->load->view(\'{view_folder}/list\', $data);
+        $this->load->view(\'footer\');
+    }
+
+    public function show($id) {
+        $data[\'result\'] = $this->{uc_model_name}->get($id);
+
+        if(!isset($data["result"]["id"])) {
+            foreach($data["result"] as $row) {
+                //add record primary key assigned to id
+                $data["result"]["id"] = current($row);
+            }
+        }
+
+        $this->load->view(\'header\');
+        $this->load->view(\'{view_folder}/show\', $data);
+        $this->load->view(\'footer\');
+    }
+
+    public function new_entry() {
+
+        {set_rules}
+
+        if ($this->form_validation->run() == FALSE) {
+
                     $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/list\', $data);
+                    $this->load->view(\'{view_folder}/new\');
                     $this->load->view(\'footer\');
-                }
-
-                public function show($id) {
-                    $data[\'result\'] = $this->{uc_model_name}->get($id);
-
-                    if(!isset($data["result"]["id"])) {
-                        foreach($data["result"] as $row) {
-                            //add record primary key assigned to id
-                            $data["result"]["id"] = current($row);
-                        }
-                    }
-
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/show\', $data);
-                    $this->load->view(\'footer\');
-                }
-
-                public function new_entry() {
-
-                    {set_rules}
-
-                    if ($this->form_validation->run() == FALSE) {
-
-                                $this->load->view(\'header\');
-                                $this->load->view(\'{view_folder}/new\');
-                                $this->load->view(\'footer\');
-                    } else {
-                                redirect(\'{controller}/show_list\');
-                   }
-                }
-
-                public function create() {
-
-                    {set_rules}
-                    if ($this->form_validation->run() == FALSE) {
-                            $this->session->set_flashdata(\'msg\', \'Error\');
-                            $this->load->view(\'header\');
-                            $this->load->view(\'{view_folder}/new\');
-                            $this->load->view(\'footer\');
-                        } else {
-                            $this->{uc_model_name}->insert();
-                            $this->session->set_flashdata(\'msg\', \'Entry Created\');
-                            redirect(\'{controller}/show_list\');
-                        }
-                }
-
-                public function edit($id) {
-
-                    $res = $this->{uc_model_name}->get($id);
-                    $data["result"] = $res[0];
-                    if(!isset($data["result"]["id"])) {
-                        foreach($data["result"] as $row) {
-                            //add record primary key assigned to id
-                            $data["result"]["id"] = $row[0];
-                        }
-                    }
-                    {set_rules}
-
-                    if ($this->form_validation->run() == FALSE) {
-                                $this->load->view(\'header\');
-                                $this->load->view(\'{view_folder}/edit\', $data);
-                                $this->load->view(\'footer\');
-                    } else {
-                                redirect(\'{controller}/show_list\');
-                    }
-                }
-
-                public function update($id) {
-                    {set_rules}
-
-                    if ($this->form_validation->run() == FALSE)
-                    {
-                        $res = $this->{uc_model_name}->get($id);
-                        $data["result"] = $res[0];
-
-                        $this->session->set_flashdata(\'msg\', \'Error\');
-                        $this->load->view(\'header\');
-                        $this->load->view(\'{controller}/edit\', $data);
-                        $this->load->view(\'footer\');
-                    }
-                    else
-                    {
-                        $post = $this->input->post();
-                        $this->{uc_model_name}->update($id);
-                        $this->session->set_flashdata(\'msg\', \'Entry Updated\');
-                        redirect(\'{controller}/show_list\');
-                    }
-                }
-
-                public function delete($id) {
-                    $this->{uc_model_name}->delete($id);
-
-                    $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
+        } else {
                     redirect(\'{controller}/show_list\');
-                }
-                /**
-                 * @desc Validates a date format
-                 * @params format,delimiter
-                 * e.g. d/m/y,/ or y-m-d,-
-                 * http://tutsforweb.blogspot.ch/2012/05/date-validation-for-codeigniter-2.html
-                 */
-                 function valid_date($str, $params)
-                 {
-                  // setup
-                  $CI =&get_instance();
-                  $params = explode(",", $params);
-                  $delimiter = $params[1];
-                  $date_parts = explode($delimiter, $params[0]);
+       }
+    }
 
-                  // get the index (0, 1 or 2) for each part
-                  $di = $this->valid_date_part_index($date_parts, "d");
-                  $mi = $this->valid_date_part_index($date_parts, "m");
-                  $yi = $this->valid_date_part_index($date_parts, "y");
+    public function create() {
 
-                  // regex setup
-                  $dre =   "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)";
-                  $mre = "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12)";
-                  $yre = "([0-9]{4})";
-                  $red = "".$delimiter; // escape delimiter for regex
-                  $rex = "/^[0]{$red}[1]{$red}[2]/";
+        {set_rules}
+        if ($this->form_validation->run() == FALSE) {
+                $this->session->set_flashdata(\'msg\', \'Error\');
+                $this->load->view(\'header\');
+                $this->load->view(\'{view_folder}/new\');
+                $this->load->view(\'footer\');
+            } else {
+                $this->{uc_model_name}->insert();
+                $this->session->set_flashdata(\'msg\', \'Entry Created\');
+                redirect(\'{controller}/show_list\');
+            }
+    }
 
-                  // do replacements at correct positions
-                  $rex = str_replace("[{$di}]", $dre, $rex);
-                  $rex = str_replace("[{$mi}]", $mre, $rex);
-                  $rex = str_replace("[{$yi}]", $yre, $rex);
+    public function edit($id) {
 
-                  if (preg_match($rex, $str, $matches))
-                  {
-                   // skip 0 as it contains full match, check the date is logically valid
-                   if (checkdate($matches[$mi + 1], $matches[$di + 1], $matches[$yi + 1]))
-                   {
-                    return true;
-                   }
-                   else
-                   {
-                    // match but logically invalid
-                    $CI->form_validation->set_message("valid_date", "The date is invalid.");
-                    return false;
-                   }
-                  }
+        $res = $this->{uc_model_name}->get($id);
+        $data["result"] = $res[0];
+        if(!isset($data["result"]["id"])) {
+            foreach($data["result"] as $row) {
+                //add record primary key assigned to id
+                $data["result"]["id"] = $row[0];
+            }
+        }
+        {set_rules}
 
-                  // no match
-                  $CI->form_validation->set_message("valid_date", "The date format is invalid. Use {$params[0]}");
-                  return false;
-                 }
+        if ($this->form_validation->run() == FALSE) {
+                    $this->load->view(\'header\');
+                    $this->load->view(\'{view_folder}/edit\', $data);
+                    $this->load->view(\'footer\');
+        } else {
+                    redirect(\'{controller}/show_list\');
+        }
+    }
 
-                 function valid_date_part_index($parts, $search)
-                 {
-                  for ($i = 0; $i <= count($parts); $i++)
-                  {
-                   if ($parts[$i] == $search)
-                   {
-                    return $i;
-                   }
-                  }
-                 }
-            }';
+    public function update($id) {
+        {set_rules}
+
+        if ($this->form_validation->run() == FALSE)
+        {
+            $res = $this->{uc_model_name}->get($id);
+            $data["result"] = $res[0];
+
+            $this->session->set_flashdata(\'msg\', \'Error\');
+            $this->load->view(\'header\');
+            $this->load->view(\'{controller}/edit\', $data);
+            $this->load->view(\'footer\');
+        }
+        else
+        {
+            $post = $this->input->post();
+            $this->{uc_model_name}->update($id);
+            $this->session->set_flashdata(\'msg\', \'Entry Updated\');
+            redirect(\'{controller}/show_list\');
+        }
+    }
+
+    public function delete($id) {
+        $this->{uc_model_name}->delete($id);
+
+        $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
+        redirect(\'{controller}/show_list\');
+    }
+    /**
+     * @desc Validates a date format
+     * @params format,delimiter
+     * e.g. d/m/y,/ or y-m-d,-
+     * http://tutsforweb.blogspot.ch/2012/05/date-validation-for-codeigniter-2.html
+     */
+     function valid_date($str, $params)
+     {
+      // setup
+      $CI =&get_instance();
+      $params = explode(",", $params);
+      $delimiter = $params[1];
+      $date_parts = explode($delimiter, $params[0]);
+
+      // get the index (0, 1 or 2) for each part
+      $di = $this->valid_date_part_index($date_parts, "d");
+      $mi = $this->valid_date_part_index($date_parts, "m");
+      $yi = $this->valid_date_part_index($date_parts, "y");
+
+      // regex setup
+      $dre =   "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)";
+      $mre = "(0?1|0?2|0?3|0?4|0?5|0?6|0?7|0?8|0?9|10|11|12)";
+      $yre = "([0-9]{4})";
+      $red = "".$delimiter; // escape delimiter for regex
+      $rex = "/^[0]{$red}[1]{$red}[2]/";
+
+      // do replacements at correct positions
+      $rex = str_replace("[{$di}]", $dre, $rex);
+      $rex = str_replace("[{$mi}]", $mre, $rex);
+      $rex = str_replace("[{$yi}]", $yre, $rex);
+
+      if (preg_match($rex, $str, $matches))
+      {
+       // skip 0 as it contains full match, check the date is logically valid
+       if (checkdate($matches[$mi + 1], $matches[$di + 1], $matches[$yi + 1]))
+       {
+        return true;
+       }
+       else
+       {
+        // match but logically invalid
+        $CI->form_validation->set_message("valid_date", "The date is invalid.");
+        return false;
+       }
+      }
+
+      // no match
+      $CI->form_validation->set_message("valid_date", "The date format is invalid. Use {$params[0]}");
+      return false;
+     }
+
+     function valid_date_part_index($parts, $search)
+     {
+      for ($i = 0; $i <= count($parts); $i++)
+      {
+       if ($parts[$i] == $search)
+       {
+        return $i;
+       }
+      }
+     }
+}';
 
         return $html;
     }
@@ -1768,75 +1768,75 @@ class SparkPlug
 
     function _model_text()
     {
-        return
-            '<?php
-             if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
-             /*
-             * User: ps
-             # copyright 2014 keepitnative.ch, io, all rights reserved to the author
-             * Date: 02.05.14
-             * Time: 20:33
-             * project: sparkplug
-             * file: application/models/{ucf_controller}.php
-             * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
-             */
+return
+'<?php
+ if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+ /*
+ * User: ps
+ # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+ * Date: 02.05.14
+ * Time: 20:33
+ * project: sparkplug
+ * file: application/models/{ucf_controller}.php
+ * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
+ */
 
-            class {model_name} extends CI_Model {
-                {variables}
+class {model_name} extends CI_Model {
+    {variables}
 
-                public function {model_name}() {
-                    parent::__construct();
-                    $this->load->helper(array("security"));
-                    $this->load->library(array("encrypt"));
-                }
+    public function {model_name}() {
+        parent::__construct();
+        $this->load->helper(array("security"));
+        $this->load->library(array("encrypt"));
+    }
 
-                public function getPrimaryKeyFieldName() {
-                 $fields = $this->db->field_data("'.$this->table.'");
+    public function getPrimaryKeyFieldName() {
+     $fields = $this->db->field_data("'.$this->table.'");
 
-                    $primary_key_name = $fields[0]->name;
-                    return $primary_key_name;
-                }
+        $primary_key_name = $fields[0]->name;
+        return $primary_key_name;
+    }
 
-                public function insert() {
-                    {set_variables_from_post}
+    public function insert() {
+        {set_variables_from_post}
 
-                    $this->db->insert(\'{table}\', $this);
-                }
+        $this->db->insert(\'{table}\', $this);
+    }
 
-                public function get($id) {
-                    $id = (int) $id;
-                    $primary_key = $this->getPrimaryKeyFieldName();
+    public function get($id) {
+        $id = (int) $id;
+        $primary_key = $this->getPrimaryKeyFieldName();
 
-                    $query = $this->db->get_where(\'{table}\', array("$primary_key" => (int) xss_clean($id)));
-                    return $query->result_array();
-                }
+        $query = $this->db->get_where(\'{table}\', array("$primary_key" => (int) xss_clean($id)));
+        return $query->result_array();
+    }
 
-                public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1 ) {
-                    $this->db->limit($limit_per_page, $offset_limit);
-                    $query = $this->db->get(\'{table}\');
-                    return $query->result_array();
-                }
+    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1 ) {
+        $this->db->limit($limit_per_page, $offset_limit);
+        $query = $this->db->get(\'{table}\');
+        return $query->result_array();
+    }
 
-                public function get_field_data() {
-                    return $this->db->field_data(\'{table}\');
-                }
+    public function get_field_data() {
+        return $this->db->field_data(\'{table}\');
+    }
 
-                public function update($id) {
-                    {set_variables_from_post}
+    public function update($id) {
+        {set_variables_from_post}
 
-                    $primary_key = $this->getPrimaryKeyFieldName();
+        $primary_key = $this->getPrimaryKeyFieldName();
 
-                    $this->db->set($this);
-                    $this->db->where( "$primary_key" ,$id);//@FIMXE sec? $this->$primary_key
-                    $this->db->update(\'{table}\', $this);
-                }
+        $this->db->set($this);
+        $this->db->where( "$primary_key" ,$id);//@FIMXE sec? $this->$primary_key
+        $this->db->update(\'{table}\', $this);
+    }
 
-                public function delete($id) {
-                    $id = (int) $id;
-                    $primary_key = $this->getPrimaryKeyFieldName();
-                    $this->db->delete(\'{table}\', array("$primary_key" => xss_clean($id)));
-                }
-            }';
+    public function delete($id) {
+        $id = (int) $id;
+        $primary_key = $this->getPrimaryKeyFieldName();
+        $this->db->delete(\'{table}\', array("$primary_key" => xss_clean($id)));
+    }
+}';
     }
     /**
      * View Templates
@@ -1857,132 +1857,130 @@ class SparkPlug
     /* LIST */
     function _list_view()
     {
-        return
-            '<h1>List ' . (string)$this->table . '</h1>
-            <p>
-            <?php
-            if ($this->session->flashdata("msg") != ""):
-            ?>
-            <div class="alert alert-success has-error has-feedback">
-            <?= $this->session->flashdata("msg") ?>
-            <span class="alert glyphicon glyphicon-ok"></span>
-            </div>
-            <?php endif; ?>
-            </p>
-            <div class="table-responsive">
-            <table class="table table table-bordered table-striped table-hover">
-                <tr>
-                <?
-                if(count($results) != 0) :
-                foreach(array_keys($results[0]) as $key): ?>
-                    <th><?= ucfirst($key) ?></th>
-                <? endforeach;
-                endif;
-                ?>
-                <th>View</th>
-                <th>Edit</th>
-                <th>Delete</th>
-                </tr>
-           <?
-           if(count($results) != 0) :
-           foreach ($results as $row):
-                ?>
-                <tr>
-                <? foreach ($row as $field_value): ?>
-                    <td><?= $field_value ?></td>
-                <? endforeach; ?>
-                    <td> <?= anchor("{controller}/show/".$row[\'id\'], \'View\', "class=\'btn btn-sm btn-success\'") ?></td>
-                    <td> <?= anchor("{controller}/edit/".$row[\'id\'], \'Edit\', "class=\'btn btn-sm btn-warning\'") ?></td>
-                    <td> <?= anchor("{controller}/delete/".$row[\'id\'], \'Delete\', "class=\'btn btn-sm btn-danger\'") ?></td>
-                </tr>
-            <? endforeach;
-            endif;
-            ?>
-            </table>
-            <br />
-                <?= $this->pagination->create_links();?>
-                <br />
-            </div><br />
-            <div class="col-lg-4 col-md-4 col-sm-12">
-            <?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-default btn-block\'") ?>
-            </div>
-            ';
+return
+'<h1>List ' . (string)$this->table . '</h1>
+<p>
+<?php
+if ($this->session->flashdata("msg") != ""):
+?>
+<div class="alert alert-success has-error has-feedback">
+<?= $this->session->flashdata("msg") ?>
+<span class="alert glyphicon glyphicon-ok"></span>
+</div>
+<?php endif; ?>
+</p>
+<div class="table-responsive">
+<table class="table table table-bordered table-striped table-hover">
+    <tr>
+    <?
+    if(count($results) != 0) :
+    foreach(array_keys($results[0]) as $key): ?>
+        <th><?= ucfirst($key) ?></th>
+    <? endforeach;
+    endif;
+    ?>
+    <th>View</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    </tr>
+<?
+if(count($results) != 0) :
+foreach ($results as $row):
+    ?>
+    <tr>
+    <? foreach ($row as $field_value): ?>
+        <td><?= $field_value ?></td>
+    <? endforeach; ?>
+        <td> <?= anchor("{controller}/show/".$row[\'id\'], \'View\', "class=\'btn btn-sm btn-success\'") ?></td>
+        <td> <?= anchor("{controller}/edit/".$row[\'id\'], \'Edit\', "class=\'btn btn-sm btn-warning\'") ?></td>
+        <td> <?= anchor("{controller}/delete/".$row[\'id\'], \'Delete\', "class=\'btn btn-sm btn-danger\'") ?></td>
+    </tr>
+<? endforeach;
+endif;
+?>
+</table>
+<br />
+    <?= $this->pagination->create_links();?>
+    <br />
+</div><br />
+<div class="col-lg-4 col-md-4 col-sm-12">
+<?= anchor("{controller}/new_entry", "New", "class=\'btn btn-lg btn-default btn-block\'") ?>
+</div>
+';
     }
 
     /* SHOW */
     function _show_view()
     {
-        return
-            '<h1>Show ' . (string)$this->table . '</h1>
-            <? foreach ($result[0] as $field_name => $field_value): ?>
-            <p>
-                <b><?= ucfirst($field_name) ?>:</b> <?= $field_value ?>
-            </p>
-            <? endforeach; ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
+return
+'<h1>Show ' . (string)$this->table . '</h1>
+<? foreach ($result[0] as $field_name => $field_value): ?>
+<p>
+    <b><?= ucfirst($field_name) ?>:</b> <?= $field_value ?>
+</p>
+<? endforeach; ?>
+<?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
     /* EDIT */
     function _edit_view()
     {
+return
+'<h1>Edit ' . (string)$this->table . '</h1>
+<? if (validation_errors() != ""): ?>
+    <div class="alert alert-danger has-error has-feedback">
+        <span class="alert glyphicon glyphicon-warning-sign"></span>
+        <?php
+        if ($this->session->flashdata("msg") != ""):
+            ?>
 
-        return
-            '<h1>Edit ' . (string)$this->table . '</h1>
-            <? if (validation_errors() != ""): ?>
-                <div class="alert alert-danger has-error has-feedback">
-                    <span class="alert glyphicon glyphicon-warning-sign"></span>
-                    <?php
-                    if ($this->session->flashdata("msg") != ""):
-                        ?>
-
-                        <div style="display:block;float: left;width:60%">
-                            <h3><?= $this->session->flashdata("msg") ?></h3>
-                        </div>
-                    <?php endif; ?>
-                    <div style="display:block;float: left;width:60%">
-                        <?= validation_errors(); ?>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            <?php endif; ?>
-            <?= form_open("{controller}/update/".$result["id"],"formnovalidate=formnovalidate") ?>
-            {form_fields_update}
-            <p>
-                <?= form_submit(\'submit\', \'Update\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
-            </p>
-            <?= form_close() ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
+            <div style="display:block;float: left;width:60%">
+                <h3><?= $this->session->flashdata("msg") ?></h3>
+            </div>
+        <?php endif; ?>
+        <div style="display:block;float: left;width:60%">
+            <?= validation_errors(); ?>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+<?php endif; ?>
+<?= form_open("{controller}/update/".$result["id"],"formnovalidate=formnovalidate") ?>
+{form_fields_update}
+<p>
+    <?= form_submit(\'submit\', \'Update\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
+</p>
+<?= form_close() ?>
+<?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
     }
 
     /* NEW */
     function _new_view()
     {
-        return
-            '<h1>New ' . (string)$this->table . '</h1>
-             <? if (validation_errors() != ""): ?>
-                <div class="alert alert-danger has-error has-feedback">
-                    <span class="alert glyphicon glyphicon-warning-sign"></span>
-                    <?php
-                    if ($this->session->flashdata("msg") != ""):
-                        ?>
+return
+'<h1>New ' . (string)$this->table . '</h1>
+ <? if (validation_errors() != ""): ?>
+    <div class="alert alert-danger has-error has-feedback">
+        <span class="alert glyphicon glyphicon-warning-sign"></span>
+        <?php
+        if ($this->session->flashdata("msg") != ""):
+            ?>
 
-                        <div style="display:block;float: left;width:60%">
-                            <h3><?= $this->session->flashdata("msg") ?></h3>
-                        </div>
-                    <?php endif; ?>
-                    <div style="display:block;float: left;width:60%">
-                        <?= validation_errors(); ?>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            <?php endif; ?>
-            <?= form_open(\'{controller}/create\',"formnovalidate") ?>
-            {form_fields_create}
-            <p>
-                <?= form_submit(\'submit\', \'Create\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
-            </p>
-            <?= form_close() ?>
-            <?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
-    }
-
+            <div style="display:block;float: left;width:60%">
+                <h3><?= $this->session->flashdata("msg") ?></h3>
+            </div>
+        <?php endif; ?>
+        <div style="display:block;float: left;width:60%">
+            <?= validation_errors(); ?>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+<?php endif; ?>
+<?= form_open(\'{controller}/create\',"formnovalidate") ?>
+{form_fields_create}
+<p>
+    <?= form_submit(\'submit\', \'Create\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
+</p>
+<?= form_close() ?>
+<?= anchor("{controller}/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'") ?>';
+}
 }
