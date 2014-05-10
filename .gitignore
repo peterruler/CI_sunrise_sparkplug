@@ -12,7 +12,7 @@ ehthumbs.db
 Thumbs.db
 .dropbox
 vendor
-conmposer.phar
+composer.phar
 #ignore all files
 application/controllers/*
 #but not
