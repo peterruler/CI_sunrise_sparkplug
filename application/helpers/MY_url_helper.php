@@ -44,7 +44,7 @@ function is_active($input_params = "")
    // direct matching, faster than looping.
    if ($uri_string == $input_params)
       return true;
-      
+
    $uri_params = preg_split("/\//", $uri_string);
    $input_params = preg_split("/\//", $input_params);
 

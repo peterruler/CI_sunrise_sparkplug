@@ -1567,23 +1567,27 @@ class {ucf_controller} extends CI_Controller {
 
         $config[\'next_link\'] = \'&gt;\';
         $config[\'prev_link\'] = \'&lt;\';
+        //@todo search
+        $segments_array = $this->uri->segment_array();//@change
 
-        $url_string =xss_clean($this->uri->uri_string());
-        $segments = explode("/",$url_string);
-        $segments_length = count($segments);
-        switch ($segments_length) {
-            case 4:
-                $offset = xss_clean($this->uri->segment(4));
-                break;
+        $filter_by = false;//@change
+        $filter_value = false;//@change
+        $direction = false;//@change
+        switch ($this->uri->total_segments()) {
             case 3:
-                $offset = xss_clean($this->uri->segment(3));
+            case 4:
+                $direction = xss_clean($this->input->post(\'direction\',true));//@change
+                $filter_by= xss_clean($this->input->post(\'filter_by\',true));//@change
+                $filter_value = xss_clean($this->input->post(\'filter_value\',true));//@change
+                $offset = xss_clean($segments_array[2]);
                 break;
             default:
                 $offset = 1;
                 break;
         }
         $this->pagination->initialize($config);
-        $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config["per_page"],$offset);
+        $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
+
         $index = 0;
         if(!isset($data["results"][0]["id"])) {
             foreach($data["results"] as $row) {
@@ -1592,6 +1596,7 @@ class {ucf_controller} extends CI_Controller {
                 $index++;
             }
         }
+        //@todo end search
         $this->load->view(\'header\');
         $this->load->view(\'{view_folder}/list\', $data);
         $this->load->view(\'footer\');
@@ -1811,8 +1816,15 @@ class {model_name} extends CI_Model {
         return $query->result_array();
     }
 
-    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1 ) {
+    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by, $filter_value, $direction ) {//@todo search
+
         $this->db->limit($limit_per_page, $offset_limit);
+        //@todo search
+        if( $filter_by!=false && $filter_value != false && $direction != false ) {
+            $this->db->like($filter_by, strtolower($filter_value));//@change
+            $this->db->order_by($filter_by, $direction);//@change
+        }
+        //@todo search end
         $query = $this->db->get(\'{table}\');
         return $query->result_array();
     }
@@ -1872,17 +1884,116 @@ if ($this->session->flashdata("msg") != ""):
 <div class="table-responsive">
 <table class="table table table-bordered table-striped table-hover">
     <tr>
-    <?
+    <?php
+    $options_select = array();
     if(count($results) != 0) :
-    foreach(array_keys($results[0]) as $key): ?>
+    foreach(array_keys($results[0]) as $key):
+        $options_select[$key] = ucfirst($key);//@todo search
+    ?>
         <th><?= ucfirst($key) ?></th>
-    <? endforeach;
+    <?php endforeach;
     endif;
     ?>
     <th>View</th>
     <th>Edit</th>
     <th>Delete</th>
     </tr>
+        <p>Apply a filter</p>
+    <?php
+    //@change foreach fields
+    $js = \'
+        this.onclick = function() {
+            document.searchForm.submit();
+        };
+    \';
+    $options = array(
+        \'name\'=> \'searchForm\',
+         \'formnovalidate\'=>\'formnovalidate\'
+         );
+    echo form_open(\'jobs/show_list/10/filter\',$options);
+    ?>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+    <p>
+        <?php
+            echo form_dropdown(\'filter_by\', $options_select, "", \'class="form-control"\');
+        ?>
+    </p>
+        </div>
+    <div class="col-lg-2 col-md-2 col-sm-12">
+    <p>
+    <?php
+    //@todo search
+    $options_search_field = array(
+        \'name\'=>\'filter_value\',
+        \'id\'=>\'filter_value\',
+        \'value\'=> xss_clean($this->input->post(\'filter_value\')),
+        \'maxlength\'=>20,
+        \'size\'=>50,
+        \'style\'=>\'width:100%\',
+        \'class\'=>\'form-control\',
+        \'placeholder\'=>\'filter_value\'
+    );
+    echo form_input($options_search_field);
+    ?>
+    </p>
+        </div>
+    <p>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+    <div class=\'radio\'>
+        <label for=\'direction01\'>
+        <?php
+        //@todo change
+        $options_radio_direction01 = array(
+            \'name\'=>\'direction\',
+            \'id\' =>\'direction01\',
+            \'value\'=>\'ASC\',
+            \'checked\'=>true,
+            \'style\' =>\'margin-right:0px;\'
+        );
+            echo form_radio($options_radio_direction01);
+        ?>
+        order asc.
+        </label>
+        </div>
+        </div>
+
+
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+    <div class=\'radio\'>
+        <label for="direction02">
+    <?php
+    //@todo change
+        $options_radio_direction02 = array(
+            \'name\'=>\'direction\',
+            \'id\' =>\'direction02\',
+            \'value\' => \'DESC\',
+            \'checked\' => false,
+            \'style\'=>\'margin-right:0px;\'
+        );
+    echo form_radio($options_radio_direction02);
+    ?>
+            order desc.
+        </label>
+        </div>
+        </div>
+    <p>
+        <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
+        <?php
+            echo form_submit(\'submit\', \'Search\', "formnovalidate  class=\'btn btn-md btn-default btn-block\'");
+        ?>
+        </div>
+    </p>
+    <p>
+        <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
+    <?php
+       echo form_submit(\'reset\', \'Reset search\',\'formnovalidate="formnovalidate", id="reset" class="btn btn-md btn-default btn-block"\');
+    ?>
+        </div>
+    </p>
+    <?php
+    form_close();
+    //@todo end search
+?>
 <?
 if(count($results) != 0) :
 foreach ($results as $row):

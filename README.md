@@ -1,16 +1,16 @@
 # Codeigniter crud/mvc generation
 
 A changed version of the ci sunrise  (Codeigniter and twitter bootstrap 3)
-and a changed version of the sparkplug rails inspired crud scaffolding.
+and a changed version of the sparkplug, rails inspired crud scaffolding.
 
 
 ## DEPENDENCIES
 * nodejs.org win/mac installer, [nodejs server](http://nodejs.org)
 * run npm init
 * run npm install
-* run npm install bower --save-dev
-* grunt: npm install grunt  --save-dev
-* grunt: npm install grunt-cli  --save-dev
+* run npm install -g bower --save-dev
+* grunt: npm install -g grunt  --save-dev
+* grunt: npm install -g grunt-cli  --save-dev
 * or install with the sunrise script via ../shell.sh, to get grunt and bower installed
 * compile the webpage via 'grunt' command
 
@@ -52,7 +52,7 @@ For the usage use of the generator see the original page:
 ## copyright to the original creators
 
 * see [sparkplug src on google code](https://code.google.com/p/sparkplug/)
-* see [CI_sunrise, ready to test installation src](https://github.com/sjlu/CodeIgniter-Sunrise)
+* see [CI_sunrise, installation src](https://github.com/sjlu/CodeIgniter-Sunrise)
 * see [Codeigniter on github, dev version](https://github.com/EllisLab/CodeIgniter/)
 
 ##For writing unittests
