@@ -359,24 +359,29 @@ class SparkPlug
 
     function _insertMarkup($field)
     {
-        $form_markup = '';
-        $form_markup .= "\n\t";
+$form_markup = '<?php';
+$form_markup .= '\n\t';
         if ($field->primary_key) {
-            $form_markup .= form_hidden($field->name, "");
-            $form_markup .= "\n\t";
+$form_markup .= 'echo form_hidden('.$field->name.', \'\')';
+$form_markup .= '\n\t';
         } else {
             if ($field->type != 'boolean') {
-                $form_markup .= "\n\t<p>\n";
-                $form_markup .= '?><label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
-                $form_markup .= "<br/>\n\t";
+$form_markup .= '\n\t';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
+$form_markup .= '\n\t';
+$form_markup .='?><br/><?php';
             } else if ($field->type == 'boolean') {
-                $form_markup .= "\n\t<p>\n";
-                $form_markup .= '<label for="' . $field->name . '">' . ucfirst($field->name) . '</label>';
-                $form_markup .= "\n\t<p>\n";
-                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("true") . '/</label>';
-                $form_markup .= "\n\t<p>\n";
-                $form_markup .= '<label for="' . $field->name . '">' . ucfirst("false") . '</label>';
-                $form_markup .= "<br/>\n\t";
+$form_markup .= '\n\t';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
+$form_markup .= '\n\t';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('true') . '\')';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('false') . '\')';
+$form_markup .= '\n\t';
+$form_markup .='?><br/><?php';
             }
 
 
