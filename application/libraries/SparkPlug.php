@@ -414,12 +414,12 @@ $form_markup .= '\n\t';
                     switch ($field->primary_key) :
                         case 'id':
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                         default:
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                     endswitch;
@@ -442,7 +442,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                         case 'url':
@@ -460,7 +460,7 @@ $form_markup .= '\n\t';
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                         case 'password':
@@ -478,7 +478,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
 
 $form_markup .= '//reenter password';
@@ -496,7 +496,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                         case 'phone':
@@ -514,7 +514,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                         default:
@@ -532,7 +532,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                             break;
                     endswitch;
@@ -569,7 +569,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
 
                     break;
@@ -586,7 +586,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_radio(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_radio($options);';
 $form_markup .= '\n\t';
 
 $form_markup .= '\n\t';
@@ -600,7 +600,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_radio(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_radio($options);';
 $form_markup .= '\n\t';
 
                     break;
@@ -619,7 +619,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input($options);';
 $form_markup .= '\n\t';
                     break;
             }
@@ -630,40 +630,40 @@ $form_markup .= '\n\t';
     function _editMarkup($field, $data)
     {
 
-        $form_markup = '<?php';
-        $form_markup .= '\n\t';
-        $form_markup = '$size = 50;';
-        $form_markup .= '\n\t';
-        $form_markup = '$style = \'width:100%;\'';
-        $form_markup .= '\n\t';
-        $form_markup = '$css-class = \'form-control\'';
-        $form_markup .= '\n\t';
-        $form_markup .= '\n\t';
-        $form_markup = '$cols = $size';
-        $form_markup .= '\n\t';
-        $form_markup = '$rows = 20';
-        $form_markup .= '\n\t';
+$form_markup = '<?php';
+$form_markup .= '\n\t';
+$form_markup = '$size = 50;';
+$form_markup .= '\n\t';
+$form_markup = '$style = \'width:100%;\'';
+$form_markup .= '\n\t';
+$form_markup = '$css-class = \'form-control\'';
+$form_markup .= '\n\t';
+$form_markup .= '\n\t';
+$form_markup = '$cols = $size';
+$form_markup .= '\n\t';
+$form_markup = '$rows = 20';
+$form_markup .= '\n\t';
         if ($field->primary_key) {
-            $form_markup .= 'echo form_hidden('.$field->name.', \'\')';
-            $form_markup .= '\n\t';
+$form_markup .= 'echo form_hidden('.$field->name.', \'\')';
+$form_markup .= '\n\t';
         } else {
             if ($field->type != 'boolean') {
-                $form_markup .= '\n\t';
-                $form_markup .='?><p><?php';
-                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
-                $form_markup .= '\n\t';
-                $form_markup .='?><br/><?php';
+$form_markup .= '\n\t';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
+$form_markup .= '\n\t';
+$form_markup .='?><br/><?php';
             } else if ($field->type == 'boolean') {
-                $form_markup .= '\n\t';
-                $form_markup .='?><p><?php';
-                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
-                $form_markup .= '\n\t';
-                $form_markup .='?><p><?php';
-                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('true') . '\')';
-                $form_markup .='?><p><?php';
-                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('false') . '\')';
-                $form_markup .= '\n\t';
-                $form_markup .='?><br/><?php';
+$form_markup .= '\n\t';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
+$form_markup .= '\n\t';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('true') . '\')';
+$form_markup .='?><p><?php';
+$form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('false') . '\')';
+$form_markup .= '\n\t';
+$form_markup .='?><br/><?php';
             }
 
             switch ($field->type) {
@@ -684,14 +684,14 @@ $form_markup .= '\n\t';
                     $form_markup .= '\n\t';
                     switch ($field->primary_key) :
                         case 'id':
-                            $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
-                            $form_markup .= '\n\t';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= '\n\t';
                             break;
                         default:
-                            $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
-                            $form_markup .= '\n\t';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= '\n\t';
                             break;
                     endswitch;
                     break;
@@ -699,8 +699,8 @@ $form_markup .= '\n\t';
                     $name = strtolower($field->name);
                     switch ($name) :
                         case 'email':
-                            $form_markup .= '\n\t';
-                            $form_markup .= '$options = array(
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
 \'value\' => set_value(\''.$field->name.'\',\'\',),
