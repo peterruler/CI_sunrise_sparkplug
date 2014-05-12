@@ -1174,7 +1174,7 @@ $form_markup .= "\n\t";
 $form_markup .= '$hidden = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', \'echo $result[\''.$field->name.'\']\'))';
+\'value\' => set_value(\''.$field->name.'\',xss_clean($this->input->post(\''.$field->name.'\')))';
 $form_markup .= "\n\t";
 $form_markup .= 'echo form_hidden($hidden);';
 $form_markup .= "\n\t";
@@ -1404,7 +1404,7 @@ $form_markup .= 'echo form_input(  $options);';
 $form_markup .= '$hidden = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', \'echo $result[\''.$field->name.'\']\'))';
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']))';
 $form_markup .= "\n\t";
 $form_markup .= 'echo form_hidden($hidden);';
 $form_markup .= "\n\t";
@@ -1427,7 +1427,7 @@ $form_markup .= "\n\t";
                     $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', \'echo $result[\''.$field->name.'\']\'),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
