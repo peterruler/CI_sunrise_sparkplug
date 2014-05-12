@@ -421,88 +421,110 @@ $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
                     $name = strtolower($field->name);
                     switch ($name) :
                         case 'email':
-                            $options = array(
-                                "name" => $field->name,
-                                "id" => $field->name,
-                                "value" => set_value($field->name,""),
-                                "maxlength" => "'" . $field->max_length . "'",
-                                "size" => "50",
-                                "style" => "width:100%",
-                                "class" => "form-control",
-                                "type" => "email",
-                                "placeholder" => "'" . $field->name . "'",
-                                "required" => "required");
-                            $form_markup .= form_input("'" . $field->name . "'", $options);
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'type\' => \'email\',
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
                             break;
                         case 'url':
-                            $options = array(
-                                "name" => $field->name,
-                                "id" => $field->name,
-                                "value" => set_value($field->name,""),
-                                "maxlength" => "'" . $field->max_length . "'",
-                                "size" => "50",
-                                "style" => "width:100%",
-                                "class" => "form-control",
-                                "type" => "url",
-                                "placeholder" => "'" . $field->name . "'",
-                                "required" => "required");
-                            $form_markup .= form_input("'" . $field->name . "'", $options);
+                            $form_markup .= '\n\t';
+                            $form_markup .= '$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'type\' => \'url\',
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
                             break;
                         case 'password':
-                            $options = array(
-                                "name" => $field->name,
-                                "id" => $field->name,
-                                "value" => set_value($field->name,""),
-                                "maxlength" => "'" . $field->max_length . "'",
-                                "size" => "50",
-                                "style" => "width:100%",
-                                "class" => "form-control",
-                                "type" => "password",
-                                "placeholder" => "'" . $field->name . "'",
-                                "required" => "required");
-                            $form_markup .= form_password("'" . $field->name . "'", $options);
-                            $form_markup .= "\n\t";
-                            $options = array(
-                                "name" => "passconf",
-                                "id" => "passconf",
-                                "value" => set_value($field->name,""),
-                                "maxlength" => "'" . $field->max_length . "'",
-                                "size" => "50",
-                                "style" => "width:100%",
-                                "class" => "form-control",
-                                "type" => "password",
-                                "placeholder" => "passconf",
-                                "required" => "required");
-                            $form_markup .= form_password("passconf", $options);
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'type\' => \'password\',
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= "\n\t";
+
+$form_markup .= '//reenter password';
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
+\'name\' => \'passconf\',
+\'id\' => \'passconf\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'type\' => \'password\',
+\'placeholder\' => \'passconf\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
 
                             break;
                         case 'phone':
-                            $options = array(
-                                "name" => $field->name,
-                                "id" => $field->name,
-                                "value" => set_value($field->name,""),
-                                "maxlength" => "'" . $field->max_length . "'",
-                                "size" => "50",
-                                "style" => "width:100%",
-                                "class" => "form-control",
-                                "type" => "tel",
-                                "placeholder" => "'" . $field->name . "'",
-                                "required" => "required");
-                            $form_markup .= form_input("'" . $field->name . "'", $options);
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'type\' => \'tel\',
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= "\n\t";
                             break;
                         default:
-                            $options = array(
-                                "name" => $field->name,
-                                "id" => $field->name,
-                                "value" => set_value($field->name,""),
-                                "maxlength" => "'" . $field->max_length . "'",
-                                "size" => "50",
-                                "style" => "width:100%",
-                                "class" => "form-control",
-                                "type" => "text",
-                                "placeholder" => "'" . $field->name . "'",
-                                "required" => "required");
-                            $form_markup .= form_input("'" . $field->name . "'", $options);
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'type\' => \'text\',
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= "\n\t";
                             break;
                     endswitch;
                     break;
