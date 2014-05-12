@@ -1404,7 +1404,7 @@ $form_markup .= 'echo form_input(  $options);';
 $form_markup .= '$hidden = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"));';
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']));';
 $form_markup .= "\n\t";
 $form_markup .= 'echo form_hidden($hidden);';
 $form_markup .= "\n\t";
@@ -1427,7 +1427,7 @@ $form_markup .= "\n\t";
                     $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
@@ -1453,7 +1453,7 @@ $form_markup .= "\n\t";
                             $form_markup .='$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
@@ -1468,7 +1468,7 @@ $form_markup .= "\n\t";
 $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
@@ -1484,7 +1484,7 @@ break;
                             $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size" => \'50\',
 \'style" => \'width:100%\',
@@ -1497,7 +1497,7 @@ break;
 $options = array(
 \'name\' => \'passconf\',
 \'id\' => \'passconf\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
@@ -1511,7 +1511,7 @@ $options = array(
                             $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
@@ -1525,7 +1525,7 @@ $options = array(
                             $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
@@ -1543,7 +1543,7 @@ $options = array(
                     $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'cols\' => 50,
 \'row\' => 20,
 \'style\' => \'width:100%\',
@@ -1557,7 +1557,7 @@ $options = array(
                     $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
 \'class\' => \'form-control\',
@@ -1570,7 +1570,7 @@ $options = array(
                     $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
 \'class\' => \'form-control\',
@@ -1585,7 +1585,7 @@ $options = array(
                     $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
 \'id\' => \''.$field->name.'\',
-\'value\' => set_value(\''.$field->name.'\', "$result[\''.$field->name.'\']"),
+\'value\' => set_value(\''.$field->name.'\', $result[\''.$field->name.'\']),
 \'maxlength\' => '.$field->max_length.',
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
