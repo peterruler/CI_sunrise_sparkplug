@@ -1172,22 +1172,20 @@ $form_markup .= "\n\t";
 
         if ($field->primary_key) {
 $form_markup .= 'echo form_hidden(\''.$field->name.'\', \'\');';
- $form_markup .= "\n\t";
+$form_markup .= "\n\t";
         } else {
             if ($field->type != 'boolean') {
 $form_markup .= "\n\t";
 $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\', \'' . $field->name . '\');';
-$form_markup .= '?></p><br/>';
-$form_markup .= "<?php\n\t";
+$form_markup .= "\n\t";
             } else if ($field->type == 'boolean') {
-$form_markup .= '\n\t<p>\n';
+$form_markup .= "\n\t";
 $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\', \'' . $field->name . '\');';
-$form_markup .= '<\n\t<p>\n';
+$form_markup .= "\n\t";
 $form_markup .= 'echo form_label(\'' . ucfirst('true') . '\', \'' . $field->name . '\');';
-$form_markup .= '\n\t</p><p>\n';
+$form_markup .= "\n\t";
 $form_markup .= 'echo form_label(\'' . ucfirst('false') . '\', \'' . $field->name . '\');';
-$form_markup .= '?></p>';
-$form_markup .= "<?php\n\t";
+$form_markup .= "\n\t";
 }
             switch ($field->type) {
                 case 'int':
