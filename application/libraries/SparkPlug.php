@@ -367,6 +367,11 @@ $form_markup = '$style = \'width:100%;\'';
 $form_markup .= '\n\t';
 $form_markup = '$css-class = \'form-control\'';
 $form_markup .= '\n\t';
+$form_markup .= '\n\t';
+$form_markup = '$cols = $size';
+$form_markup .= '\n\t';
+$form_markup = '$rows = 20';
+$form_markup .= '\n\t';
         if ($field->primary_key) {
 $form_markup .= 'echo form_hidden('.$field->name.', \'\')';
 $form_markup .= '\n\t';
@@ -405,15 +410,17 @@ $form_markup .='$options = array(
 \'placeholder\' => \''.$field->name.'\',
 \'required\' => \'required\');
 ';
-
+$form_markup .= '\n\t';
                     switch ($field->primary_key) :
                         case 'id':
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= '\n\t';
                             break;
                         default:
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= '\n\t';
                             break;
                     endswitch;
                     break;
@@ -436,6 +443,7 @@ $form_markup .= '$options = array(
 ';
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= '\n\t';
                             break;
                         case 'url':
                             $form_markup .= '\n\t';
@@ -453,6 +461,7 @@ $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
 ';
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= '\n\t';
                             break;
                         case 'password':
 $form_markup .= '\n\t';
@@ -470,7 +479,7 @@ $form_markup .= '$options = array(
 ';
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
-$form_markup .= "\n\t";
+$form_markup .= '\n\t';
 
 $form_markup .= '//reenter password';
 $form_markup .= '\n\t';
@@ -488,7 +497,7 @@ $form_markup .= '$options = array(
 ';
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
-
+$form_markup .= '\n\t';
                             break;
                         case 'phone':
 $form_markup .= '\n\t';
@@ -506,7 +515,7 @@ $form_markup .= '$options = array(
 ';
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
-$form_markup .= "\n\t";
+$form_markup .= '\n\t';
                             break;
                         default:
 $form_markup .= '\n\t';
@@ -524,24 +533,26 @@ $form_markup .= '$options = array(
 ';
 $form_markup .= '\n\t';
 $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
-$form_markup .= "\n\t";
+$form_markup .= '\n\t';
                             break;
                     endswitch;
                     break;
                 case 'text':
                 case 'blob':
-                    $options = array(
-                        "name" => $field->name,
-                        "id" => $field->name,
-                        "value" => set_value($field->name,""),
-                        "maxlength" => "'" . $field->max_length . "'",
-                        "cols" => 50,
-                        "row" => 20,
-                        "style" => "width:100%",
-                        "class" => "form-control",
-                        "placeholder" => "'" . $field->name . "'",
-                        "required" => "required");
-                    $form_markup .= form_textarea("'" . $field->name . "'", $options);
+$form_markup .= '\n\t';
+$form_markup .= '$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'cols\' => $cols,
+\'row\' => $rows,
+\'style\' => "$style",
+\'class\' => "$css-class",
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_textarea($options);';
                     break;
                 case 'datetime' :
                     $options = array(
