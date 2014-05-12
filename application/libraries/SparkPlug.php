@@ -361,6 +361,12 @@ class SparkPlug
     {
 $form_markup = '<?php';
 $form_markup .= '\n\t';
+$form_markup = '$size = 50;';
+$form_markup .= '\n\t';
+$form_markup = '$style = \'width:100%;\'';
+$form_markup .= '\n\t';
+$form_markup = '$css-class = \'form-control\'';
+$form_markup .= '\n\t';
         if ($field->primary_key) {
 $form_markup .= 'echo form_hidden('.$field->name.', \'\')';
 $form_markup .= '\n\t';
@@ -392,9 +398,9 @@ $form_markup .='$options = array(
 \'id\' => \''.$field->name.'\',
 \'value\' => set_value(\''.$field->name.'\'),
 \'maxlength\' => \'' . $field->max_length . '\',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
+\'size\' => "$size",
+\'style\' => "$style",
+\'class\' => "$css-class",
 \'type\' => \'number\',
 \'placeholder\' => \''.$field->name.'\',
 \'required\' => \'required\');
