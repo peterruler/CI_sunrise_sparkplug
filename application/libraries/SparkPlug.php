@@ -384,27 +384,30 @@ $form_markup .= '\n\t';
 $form_markup .='?><br/><?php';
             }
 
-
             switch ($field->type) {
                 case 'int':
-                    $options = array(
-                        "name" => $field->name,
-                        "id" => $field->name,
-                        "value" => set_value($field->name,""),
-                        "maxlength" => "'" . $field->max_length . "'",
-                        "size" => "50",
-                        "style" => "width:100%",
-                        "class" => "form-control",
-                        "type" => "number",
-                        "placeholder" => "'" . $field->name . "'",
-                        "required" => "required");
+$form_markup .= '\n\t';
+$form_markup .='$options = array(
+\'name\' => \''.$field->name.'\',
+\'id\' => \''.$field->name.'\',
+\'value\' => set_value(\''.$field->name.'\'),
+\'maxlength\' => \'' . $field->max_length . '\',
+\'size\' => \'50\',
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'type\' => \'number\',
+\'placeholder\' => \''.$field->name.'\',
+\'required\' => \'required\');
+';
 
                     switch ($field->primary_key) :
                         case 'id':
-                            $form_markup .= form_input("'" . $field->name . "'", $options);
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
                             break;
                         default:
-                            $form_markup .= form_input("'" . $field->name . "'", $options);
+$form_markup .= '\n\t';
+$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
                             break;
                     endswitch;
                     break;
