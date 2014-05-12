@@ -685,12 +685,12 @@ $form_markup .='?><br/><?php';
                     switch ($field->primary_key) :
                         case 'id':
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input( $options);';
 $form_markup .= '\n\t';
                             break;
                         default:
 $form_markup .= '\n\t';
-$form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+$form_markup .= 'echo form_input( $options);';
 $form_markup .= '\n\t';
                             break;
                     endswitch;
@@ -713,7 +713,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
                             $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+                            $form_markup .= 'echo form_input( $options);';
                             $form_markup .= '\n\t';
                             break;
                         case 'url':
@@ -731,7 +731,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
                             $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+                            $form_markup .= 'echo form_input( $options);';
                             $form_markup .= '\n\t';
                             break;
                         case 'password':
@@ -749,7 +749,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
                             $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+                            $form_markup .= 'echo form_input( $options);';
                             $form_markup .= '\n\t';
 
                             $form_markup .= '//reenter password';
@@ -767,7 +767,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
                             $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+                            $form_markup .= 'echo form_input( $options);';
                             $form_markup .= '\n\t';
                             break;
                         case 'phone':
@@ -785,7 +785,7 @@ $form_markup .= '$options = array(
 \'required\' => \'required\');
 ';
                             $form_markup .= '\n\t';
-                            $form_markup .= 'echo form_input(\'' . $field->name  .'\', $options);';
+                            $form_markup .= 'echo form_input( $options);';
                             $form_markup .= '\n\t';
                             break;
                         default:
@@ -1205,10 +1205,10 @@ $form_markup .= '$options = array(
 ';
                     switch ($field->primary_key) :
                         case 'id':
-$form_markup .= 'echo form_input( \''.$field->name.'\'. $options);';
+$form_markup .= 'echo form_input( $options );';
                             break;
                         default:
-$form_markup .= 'echo form_input( \''.$field->name.'\', $options);';
+$form_markup .= 'echo form_input(  $options );';
                             break;
                     endswitch;
                     break;
@@ -1229,7 +1229,7 @@ $form_markup .='$options = array(
 \'placeholder\' => \''.$field->name.'\',
 \'required\' => \'required\');
 ';
-$form_markup .= 'echo form_input(  $options);';
+$form_markup .= 'echo form_input( $options );';
                             break;
                         case 'url':
 $form_markup .= '$options = array(
@@ -1246,7 +1246,7 @@ $form_markup .= '$options = array(
 $form_markup .= form_input(  $options);
 break;
 ';
-$form_markup .= 'echo form_input(  $options);';
+$form_markup .= 'echo form_input( $options );';
                         case 'password':
 $form_markup .= '$options = array(
 \'name\' => \''.$field->name.'\',
@@ -1412,10 +1412,10 @@ $form_markup .= '$options = array(
 ';
                     switch ($field->primary_key) :
                         case 'id':
-                            $form_markup .= 'echo form_input( \''.$field->name.'\'. $options);';
+                            $form_markup .= 'echo form_input(  $options);';
                             break;
                         default:
-                            $form_markup .= 'echo form_input( \''.$field->name.'\', $options);';
+                            $form_markup .= 'echo form_input(  $options);';
                             break;
                     endswitch;
                     break;
