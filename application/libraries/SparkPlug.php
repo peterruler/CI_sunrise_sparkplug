@@ -2044,7 +2044,7 @@ class {ucf_controller} extends CI_Controller {
                 \'name\'=> \'searchForm\',
                  \'formnovalidate\'=>\'formnovalidate\'
                  );
-            echo form_open(\'jobs/show_list/10/filter\',$options);
+            echo form_open(\'{controller}/show_list/10/filter\',$options);
             ?>
             <div class=\'col-lg-2 col-md-2 col-sm-12\'>
             <p>
