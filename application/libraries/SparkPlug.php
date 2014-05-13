@@ -124,8 +124,8 @@ class SparkPlug
 
         /* Figure out the calling controller - that's the one we want to fix */
         $route =& load_class('Router');
-        $this->controller = $route->class."Controller";
-        $this->ucf_controller = ucfirst($route->class)."Controller";
+        $this->controller = $route->class;
+        $this->ucf_controller = ucfirst($route->class);
 
         $this->_generate(); //** FUNCTION FOUND BELOW (l.370) **//
     }
@@ -1680,7 +1680,7 @@ class {ucf_controller} extends CI_Controller {
 
     private $table = \'{model}\';
     public function index() {
-        redirect(\'{model}/show_list\');
+        redirect(\'{controller}/show_list\');
     }
     public function __construct() {
         parent::__construct();
@@ -1762,7 +1762,7 @@ class {ucf_controller} extends CI_Controller {
                     $this->load->view(\'{view_folder}/new\');
                     $this->load->view(\'footer\');
         } else {
-                    redirect(\'{model}/show_list\');
+                    redirect(\'{controller}/show_list\');
        }
     }
 
@@ -1777,7 +1777,7 @@ class {ucf_controller} extends CI_Controller {
             } else {
                 $this->{uc_model_name}->insert();
                 $this->session->set_flashdata(\'msg\', \'Entry Created\');
-                redirect(\'{view_folder}/show_list\');
+                redirect(\'{controller}/show_list\');
             }
     }
 
@@ -1798,14 +1798,14 @@ class {ucf_controller} extends CI_Controller {
                     $this->load->view(\'{view_folder}/edit\', $data);
                     $this->load->view(\'footer\');
         } else {
-                    redirect(\'{model}/show_list\');
+                    redirect(\'{controller}/show_list\');
         }
     }
 
     public function update() {
         {set_rules}
 
-        $id = (int) xss_clean($this->input-post(\'id\'));
+        $id = (int) xss_clean($this->input->post(\'id\'));
         if ($this->form_validation->run() == FALSE)
         {
             $res = $this->{uc_model_name}->get($id);
@@ -1820,7 +1820,7 @@ class {ucf_controller} extends CI_Controller {
         {
             $this->{uc_model_name}->update($id);
             $this->session->set_flashdata(\'msg\', \'Entry Updated\');
-            redirect(\'{view_folder}/show_list\');
+            redirect(\'{controller}/show_list\');
         }
     }
 
@@ -1975,7 +1975,7 @@ class {ucf_controller} extends CI_Controller {
             $primary_key = $this->getPrimaryKeyFieldName();
 
             $this->db->set($this);
-            $this->db->where( "$primary_key" ,$this->id);//@FIMXE sec? $this->$primary_key
+            $this->db->where( "$primary_key" ,$this->$primary_key);//@FIMXE sec? $this->$primary_key
             $this->db->update(\'{table}\', $this);
         }
 
