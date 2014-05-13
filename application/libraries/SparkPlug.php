@@ -66,7 +66,7 @@ class SparkPlug
         $segments_length = count($segments);
         if ($segments_length > 0) {
             try {
-                $table = xss_clean($this->CI->uri->segment(1));
+                $table = xss_clean($this->CI->uri->segment(3));
                 if ($table != '' || !empty($table)) {
                     return $table;
                 } else {
@@ -976,7 +976,7 @@ class SparkPlug
 
         /* Generate views for crud functions in subfolder */
 
-        $view_folder = APPPATH . 'views/' . strtolower($this->controller);
+        $view_folder = APPPATH . 'views/' . strtolower($this->model_name);
         $view_text = $this->_generate_views();
 
         $dir_created = @mkdir($view_folder);
@@ -991,7 +991,7 @@ class SparkPlug
 
         /* Create the controller to tie it all up */
 
-        $controller_path = APPPATH . 'controllers/' . $this->ucf_controller . '.php';
+        $controller_path = APPPATH . 'controllers/' . $this->controller . '.php';
         $controller_text = $this->_generate_controller();
         file_put_contents($controller_path, $controller_text);
         echo $controller_path . ' created<br/>';
@@ -1620,32 +1620,32 @@ break;
                 case "varchar" :
                     switch ($field->name) :
                         case "email" :
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                             break;
                         case "phone" :
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                             break;
                         case "password" :
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                             $rules .= '$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
                             break;
                         default:
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                             break;
                     endswitch;
                     break;
                 case "int" :
                     if ($field->primary_key) :
-                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->name.']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->name.']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                     else :
-                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                     endif;
                     break;
                 case "datetime" :
-                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n\r";
+                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n";
                     break;
                 case "text" :
-                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n\r";
+                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n";
                     break;
             endswitch;
         endforeach;
@@ -1802,9 +1802,10 @@ class {ucf_controller} extends CI_Controller {
         }
     }
 
-    public function update($id) {
+    public function update() {
         {set_rules}
 
+        $id = (int) xss_clean($this->input-post(\'id\'));
         if ($this->form_validation->run() == FALSE)
         {
             $res = $this->{uc_model_name}->get($id);
@@ -1817,7 +1818,6 @@ class {ucf_controller} extends CI_Controller {
         }
         else
         {
-            $post = $this->input->post();
             $this->{uc_model_name}->update($id);
             $this->session->set_flashdata(\'msg\', \'Entry Updated\');
             redirect(\'{view_folder}/show_list\');
@@ -2007,128 +2007,128 @@ class {ucf_controller} extends CI_Controller {
     {
         return
             '<h1>List ' . (string)$this->table . '</h1>
-<p>
-<?php
-if ($this->session->flashdata("msg") != ""):
-?>
-<div class="alert alert-success has-error has-feedback">
-<?= $this->session->flashdata("msg") ?>
-<span class="alert glyphicon glyphicon-ok"></span>
-</div>
-<?php endif; ?>
-</p>
-<div class="table-responsive">
-<table class="table table table-bordered table-striped table-hover">
-    <tr>
-    <?php
-    $options_select = array();
-    if(count($results) != 0) :
-    foreach(array_keys($results[0]) as $key):
-        $options_select[$key] = ucfirst($key);//@todo search
-    ?>
-        <th><?= ucfirst($key) ?></th>
-    <?php endforeach;
-    endif;
-    ?>
-    <th>View</th>
-    <th>Edit</th>
-    <th>Delete</th>
-    </tr>
-        <p>Apply a filter</p>
-    <?php
-    //@change foreach fields
-    $js = \'
-        this.onclick = function() {
-            document.searchForm.submit();
-        };
-    \';
-    $options = array(
-        \'name\'=> \'searchForm\',
-         \'formnovalidate\'=>\'formnovalidate\'
-         );
-    echo form_open(\'jobs/show_list/10/filter\',$options);
-    ?>
-    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
-    <p>
-        <?php
-            echo form_dropdown(\'filter_by\', $options_select, "", \'class="form-control"\');
-        ?>
-    </p>
-        </div>
-    <div class="col-lg-2 col-md-2 col-sm-12">
-    <p>
-    <?php
-    //@todo search
-    $options_search_field = array(
-        \'name\'=>\'filter_value\',
-        \'id\'=>\'filter_value\',
-        \'value\'=> xss_clean($this->input->post(\'filter_value\')),
-        \'maxlength\'=>20,
-        \'size\'=>50,
-        \'style\'=>\'width:100%\',
-        \'class\'=>\'form-control\',
-        \'placeholder\'=>\'filter_value\'
-    );
-    echo form_input($options_search_field);
-    ?>
-    </p>
-        </div>
-    <p>
-    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
-    <div class=\'radio\'>
-        <label for=\'direction01\'>
-        <?php
-        //@todo change
-        $options_radio_direction01 = array(
-            \'name\'=>\'direction\',
-            \'id\' =>\'direction01\',
-            \'value\'=>\'ASC\',
-            \'checked\'=>true,
-            \'style\' =>\'margin-right:0px;\'
-        );
-            echo form_radio($options_radio_direction01);
-        ?>
-        order asc.
-        </label>
-        </div>
-        </div>
+            <p>
+            <?php
+            if ($this->session->flashdata("msg") != ""):
+            ?>
+            <div class="alert alert-success has-error has-feedback">
+            <?= $this->session->flashdata("msg") ?>
+            <span class="alert glyphicon glyphicon-ok"></span>
+            </div>
+            <?php endif; ?>
+            </p>
+            <div class="table-responsive">
+            <table class="table table table-bordered table-striped table-hover">
+                <tr>
+            <?php
+            $options_select = array();
+            if(count($results) != 0) :
+            foreach(array_keys($results[0]) as $key):
+                $options_select[$key] = ucfirst($key);//@todo search
+            ?>
+                <th><?= ucfirst($key) ?></th>
+            <?php endforeach;
+            endif;
+            ?>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            </tr>
+                <p>Apply a filter</p>
+            <?php
+            //@change foreach fields
+            $js = \'
+                this.onclick = function() {
+                    document.searchForm.submit();
+                };
+            \';
+            $options = array(
+                \'name\'=> \'searchForm\',
+                 \'formnovalidate\'=>\'formnovalidate\'
+                 );
+            echo form_open(\'jobs/show_list/10/filter\',$options);
+            ?>
+            <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+            <p>
+                <?php
+                    echo form_dropdown(\'filter_by\', $options_select, "", \'class="form-control"\');
+                ?>
+            </p>
+                </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+            <p>
+            <?php
+            //@todo search
+            $options_search_field = array(
+                \'name\'=>\'filter_value\',
+                \'id\'=>\'filter_value\',
+                \'value\'=> xss_clean($this->input->post(\'filter_value\')),
+                \'maxlength\'=>20,
+                \'size\'=>50,
+                \'style\'=>\'width:100%\',
+                \'class\'=>\'form-control\',
+                \'placeholder\'=>\'filter_value\'
+            );
+            echo form_input($options_search_field);
+            ?>
+            </p>
+                </div>
+            <p>
+            <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+            <div class=\'radio\'>
+                <label for=\'direction01\'>
+                <?php
+                //@todo change
+                $options_radio_direction01 = array(
+                    \'name\'=>\'direction\',
+                    \'id\' =>\'direction01\',
+                    \'value\'=>\'ASC\',
+                    \'checked\'=>true,
+                    \'style\' =>\'margin-right:0px;\'
+                );
+                    echo form_radio($options_radio_direction01);
+                ?>
+                order asc.
+                </label>
+                </div>
+                </div>
 
 
-    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
-    <div class=\'radio\'>
-        <label for="direction02">
-    <?php
-    //@todo change
-        $options_radio_direction02 = array(
-            \'name\'=>\'direction\',
-            \'id\' =>\'direction02\',
-            \'value\' => \'DESC\',
-            \'checked\' => false,
-            \'style\'=>\'margin-right:0px;\'
-        );
-    echo form_radio($options_radio_direction02);
-    ?>
-            order desc.
-        </label>
-        </div>
-        </div>
-    <p>
-        <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
-        <?php
-            echo form_submit(\'submit\', \'Search\', "formnovalidate  class=\'btn btn-md btn-default btn-block\'");
-        ?>
-        </div>
-    </p>
-    <p>
-        <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
-    <?php
-       echo form_submit(\'reset\', \'Reset search\',\'formnovalidate="formnovalidate", id="reset" class="btn btn-md btn-default btn-block"\');
-    ?>
-        </div>
-    </p>
-    <?php
-    form_close();
-    //@todo end search
+            <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+            <div class=\'radio\'>
+                <label for="direction02">
+            <?php
+            //@todo change
+                $options_radio_direction02 = array(
+                    \'name\'=>\'direction\',
+                    \'id\' =>\'direction02\',
+                    \'value\' => \'DESC\',
+                    \'checked\' => false,
+                    \'style\'=>\'margin-right:0px;\'
+                );
+            echo form_radio($options_radio_direction02);
+            ?>
+                    order desc.
+                </label>
+                </div>
+                </div>
+            <p>
+                <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
+                <?php
+                    echo form_submit(\'submit\', \'Search\', "formnovalidate  class=\'btn btn-md btn-default btn-block\'");
+                ?>
+                </div>
+            </p>
+            <p>
+                <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
+            <?php
+               echo form_submit(\'reset\', \'Reset search\',\'formnovalidate="formnovalidate", id="reset" class="btn btn-md btn-default btn-block"\');
+            ?>
+                </div>
+            </p>
+            <?php
+            form_close();
+            //@todo end search
 ?>
 <?
 if(count($results) != 0) :
