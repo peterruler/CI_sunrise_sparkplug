@@ -1828,7 +1828,7 @@ class {ucf_controller} extends CI_Controller {
         $this->{uc_model_name}->delete($id);
 
         $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
-        redirect(\'{view_folder}/show_list\');
+        redirect(\'{controller}/show_list\');
     }
     /**
      * @desc Validates a date format
