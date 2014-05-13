@@ -1908,9 +1908,7 @@ class {ucf_controller} extends CI_Controller {
 
     function _model_text()
     {
-        return
-            '
-    <?php
+        return '<?php
      if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
      /*
      * User: ps
