@@ -968,7 +968,7 @@ class SparkPlug
 
         echo "<h3>Running SparkPlug...</h3>";
 
-        $model_path = APPPATH . 'models/' . $this->table . '.php';
+        $model_path = APPPATH . 'models/' . ucfirst($this->table) . '.php';
         $model_text = $this->_generate_model();
 
         file_put_contents($model_path, $model_text);
