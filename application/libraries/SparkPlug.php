@@ -124,8 +124,8 @@ class SparkPlug
 
         /* Figure out the calling controller - that's the one we want to fix */
         $route =& load_class('Router');
-        $this->controller = $route->class;
-        $this->ucf_controller = ucfirst($route->class);
+        $this->controller = $route->class."Controller";
+        $this->ucf_controller = ucfirst($route->class)."Controller";
 
         $this->_generate(); //** FUNCTION FOUND BELOW (l.370) **//
     }
@@ -968,7 +968,7 @@ class SparkPlug
 
         echo "<h3>Running SparkPlug...</h3>";
 
-        $model_path = APPPATH . 'models/' . $this->table . '_model.php';
+        $model_path = APPPATH . 'models/' . $this->table . '.php';
         $model_text = $this->_generate_model();
 
         file_put_contents($model_path, $model_text);
@@ -1017,7 +1017,7 @@ class SparkPlug
         $fields = $this->CI->db->list_fields($this->table);
 
         /* REPLACE TAGS */
-        $model_text = str_replace("{model_name}", $this->model_name . "_model", $model_text);
+        $model_text = str_replace("{model_name}", $this->model_name, $model_text);
         $model_text = str_replace("{table}", $this->table, $model_text);
 
 
@@ -1106,10 +1106,10 @@ class SparkPlug
 
         $text = str_replace('{ucf_controller}', $this->ucf_controller, $text);
         $text = str_replace('{controller}', $this->controller, $text);
-        $text = str_replace("{uc_model_name}", ucfirst($this->controller) . '_model', $text);
+        $text = str_replace("{uc_model_name}", ucfirst($this->model_name), $text);
 
-        $text = str_replace('{model}', $this->model_name . '_model', $text);
-        $text = str_replace('{view_folder}', strtolower($this->controller), $text);
+        $text = str_replace('{model}', $this->model_name, $text);
+        $text = str_replace('{view_folder}', strtolower($this->model_name), $text);
         $text = str_replace('{set_rules}', $this->_setRules_form_validation(), $text);
         return $text;
     }
@@ -1620,32 +1620,32 @@ break;
                 case "varchar" :
                     switch ($field->name) :
                         case "email" :
-                            $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'valid_email|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
                             break;
                         case "phone" :
-                            $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
                             break;
                         case "password" :
-                            $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
-                            $rules .= "\t" . '$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'matches[passconf]|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
                             break;
                         default:
-                            $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
                             break;
                     endswitch;
                     break;
                 case "int" :
                     if ($field->primary_key) :
-                        $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->table . $field->primary_key . ']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->name.']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
                     else :
-                        $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n\r";
                     endif;
                     break;
                 case "datetime" :
-                    $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n\r";
+                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n\r";
                     break;
                 case "text" :
-                    $rules .= "\t" . '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n\r";
+                    $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n\r";
                     break;
             endswitch;
         endforeach;
@@ -1678,9 +1678,9 @@ break;
  */
 class {ucf_controller} extends CI_Controller {
 
-    private $table = "{controller}";
+    private $table = \'{model}\';
     public function index() {
-        redirect(\'{controller}/show_list\');
+        redirect(\'{model}/show_list\');
     }
     public function __construct() {
         parent::__construct();
@@ -1694,8 +1694,8 @@ class {ucf_controller} extends CI_Controller {
 
     public function show_list() {
 
-        $config[\'base_url\'] = $this->config->item(\'base_url\')."/{ucf_controller}/show_list";
-        $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
+        $config[\'base_url\'] = $this->config->item(\'base_url\')."/{model}/show_list";
+        $config[\'total_rows\'] = $this->db->get("{model}")->num_rows();
         $config[\'per_page\'] = 10;
         $config[\'full_tag_open\'] = \'<ul id="pagination">\';
         $config[\'full_tag_close\'] = \'</ul>\';
@@ -1721,7 +1721,7 @@ class {ucf_controller} extends CI_Controller {
                 break;
         }
         $this->pagination->initialize($config);
-        $data[\'results\'] = $this->{uc_model_name}->get_all("{controller}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
+        $data[\'results\'] = $this->{uc_model_name}->get_all("{model}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
 
         $index = 0;
         if(!isset($data["results"][0]["id"])) {
@@ -1762,7 +1762,7 @@ class {ucf_controller} extends CI_Controller {
                     $this->load->view(\'{view_folder}/new\');
                     $this->load->view(\'footer\');
         } else {
-                    redirect(\'{controller}/show_list\');
+                    redirect(\'{model}/show_list\');
        }
     }
 
@@ -1777,7 +1777,7 @@ class {ucf_controller} extends CI_Controller {
             } else {
                 $this->{uc_model_name}->insert();
                 $this->session->set_flashdata(\'msg\', \'Entry Created\');
-                redirect(\'{controller}/show_list\');
+                redirect(\'{view_folder}/show_list\');
             }
     }
 
@@ -1798,7 +1798,7 @@ class {ucf_controller} extends CI_Controller {
                     $this->load->view(\'{view_folder}/edit\', $data);
                     $this->load->view(\'footer\');
         } else {
-                    redirect(\'{controller}/show_list\');
+                    redirect(\'{model}/show_list\');
         }
     }
 
@@ -1812,7 +1812,7 @@ class {ucf_controller} extends CI_Controller {
 
             $this->session->set_flashdata(\'msg\', \'Error\');
             $this->load->view(\'header\');
-            $this->load->view(\'{controller}/edit\', $data);
+            $this->load->view(\'{view_folder}/edit\', $data);
             $this->load->view(\'footer\');
         }
         else
@@ -1820,7 +1820,7 @@ class {ucf_controller} extends CI_Controller {
             $post = $this->input->post();
             $this->{uc_model_name}->update($id);
             $this->session->set_flashdata(\'msg\', \'Entry Updated\');
-            redirect(\'{controller}/show_list\');
+            redirect(\'{view_folder}/show_list\');
         }
     }
 
@@ -1828,7 +1828,7 @@ class {ucf_controller} extends CI_Controller {
         $this->{uc_model_name}->delete($id);
 
         $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
-        redirect(\'{controller}/show_list\');
+        redirect(\'{view_folder}/show_list\');
     }
     /**
      * @desc Validates a date format
@@ -1909,80 +1909,81 @@ class {ucf_controller} extends CI_Controller {
     function _model_text()
     {
         return
-            '<?php
-             if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
-             /*
-             * User: ps
-             # copyright 2014 keepitnative.ch, io, all rights reserved to the author
-             * Date: 02.05.14
-             * Time: 20:33
-             * project: sparkplug
-             * file: application/models/{ucf_controller}.php
-             * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
-             */
+            '
+    <?php
+     if (! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');
+     /*
+     * User: ps
+     # copyright 2014 keepitnative.ch, io, all rights reserved to the author
+     * Date: 02.05.14
+     * Time: 20:33
+     * project: sparkplug
+     * file: application/models/{ucf_controller}.php
+     * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
+     */
 
-            class {model_name} extends CI_Model {
-                {variables}
+    class {model_name} extends CI_Model {
+        {variables}
 
-                public function {model_name}() {
-                    parent::__construct();
-                    $this->load->helper(array("security"));
-                    $this->load->library(array("encrypt"));
-                }
-
-                public function getPrimaryKeyFieldName() {
-                 $fields = $this->db->field_data("' . $this->table . '");
-
-        $primary_key_name = $fields[0]->name;
-        return $primary_key_name;
-    }
-
-    public function insert() {
-        {set_variables_from_post}
-
-        $this->db->insert(\'{table}\', $this);
-    }
-
-    public function get($id) {
-        $id = (int) $id;
-        $primary_key = $this->getPrimaryKeyFieldName();
-
-        $query = $this->db->get_where(\'{table}\', array("$primary_key" => (int) xss_clean($id)));
-        return $query->result_array();
-    }
-
-    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by, $filter_value, $direction ) {//@todo search
-
-        $this->db->limit($limit_per_page, $offset_limit);
-        //@todo search
-        if( $filter_by!=false && $filter_value != false && $direction != false ) {
-            $this->db->like($filter_by, strtolower($filter_value));//@change
-            $this->db->order_by($filter_by, $direction);//@change
+        public function {model_name}() {
+            parent::__construct();
+            $this->load->helper(array("security"));
+            $this->load->library(array("encrypt"));
         }
-        //@todo search end
-        $query = $this->db->get(\'{table}\');
-        return $query->result_array();
-    }
 
-    public function get_field_data() {
-        return $this->db->field_data(\'{table}\');
-    }
+        public function getPrimaryKeyFieldName() {
+            $fields = $this->db->field_data("' . $this->table . '");
 
-    public function update($id) {
-        {set_variables_from_post}
+            $primary_key_name = $fields[0]->name;
+            return $primary_key_name;
+        }
 
-        $primary_key = $this->getPrimaryKeyFieldName();
+        public function insert() {
+            {set_variables_from_post}
 
-        $this->db->set($this);
-        $this->db->where( "$primary_key" ,$id);//@FIMXE sec? $this->$primary_key
-        $this->db->update(\'{table}\', $this);
-    }
+            $this->db->insert(\'{table}\', $this);
+        }
 
-    public function delete($id) {
-        $id = (int) $id;
-        $primary_key = $this->getPrimaryKeyFieldName();
-        $this->db->delete(\'{table}\', array("$primary_key" => xss_clean($id)));
-    }
+        public function get($id) {
+            $id = (int) $id;
+            $primary_key = $this->getPrimaryKeyFieldName();
+
+            $query = $this->db->get_where(\'{table}\', array("$primary_key" => (int) xss_clean($id)));
+            return $query->result_array();
+        }
+
+        public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by, $filter_value, $direction ) {//@todo search
+
+            $this->db->limit($limit_per_page, $offset_limit);
+            //@todo search
+            if( $filter_by!=false && $filter_value != false && $direction != false ) {
+                $this->db->like($filter_by, strtolower($filter_value));//@change
+                $this->db->order_by($filter_by, $direction);//@change
+            }
+            //@todo search end
+            $query = $this->db->get(\'{table}\');
+            return $query->result_array();
+        }
+
+        public function get_field_data() {
+            return $this->db->field_data(\'{table}\');
+        }
+
+        public function update() {
+            {set_variables_from_post}
+
+            $primary_key = $this->getPrimaryKeyFieldName();
+
+            $this->db->set($this);
+            $this->db->where( "$primary_key" ,$this->id);//@FIMXE sec? $this->$primary_key
+            $this->db->update(\'{table}\', $this);
+        }
+
+        public function delete($id) {
+            $id = (int) $id;
+            $primary_key = $this->getPrimaryKeyFieldName();
+            $this->db->delete(\'{table}\', array("$primary_key" => xss_clean($id)));
+        }
 }';
     }
     /**
@@ -2190,7 +2191,7 @@ endif;
         <div class="clearfix"></div>
     </div>
 <?php endif; ?>
-<?= form_open("{controller}/update/".$result["id"],"formnovalidate=formnovalidate") ?>
+<?php echo form_open(\'{controller}/update/\',\'formnovalidate=formnovalidate\'); ?>
 {form_fields_update}
 <p>
     <?= form_submit(\'submit\', \'Update\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
