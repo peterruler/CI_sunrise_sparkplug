@@ -2,7 +2,7 @@
 
 class SparkPlugController extends CI_Controller
 {
-
+    private $uc_first_nosufix = "";
     function index()
     {
         $this->load->database();
@@ -14,13 +14,14 @@ class SparkPlugController extends CI_Controller
         $query = $this->db->query($sql);
         $data['tables'] = $query->result();
         $this->load->view('header');
-        $this->load->view('SparkPlugCtrl', $data);
+        $this->load->view('SparkPlugView', $data);
         $this->load->view('footer');
     }
 
     function generateController($table)
     {
         $uc_first_ctrl = ucfirst($table).'Controller';
+        $this->uc_first_nosufix = ucfirst($table);
         $this->load->helper('file');
         $data = '<?php
 if (!defined("BASEPATH")) exit("No direct script access allowed");
@@ -70,7 +71,7 @@ class '.$uc_first_ctrl.' extends CI_Controller {
         }
         else
         {
-            redirect("/".$uc_first_ctrl."/scaffolding/".$table);
+            redirect("/".$this->uc_first_nosufix."/scaffolding/".$table);
             echo "File written!";
         }
     }

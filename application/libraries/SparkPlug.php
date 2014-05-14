@@ -996,7 +996,7 @@ class SparkPlug
         file_put_contents($controller_path, $controller_text);
         echo $controller_path . ' created<br/>';
 
-        echo '<br/>Scaffold completed.  Click ' . anchor($this->controller . "/show_list", 'here') . ' to get started.';
+        echo '<br/>Scaffold completed.  Click ' . anchor($this->model_name . "/show_list", 'here') . ' to get started.';
     }
 
     /*****                                *****/
@@ -1105,7 +1105,7 @@ class SparkPlug
         $text = $this->_controller_text();
 
         $text = str_replace('{ucf_controller}', $this->ucf_controller, $text);
-        $text = str_replace('{controller}', $this->controller, $text);
+        $text = str_replace('{controller}', substr($this->controller,0,strlen($this->controller)-strlen("Controller")), $text);
         $text = str_replace("{uc_model_name}", ucfirst($this->model_name), $text);
 
         $text = str_replace('{model}', $this->model_name, $text);
