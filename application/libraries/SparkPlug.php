@@ -1694,7 +1694,7 @@ class {ucf_controller} extends CI_Controller {
 
     public function show_list() {
 
-        $config[\'base_url\'] = $this->config->item(\'base_url\')."/{model}/show_list";
+        $config[\'base_url\'] = $this->config->item(\'base_url\')."/{controller}/show_list";
         $config[\'total_rows\'] = $this->db->get("{model}")->num_rows();
         $config[\'per_page\'] = 10;
         $config[\'full_tag_open\'] = \'<ul id="pagination">\';

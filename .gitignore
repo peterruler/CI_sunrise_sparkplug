@@ -16,19 +16,19 @@ composer.phar
 #ignore all files
 application/controllers/*
 #but not
-index.html
-sparkplugctrl.php
-welcome.php
-gpl-3.0.txt
+!index.html
+!SparkPlugController.php
+!welcome.php
+!gpl-3.0.txt
 #ignore all files
 application/models/*
 #but not
-index.html
+!index.html
 #ignore all files
 application/views/*
 #but not
-pages
-SparkPlugCtrl.php
+!pages
+!SparkPlugCtrl.php
 #@todo header/footer will get changed
 header.php
 footer.php

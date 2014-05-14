@@ -1,6 +1,6 @@
 <?php
 
-class SparkPlugCtrl extends CI_Controller
+class SparkPlugController extends CI_Controller
 {
 
     function index()
