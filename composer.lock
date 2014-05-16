@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "674d6ad027ec692337a7ab77efb7e784",
+    "hash": "dbaaec4d25301c88259f63fa6eea3dc6",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -300,12 +300,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "9d6300fd862478f58a526fbcad0a8f630daa60aa"
+                "reference": "0df188624892ecc58751b3f7720c364dac99f998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/9d6300fd862478f58a526fbcad0a8f630daa60aa",
-                "reference": "9d6300fd862478f58a526fbcad0a8f630daa60aa",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0df188624892ecc58751b3f7720c364dac99f998",
+                "reference": "0df188624892ecc58751b3f7720c364dac99f998",
                 "shasum": ""
             },
             "require": {
@@ -317,8 +317,11 @@
                 "symfony/console": "2.*"
             },
             "suggest": {
-                "symfony/console": "Allows use of the command line interface"
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
+            "bin": [
+                "bin/doctrine-dbal"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -363,7 +366,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-05-09 13:52:56"
+            "time": "2014-05-13 23:04:38"
         },
         {
             "name": "doctrine/inflector",
@@ -487,16 +490,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "94837a0105eec91f572ef18dc140779586f931a6"
+                "reference": "d30e3ab43ca89d9e81b1cbe940b25b40b510baa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/94837a0105eec91f572ef18dc140779586f931a6",
-                "reference": "94837a0105eec91f572ef18dc140779586f931a6",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/d30e3ab43ca89d9e81b1cbe940b25b40b510baa9",
+                "reference": "d30e3ab43ca89d9e81b1cbe940b25b40b510baa9",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "~1.1",
+                "doctrine/collections": "~1.2",
                 "doctrine/dbal": ">=2.5-dev,<2.6-dev",
                 "ext-pdo": "*",
                 "php": ">=5.3.2",
@@ -556,7 +559,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-05-02 23:43:38"
+            "time": "2014-05-16 04:22:11"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -602,6 +605,43 @@
                 "html"
             ],
             "time": "2014-02-04 20:17:24"
+        },
+        {
+            "name": "geshi/geshi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GeSHi/geshi-1.0.git",
+                "reference": "ed75dead77db9e544ceec9eee41d97138a69f6d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GeSHi/geshi-1.0/zipball/ed75dead77db9e544ceec9eee41d97138a69f6d7",
+                "reference": "ed75dead77db9e544ceec9eee41d97138a69f6d7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/geshi/",
+                    "src/geshi.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Benny Baumann",
+                    "email": "BenBE@geshi.org",
+                    "homepage": "http://blog.benny-baumann.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generic Syntax Highlighter",
+            "homepage": "http://qbnz.com/highlighter/",
+            "time": "2014-05-14 16:14:56"
         },
         {
             "name": "league/oauth2-server",
@@ -1198,12 +1238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-skeleton-generator.git",
-                "reference": "572c40d9fcf12d454fc066ccf3ab551f88bc114c"
+                "reference": "c0eeb18f31893c2f0c387bce84f8a3816a0eacd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-skeleton-generator/zipball/572c40d9fcf12d454fc066ccf3ab551f88bc114c",
-                "reference": "572c40d9fcf12d454fc066ccf3ab551f88bc114c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-skeleton-generator/zipball/c0eeb18f31893c2f0c387bce84f8a3816a0eacd1",
+                "reference": "c0eeb18f31893c2f0c387bce84f8a3816a0eacd1",
                 "shasum": ""
             },
             "require": {
@@ -1249,7 +1289,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-04-27 17:53:00"
+            "time": "2014-05-14 17:42:22"
         },
         {
             "name": "psr/log",
@@ -2021,7 +2061,8 @@
         "doctrine/common": 20,
         "doctrine/dbal": 20,
         "doctrine/orm": 20,
-        "ezyang/htmlpurifier": 20
+        "ezyang/htmlpurifier": 20,
+        "geshi/geshi": 20
     },
     "platform": [
 
