@@ -32,4 +32,5 @@ application/views/*
 #@todo header/footer will get changed
 header.php
 footer.php
+tests/scaffold/fixtures/*
 

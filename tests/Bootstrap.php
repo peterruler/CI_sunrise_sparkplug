@@ -45,6 +45,7 @@ if ( ! class_exists('vfsStream') && file_exists(PROJECT_BASE.'vendor/autoload.ph
  defined('BASEPATH') OR define('BASEPATH', org\bovigo\vfs\vfsStream::url('system/'));
  defined('APPPATH') OR define('APPPATH', org\bovigo\vfs\vfsStream::url('application/'));
 
+#defined('SYSDIR') OR define('SYSDIR', org\bovigo\vfs\vfsStream::url('system/'));
 
 defined('VIEWPATH') OR define('VIEWPATH', APPPATH.'views/');
 defined('ENVIRONMENT') OR define('ENVIRONMENT', 'development');

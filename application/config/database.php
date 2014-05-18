@@ -45,24 +45,24 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'mysqli';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'haus78';
-$db['default']['database'] = 'proj01_02';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['mysqli']['hostname'] = 'localhost';
+$db['mysqli']['username'] = 'root';
+$db['mysqli']['password'] = 'haus78';
+$db['mysqli']['database'] = 'proj01_02';
+$db['mysqli']['dbdriver'] = 'mysqli';
+$db['mysqli']['dbprefix'] = '';
+$db['mysqli']['pconnect'] = TRUE;
+$db['mysqli']['db_debug'] = TRUE;
+$db['mysqli']['cache_on'] = FALSE;
+$db['mysqli']['cachedir'] = '';
+$db['mysqli']['char_set'] = 'utf8';
+$db['mysqli']['dbcollat'] = 'utf8_general_ci';
+$db['mysqli']['swap_pre'] = '';
+$db['mysqli']['autoinit'] = TRUE;
+$db['mysqli']['stricton'] = FALSE;
 
 
 /* End of file database.php */

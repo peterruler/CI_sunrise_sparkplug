@@ -80,11 +80,11 @@ class Utf8_test extends CI_TestCase {
 	{
 		if (MB_ENABLED OR ICONV_ENABLED)
 		{
-			$this->assertEquals('С‚РµСЃС‚', $this->utf8->convert_to_utf8('тест', 'WINDOWS-1251'));
+			$this->assertEquals('С‚РµСЃС‚', $this->utf8->convert_to_utf8('пїЅпїЅпїЅпїЅ', 'WINDOWS-1251'));
 		}
 		else
 		{
-			$this->assertFalse($this->utf8->convert_to_utf8('тест', 'WINDOWS-1251'));
+			$this->assertFalse($this->utf8->convert_to_utf8('пїЅпїЅпїЅпїЅ', 'WINDOWS-1251'));
 		}
 	}
 

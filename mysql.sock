@@ -1,0 +1,1 @@
+/Applications/MAMP/tmp/mysql/mysql.sock

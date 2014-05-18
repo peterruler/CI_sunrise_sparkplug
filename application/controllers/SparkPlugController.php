@@ -8,7 +8,7 @@ class SparkPlugController extends CI_Controller
         $this->load->database();
         $db = array();
         include(APPPATH . 'config/database' . EXT);
-        $dbname = $db['default']['database'];
+        $dbname = $db['mysqli']['database'];
 
         $sql = "SHOW TABLES FROM $dbname";
         $query = $this->db->query($sql);

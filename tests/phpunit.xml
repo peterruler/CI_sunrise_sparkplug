@@ -15,7 +15,7 @@
 			<directory suffix="test.php">./codeigniter/core</directory>
 			<directory suffix="test.php">./codeigniter/helpers</directory>
 			<directory suffix="test.php">./codeigniter/libraries</directory>
-			-->
+            -->
             <directory suffix="test.php">./scaffold</directory>
 		</testsuite>
 	</testsuites>
@@ -26,4 +26,10 @@
 			<directory suffix=".php">../vendor</directory>
 		</blacklist>
 	</filter>
+    <php>
+        <var name="DB_DSN" value="mysql:dbname=proj01_02;host=localhost" />
+        <var name="DB_USER" value="root" />
+        <var name="DB_PASSWD" value="haus78" />
+        <var name="DB_DBNAME" value="proj01_02" />
+    </php>
 </phpunit>

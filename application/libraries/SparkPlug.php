@@ -1423,6 +1423,47 @@ $options_' . $field->name . ' = array(
                 $form_markup .= "\n\t";
             }
             switch ($field->type) {
+                case 'enum' :
+                    $arr = array();
+                    $options = array();
+
+                    //get the enum values
+                    $query = $this->CI->db->query("SELECT SUBSTRING(COLUMN_TYPE,5)
+                    FROM information_schema.COLUMNS
+                    WHERE TABLE_SCHEMA='{$this->CI->db->database}'
+                        AND TABLE_NAME='{$this->table}'
+                        AND COLUMN_NAME='{$field->name}'");
+                    $row = $query->row();
+                    //var_dump($row);exit;
+
+                    foreach($row as $value) {
+                        $row = $value;
+                    }
+                    $row = preg_replace('/\'/','',$row);
+                    $row = preg_replace('/\(/','',$row);
+                    $row = preg_replace('/\)/','',$row);
+                    $arr  = explode(',',$row);
+                    $n = 0;
+                    foreach ($arr as $value) {
+                        $options[$value] = ucfirst($value);
+                        $form_markup .= 'echo $options_' . $field->name . '[\''.$value.'\']= \''.ucfirst($value).'\';';
+                    }
+                    //get the default value of row
+                    $query = $this->CI->db->query("SELECT COLUMN_DEFAULT FROM
+                    information_schema.columns
+                    WHERE TABLE_SCHEMA='{$this->CI->db->database}'
+                        AND TABLE_NAME='{$this->table}'
+                        AND COLUMN_NAME='{$field->name}'");
+
+                    $row = $query->row();
+                    foreach($row as $value) {
+                        $default = $value;
+                    }
+                    $form_markup .= 'echo $default_' . $field->name . ' = \''.$default.'\';';
+
+                    $form_markup .= 'echo form_dropdown(\'' . $field->name . '\', $options_' . $field->name . ', $default_' . $field->name . ');';
+                    //$enum = str_getcsv($matches[1], ",", "'");
+            break;
                 case 'int':
                     $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
@@ -1444,6 +1485,21 @@ $options_' . $field->name . ' = array(
                             $form_markup .= 'echo form_input($options_' . $field->name . ');';
                             break;
                     endswitch;
+                    break;
+
+                case 'decimal':
+                    $form_markup .= '$options_' . $field->name . ' = array(
+\'name\' => \'' . $field->name . '\',
+\'id\' => \'' . $field->name . '\',
+\'value\' => set_value(\'' . $field->name . '\', $result[\'' . $field->name . '\']),
+\'size\' => \'50\',
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'type\' => \'number\',
+\'placeholder\' => \'' . $field->name . '\',
+\'required\' => \'required\');
+';
+                    $form_markup .= 'echo form_input($options_' . $field->name . ');';
                     break;
                 case 'varchar':
                 case 'string':
@@ -1486,10 +1542,10 @@ break;
 \'id\' => \'' . $field->name . '\',
 \'value\' => set_value(\'' . $field->name . '\', $result[\'' . $field->name . '\']),
 \'maxlength\' => ' . $field->max_length . ',
-\'size" => \'50\',
-\'style" => \'width:100%\',
-\'class" => \'form-control\',
-\'type" => \'password\',
+\'size\' => \'50\',
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'type\' => \'password\',
 \'placeholder\' => \'' . $field->name . '\',
 \'required\' => "required");
 ';
@@ -1504,7 +1560,7 @@ break;
 \'class\' => \'form-control\',
 \'type\' => \'password\',
 \'placeholder\' => \'passconf\',
-\'required\' => \'required");
+\'required\' => \'required\');
 ';
                             $form_markup .= 'echo form_password($options_' . $field->name . ');';
                             break;
@@ -1541,7 +1597,7 @@ break;
                     endswitch;
                     break;
                 case 'text':
-                case 'blob':
+                case 'blob':/*@todo fileupload*/
                     $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
 \'id\' => \'' . $field->name . '\',
@@ -1556,10 +1612,40 @@ break;
                     $form_markup .= 'echo form_textarea($options_' . $field->name . ');';
                     break;
                 case 'datetime' :
+                    if(strstr($field->name,'time')) :/*is time*/
+                        $form_markup .= '$time_'.$field->name.' = substr($result[\'' . $field->name . '\'],strlen(\'0000-00-00 \'));';
                     $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
 \'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\', $result[\'' . $field->name . '\']),
+\'value\' => set_value(\'' . $field->name . '\', $time_'.$field->name.'),
+\'size\' => \'50\',
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'type\' => \'time\',
+\'placeholder\' => \'' . $field->name . '\');
+';
+                        else :/*is datetime*/
+                        $form_markup .= '$date_'.$field->name.' =  substr($result[\''.$field->name.'\'],0, strlen($result[\''.$field->name.'\'])-strlen(\' 00:00:00\'));';
+                        $form_markup .= '$options_' . $field->name . ' = array(
+\'name\' => \'' . $field->name . '\',
+\'id\' => \'' . $field->name . '\',
+\'value\' => set_value(\'' . $field->name . '\', $date_'.$field->name.'),
+\'size\' => \'50\',
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'type\' => \'date\',
+\'placeholder\' => \'' . $field->name . '\');
+';
+                        endif;
+
+                    $form_markup .= 'echo form_input($options_' . $field->name . ');';
+                    break;
+                case 'timestamp' :
+                    $form_markup .= '$date_'.$field->name.' =  gmdate(\'Y-m-d\',substr($result[\''.$field->name.'\'],0, strlen($result[\''.$field->name.'\'])-strlen(\' 00:00:00\')));';
+                    $form_markup .= '$options_' . $field->name . ' = array(
+\'name\' => \'' . $field->name . '\',
+\'id\' => \'' . $field->name . '\',
+\'value\' => set_value(\'' . $field->name . '\', $date_'.$field->name.'),
 \'size\' => \'50\',
 \'style\' => \'width:100%\',
 \'class\' => \'form-control\',
@@ -1567,6 +1653,7 @@ break;
 \'placeholder\' => \'' . $field->name . '\');
 ';
                     $form_markup .= 'echo form_input($options_' . $field->name . ');';
+
                     break;
                 case 'boolean' :
                     $form_markup .= '$options_' . $field->name . ' = array(
@@ -1614,7 +1701,7 @@ break;
         $fields = $this->CI->db->field_data($this->table);
 
         $html = "";
-        $rules = "";
+        $rules = "\n\r";
         foreach ($fields as $field) :
             switch ($field->type) :
                 case "varchar" :
@@ -1636,7 +1723,7 @@ break;
                     break;
                 case "int" :
                     if ($field->primary_key) :
-                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->name.']|numeric|trim|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->table.'.'.$field->primary_key.']|numeric|trim|xss_clean\');' . "\n";
                     else :
                         $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                     endif;
@@ -1645,6 +1732,7 @@ break;
                     $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n";
                     break;
                 case "text" :
+                case "blob" :
                     $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n";
                     break;
             endswitch;
@@ -1788,11 +1876,11 @@ class {ucf_controller} extends CI_Controller {
     public function edit($id) {
 
         $res = $this->{uc_model_name}->get($id);
-        $data["result"] = $res[0];
-        if(!isset($data["result"]["id"])) {
-            foreach($data["result"] as $row) {
+        $data[\'result\'] = $res[0];
+        if(!isset($data[\'result\'][\'id\'])) {
+            foreach($data[\'result\'] as $row) {
                 //add record primary key assigned to id
-                $data["result"]["id"] = $row[0];
+                $data[\'result\'][\'id\'] = $row;
             }
         }
         {set_rules}
@@ -2069,6 +2157,7 @@ class {ucf_controller} extends CI_Controller {
             \'maxlength\'=>20,
             \'size\'=>50,
             \'style\'=>\'width:100%\',
+            \'type\'=>\'search\',
             \'class\'=>\'form-control\',
             \'placeholder\'=>\'filter_value\'
         );
@@ -2148,8 +2237,11 @@ endif;
     <?php echo $this->pagination->create_links();?>
     <br />
 </div><br />
-<div class="col-lg-4 col-md-4 col-sm-12">
-<?php echo anchor("'.$this->model_name.'/new_entry", "New", "class=\'btn btn-lg btn-default btn-block\'"); ?>
+<div class="col-lg-4 col-md-4 col-sm-12 glyphicon">
+<a href="'.$this->model_name.'/new_entry" class="btn btn-sm btn-default btn-block">
+<span class=\'icon-plus\'></span>
+<button class=\'btn btn-lg btn-default btn-block\'>Add</button>
+</a>
 </div>
 ';
     }

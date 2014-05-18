@@ -122,7 +122,7 @@ function &DB($params = '', $active_record_override = NULL)
 
 	if ( ! isset($active_record) OR $active_record == TRUE)
 	{
-		require_once(BASEPATH.'database/DB_active_rec.php');
+		require_once('DB_active_rec.php');
 
 		if ( ! class_exists('CI_DB'))
 		{
