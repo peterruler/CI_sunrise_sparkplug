@@ -1037,10 +1037,10 @@ class SparkPlug
         $var_set = '';
         foreach ($fields as $field) {
             if ($field == "password") {
-                $var_set .= '$password = $this->CI->encrypt->sha1(xss_clean($this->input->post("password",TRUE)));' . "\n";
+                $var_set .= '$password = $this->CI->encrypt->sha1(xss_clean($this->CI->input->post("password",TRUE)));' . "\n";
                 $var_set .= $indent . '$this->password	= $password;' . "\n";
             } elseif ($field == "passconf") {
-                $var_set .= '$passconf = $this->CI->encrypt->sha1(xss_clean($this->input->post("passconf",TRUE)));' . "\n";
+                $var_set .= '$passconf = $this->CI->encrypt->sha1(xss_clean($this->CI->input->post("passconf",TRUE)));' . "\n";
                 $var_set .= $indent . '$this->passconf	= $passconf;' . "\n";
 
             } else {
@@ -1262,6 +1262,8 @@ break;
 \'required\' => "required");';
                             $form_markup .= 'echo form_password($options_' . $field->name . ');';
 
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'echo form_label(\'Password Repeat\', \'Password repeat\');';
                             $form_markup .= '
 $options_' . $field->name . ' = array(
 \'name\' => \'passconf\',
@@ -1446,7 +1448,7 @@ $options_' . $field->name . ' = array(
                     $n = 0;
                     foreach ($arr as $value) {
                         $options[$value] = ucfirst($value);
-                        $form_markup .= 'echo $options_' . $field->name . '[\''.$value.'\']= \''.ucfirst($value).'\';';
+                        $form_markup .= '$options_' . $field->name . '[\''.$value.'\']= \''.ucfirst($value).'\';';
                     }
                     //get the default value of row
                     $query = $this->CI->db->query("SELECT COLUMN_DEFAULT FROM
@@ -1459,9 +1461,10 @@ $options_' . $field->name . ' = array(
                     foreach($row as $value) {
                         $default = $value;
                     }
-                    $form_markup .= 'echo $default_' . $field->name . ' = \''.$default.'\';';
+                    $form_markup .= '$default_' . $field->name . ' = \''.$default.'\';';
 
-                    $form_markup .= 'echo form_dropdown(\'' . $field->name . '\', $options_' . $field->name . ', $default_' . $field->name . ');';
+                    $form_markup .= ' ?><br /><?php echo form_dropdown(\'' . $field->name . '\', $options_' . $field->name . ', $default_' . $field->name . ');';
+                    $form_markup .= ' ?><br /><?php ';
                     //$enum = str_getcsv($matches[1], ",", "'");
             break;
                 case 'int':
@@ -1500,6 +1503,37 @@ $options_' . $field->name . ' = array(
 \'required\' => \'required\');
 ';
                     $form_markup .= 'echo form_input($options_' . $field->name . ');';
+                    break;
+                case 'tinyint':
+                case 'boolean':
+                $form_markup .= '?><div class=\'radio\'><?php ';
+                    $form_markup .= '$options_' . $field->name . '01 = array(
+
+    \'name\'        => \'' . $field->name . '[]\',
+    \'id\'          => \'' . $field->name . '\',
+    \'value\'       => \'1\',
+    \'checked\'     => TRUE,
+    \'style\'       => \'margin:10px\'
+                    );';
+                $form_markup .= '?><label for=\''.$field->name.'01\'><?php ';
+                $form_markup .= 'echo form_radio(\'' . $field->name . '[]\',0,\'\',\'id="'.$field->name.'01"\')';
+                $form_markup .= '?>True';
+                $form_markup .= '</label><?php ';
+
+                $form_markup .= '$options_' . $field->name . '02 = array(
+
+    \'name\'        => \'' . $field->name . '[]\',
+    \'id\'          => \'' . $field->name . '\',
+    \'value\'       => \'0\',
+    \'checked\'     => FALSE,
+    \'style\'       => \'margin:10px\'
+                    );';
+                $form_markup .= '?><label for=\''.$field->name.'02\'><?php ';
+                $form_markup .= 'echo form_radio(\'' . $field->name . '[]\',0,\'\',\'id="'.$field->name.'02"\')';
+                $form_markup .= '?>False';
+                $form_markup .= '</label>';
+
+                $form_markup .= '</div><?php ';
                     break;
                 case 'varchar':
                 case 'string':
@@ -1550,6 +1584,8 @@ break;
 \'required\' => "required");
 ';
                             $form_markup .= 'echo form_password($options_' . $field->name . ');';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'echo form_label(\'Password repeat\', \'passconf\');';
                             $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'passconf\',
 \'id\' => \'passconf\',
@@ -1597,7 +1633,21 @@ break;
                     endswitch;
                     break;
                 case 'text':
-                case 'blob':/*@todo fileupload*/
+                    $form_markup .= '$options_' . $field->name . ' = array(
+\'name\' => \'' . $field->name . '\',
+\'id\' => \'' . $field->name . '\',
+\'value\' => set_value(\'' . $field->name . '\', $result[\'' . $field->name . '\']),
+\'cols\' => 50,
+\'row\' => 20,
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'placeholder\' => \'' . $field->name . '\',
+\'required\' => \'required\');
+';
+                    $form_markup .= 'echo form_textarea($options_' . $field->name . ');';
+                    break;
+                case 'blob':
+                case 'bloblong':/*@todo fileupload*/
                     $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
 \'id\' => \'' . $field->name . '\',
@@ -1625,7 +1675,7 @@ break;
 \'placeholder\' => \'' . $field->name . '\');
 ';
                         else :/*is datetime*/
-                        $form_markup .= '$date_'.$field->name.' =  substr($result[\''.$field->name.'\'],0, strlen($result[\''.$field->name.'\'])-strlen(\' 00:00:00\'));';
+                        $form_markup .= '$date_'.$field->name.' = date(\'Y-m-d\', strtotime($result[\''.$field->name.'\']));';
                         $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
 \'id\' => \'' . $field->name . '\',
@@ -1641,7 +1691,7 @@ break;
                     $form_markup .= 'echo form_input($options_' . $field->name . ');';
                     break;
                 case 'timestamp' :
-                    $form_markup .= '$date_'.$field->name.' =  gmdate(\'Y-m-d\',substr($result[\''.$field->name.'\'],0, strlen($result[\''.$field->name.'\'])-strlen(\' 00:00:00\')));';
+                    $form_markup .= '$date_'.$field->name.' = date(\'Y-m-d\', strtotime($result[\''.$field->name.'\']));';
                     $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
 \'id\' => \'' . $field->name . '\',
@@ -1654,21 +1704,6 @@ break;
 ';
                     $form_markup .= 'echo form_input($options_' . $field->name . ');';
 
-                    break;
-                case 'boolean' :
-                    $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\', $result[\'' . $field->name . '\']),
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'radio\',
-\'checked\' => FALSE,
-\'style\' => \'margin:10px\',
-\'required\' =>  \'required\');
-';
-                    $form_markup .= 'echo form_radio($options_' . $field->name . ');';
                     break;
                 default :
                     $form_markup .= '$options_' . $field->name . ' = array(
@@ -1723,7 +1758,7 @@ break;
                     break;
                 case "int" :
                     if ($field->primary_key) :
-                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'is_unique[' . $this->table.'.'.$field->primary_key.']|numeric|trim|xss_clean\');' . "\n";
+                        $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|xss_clean\');' . "\n";
                     else :
                         $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'numeric|trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                     endif;
@@ -1765,7 +1800,7 @@ break;
  * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
  */
 class {ucf_controller} extends CI_Controller {
-
+    private $CI;
     private $table = \'{model}\';
     public $'.strtolower($this->model_name).' = null;
     public function index() {
@@ -1773,7 +1808,7 @@ class {ucf_controller} extends CI_Controller {
     }
     public function __construct() {
         parent::__construct();
-
+        $this->CI =& get_instance();
         $this->'.strtolower($this->model_name).'  = new {uc_model_name}();
         //var_dump($this->'.$this->model_name.' );
 
@@ -1896,8 +1931,8 @@ class {ucf_controller} extends CI_Controller {
 
     public function update() {
         {set_rules}
-
-        $id = (int) xss_clean($this->input->post(\'id\'));
+        $id_field = $this->getPrimaryKeyFieldName();
+        $id = (int) xss_clean($this->input->post("$id_field"));
         if ($this->form_validation->run() == FALSE)
         {
             $res = $this->{uc_model_name}->get($id);
@@ -1922,6 +1957,11 @@ class {ucf_controller} extends CI_Controller {
         $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
         redirect(\'{controller}/show_list\');
     }
+    public function getPrimaryKeyFieldName() {
+        $fields = $this->CI->db->field_data("' . $this->table . '");
+        $primary_key_name = $fields[0]->name;
+        return $primary_key_name;
+     }
     /**
      * @desc Validates a date format
      * @params format,delimiter
@@ -2237,11 +2277,8 @@ endif;
     <?php echo $this->pagination->create_links();?>
     <br />
 </div><br />
-<div class="col-lg-4 col-md-4 col-sm-12 glyphicon">
-<a href="'.$this->model_name.'/new_entry" class="btn btn-sm btn-default btn-block">
-<span class=\'icon-plus\'></span>
-<button class=\'btn btn-lg btn-default btn-block\'>Add</button>
-</a>
+<div class="col-lg-1 col-md-2 col-sm-12">
+<?php echo anchor("Fixture_table/new_entry/", \'<span class="glyphicon"><span class="glyphicon-plus"></span>Add</span>\', "class=\'btn btn-lg btn-default btn-block \'"); ?>
 </div>
 ';
     }
@@ -2282,7 +2319,8 @@ endif;
 <?php echo form_open(\''.$this->model_name.'/update/\',\'formnovalidate=formnovalidate\'); ?>
 {form_fields_update}
 <p>
-    <?= form_submit(\'submit\', \'Update\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
+<br />
+    <?php echo form_submit(\'submit\', \'Update\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'") ?>
 </p>
 <?php echo form_close(); ?>
 <?php echo anchor("'.$this->model_name.'/show_list", "Back", "class=\'btn btn-lg btn-default btn-block\'"); ?>';
