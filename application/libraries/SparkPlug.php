@@ -1013,9 +1013,17 @@ class SparkPlug
     function _generate_model()
     {
 
+
+
         $model_text = $this->_model_text();
         $fields = $this->CI->db->list_fields($this->table);
-
+        $fields_meta = $this->CI->db->field_data($this->table);
+        $meta_arr = array();
+        $index = 0;
+        foreach ($fields_meta as $field) {
+            $meta_arr[$index] = $field->type;
+            $index++;
+        }
         /* REPLACE TAGS */
         $model_text = str_replace("{model_name}", $this->model_name, $model_text);
         $model_text = str_replace("{table}", $this->table, $model_text);
@@ -1025,29 +1033,99 @@ class SparkPlug
         list($model_text, $indent) = $this->_fix_indent($model_text, 'variables');
 
         $var_init = '';
+        $index2 = 0;
         foreach ($fields as $field) {
-            $var_init .= $indent . 'public $' . $field . "	= '';\n";
+            $var_init .= $indent . '/**'."\n";
+            if ($index2==0) {/*first row must always be primary key*/
+                $var_init .= $indent . '* @'.$this->getPrimaryKeyFieldName().' @Column(type="integer") @GeneratedValue'."\n";
+            } else {
+                switch ($meta_arr[$index2]) {
+                    case 'int';
+                        $var_init .= $indent . '*@Column(type="integer")'."\n";
+                        $var_init .= $indent . '*@var int'."\n";
+                    break;
+                    case 'smallint';
+                        $var_init .= $indent . '*@Column(type="smallint")'."\n";
+                        $var_init .= $indent . '*@var smallint'."\n";
+                        break;
+                    case 'bigint';
+                        $var_init .= $indent . '*@Column(type="bigint")'."\n";
+                        $var_init .= $indent . '*@var bigint'."\n";
+                        break;
+                    case 'string';
+                    case 'text';
+                    case 'varchar';
+                    case 'timestamp';
+                    case 'enum';
+                        $var_init .= $indent . '*@Column(type="string")'."\n";
+                        $var_init .= $indent . '*@var string'."\n";
+                        break;
+                    case 'datetime';
+                        $var_init .= $indent . '*@Column(type="datetime")'."\n";
+                        $var_init .= $indent . '*@var DateTime'."\n";
+                    break;
+                        $var_init .= $indent . '*@Column(type="string")'."\n";
+                        $var_init .= $indent . '*@var string'."\n";
+                    break;
+                    case 'decimal';
+                        $var_init .= $indent . '*@Column(type="decimal")'."\n";
+                        $var_init .= $indent . '*@var decimal'."\n";
+                    break;
+                    case 'boolean';
+                        $var_init .= $indent . '*@Column(type="boolean")'."\n";
+                        $var_init .= $indent . '*@var boolean'."\n";
+                    break;
+                }
+            }
+            $var_init .= $indent . '*/'."\n";
+            $var_init .= $indent . 'protected $' . $field . "	= 'null';\n";
+            $index2++;
         }
         $model_text = str_replace("{variables}\n", $var_init, $model_text);
+
+        //getters and setters
+        $get_set  = "\n";
+        foreach ($fields as $field) {
+            $get_set .= $indent . '/**'."\n";
+            $get_set .= $indent . '*'."\n";
+            $get_set .= $indent . '*/'."\n";
+            $get_set .= $indent . 'public function set' . ucfirst($field) . '($name) {'."\n";
+            $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+            $get_set .= $indent . '}'."\n";
+
+            $get_set .= $indent . '/**'."\n";
+            $get_set .= $indent . '*'."\n";
+            $get_set .= $indent . '*/'."\n";
+            $get_set .= $indent . 'public function get' . ucfirst($field) . '() {'."\n";
+            $get_set .= $indent . $indent .'return $this->'.$field.';'."\n";
+            $get_set .= $indent . '}'."\n";
+        }
+
+        $model_text = str_replace("{get_set_methods}\n", $get_set, $model_text);
 
 
         /* Replace Variable Setters */
         list($model_text, $indent) = $this->_fix_indent($model_text, 'set_variables_from_post');
 
-        $var_set = '';
+        $var_set = $indent . '$data=array();'."\n";
         foreach ($fields as $field) {
-            if ($field == "password") {
-                $var_set .= '$password = $this->CI->encrypt->sha1(xss_clean($this->CI->input->post("password",TRUE)));' . "\n";
-                $var_set .= $indent . '$this->password	= $password;' . "\n";
-            } elseif ($field == "passconf") {
-                $var_set .= '$passconf = $this->CI->encrypt->sha1(xss_clean($this->CI->input->post("passconf",TRUE)));' . "\n";
-                $var_set .= $indent . '$this->passconf	= $passconf;' . "\n";
-
-            } else {
-                $var_set .= $indent . '$this->' . $field . '	= xss_clean($this->CI->input->post(\'' . $field . "',TRUE));" . "\n";
-            }
+                $var_set .= $indent . '$data[\''.$field.'\'] = $this->get' . ucfirst($field) . '(\''.$field.'\');' . "\n";
         }
         $model_text = str_replace("{set_variables_from_post}\n", $var_set, $model_text);
+
+
+        $var_set2 = '';
+        foreach ($fields as $field) {
+            if ($field == "password") {
+                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '($this->CI->encrypt->sha1(xss_clean($this->CI->input->post("password",TRUE))));' . "\n";
+            } elseif ($field == "passconf") {
+                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '($this->CI->encrypt->sha1(xss_clean($this->CI->input->post("passconf",TRUE))));' . "\n";
+
+            } else {
+                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));' . "\n";
+            }
+        }
+        $model_text = str_replace("{setter_variables_from_post}\n", $var_set2, $model_text);
 
 
         return $model_text;
@@ -1786,6 +1864,11 @@ break;
      *
      */
 
+    public function getPrimaryKeyFieldName() {
+        $fields = $this->CI->db->field_data("$this->table");
+        $primary_key_name = $fields[0]->name;
+        return $primary_key_name;
+    }
     function _controller_text()
     {
 
@@ -1931,8 +2014,7 @@ class {ucf_controller} extends CI_Controller {
 
     public function update() {
         {set_rules}
-        $id_field = $this->getPrimaryKeyFieldName();
-        $id = (int) xss_clean($this->input->post("$id_field"));
+        $id = (int) xss_clean($this->input->post(\''.$this->getPrimaryKeyFieldName().'\',TRUE));
         if ($this->form_validation->run() == FALSE)
         {
             $res = $this->{uc_model_name}->get($id);
@@ -1957,11 +2039,6 @@ class {ucf_controller} extends CI_Controller {
         $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
         redirect(\'{controller}/show_list\');
     }
-    public function getPrimaryKeyFieldName() {
-        $fields = $this->CI->db->field_data("' . $this->table . '");
-        $primary_key_name = $fields[0]->name;
-        return $primary_key_name;
-     }
     /**
      * @desc Validates a date format
      * @params format,delimiter
@@ -2051,35 +2128,32 @@ class {ucf_controller} extends CI_Controller {
      * file: application/models/{ucf_controller}.php
      * adaption to twitter bootstrap 3, html5 form elements, serverside validation and xss sanitize
      */
-
+    /**
+    * @Entity @Table(name="'.$this->table.'")
+    **/
     class {model_name} {
         private $CI;
         {variables}
-
         public function {model_name}() {
             $this->CI =& get_instance();
             $this->CI->load->helper(array("security"));
             $this->CI->load->library(array("encrypt"));
         }
-
-        public function getPrimaryKeyFieldName() {
-            $fields = $this->CI->db->field_data("' . $this->table . '");
-
-            $primary_key_name = $fields[0]->name;
-            return $primary_key_name;
-        }
-
-        public function insert() {
+        {get_set_methods}
+        public function facadeSetGet() {
+            {setter_variables_from_post}
             {set_variables_from_post}
+            return $data;
+        }
+        public function insert() {
+            $data = $this->facadeSetGet();
 
-            $this->CI->db->insert(\'{table}\', $this);
+            $this->CI->db->insert(\'{table}\', $data);
         }
 
         public function get($id) {
             $id = (int) $id;
-            $primary_key = $this->getPrimaryKeyFieldName();
-
-            $query = $this->CI->db->get_where(\'{table}\', array("$primary_key" => (int) xss_clean($id)));
+            $query = $this->CI->db->get_where(\'{table}\', array(\''.$this->getPrimaryKeyFieldName().'\' => (int) xss_clean($id)));
             return $query->result_array();
         }
 
@@ -2101,19 +2175,14 @@ class {ucf_controller} extends CI_Controller {
         }
 
         public function update() {
-            {set_variables_from_post}
-
-            $primary_key = $this->getPrimaryKeyFieldName();
-
-            $this->CI->db->set($this);
-            $this->CI->db->where( "$primary_key" ,$this->$primary_key);//@FIMXE sec? $this->$primary_key
-            $this->CI->db->update(\'{table}\', $this);
+            $data = $this->facadeSetGet();
+            $this->CI->db->where( \''.$this->getPrimaryKeyFieldName().'\' ,$this->get'.ucfirst($this->getPrimaryKeyFieldName()).'());//@FIMXE sec? $this->$primary_key
+            $this->CI->db->update(\'{table}\', $data);
         }
 
         public function delete($id) {
             $id = (int) $id;
-            $primary_key = $this->getPrimaryKeyFieldName();
-            $this->CI->db->delete(\'{table}\', array("$primary_key" => xss_clean($id)));
+            $this->CI->db->delete(\'{table}\', array(\''.$this->getPrimaryKeyFieldName().'\' => xss_clean($id)));
         }
 }';
     }

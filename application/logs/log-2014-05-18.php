@@ -16676,3 +16676,5082 @@ DEBUG - 2014-05-18 17:36:42 --> Final output sent to browser
 ERROR - 2014-05-18 17:36:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
 DEBUG - 2014-05-18 17:36:42 --> Total execution time: 0.1821
 ERROR - 2014-05-18 17:36:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 20:55:44 --> Config Class Initialized
+DEBUG - 2014-05-18 20:55:45 --> Hooks Class Initialized
+DEBUG - 2014-05-18 20:55:45 --> Utf8 Class Initialized
+DEBUG - 2014-05-18 20:55:45 --> UTF-8 Support Enabled
+DEBUG - 2014-05-18 20:55:45 --> URI Class Initialized
+DEBUG - 2014-05-18 20:55:45 --> Router Class Initialized
+DEBUG - 2014-05-18 20:55:45 --> No URI present. Default controller set.
+DEBUG - 2014-05-18 20:55:45 --> Output Class Initialized
+DEBUG - 2014-05-18 20:55:45 --> Security Class Initialized
+DEBUG - 2014-05-18 20:55:46 --> Input Class Initialized
+DEBUG - 2014-05-18 20:55:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-05-18 20:55:46 --> Language Class Initialized
+DEBUG - 2014-05-18 20:55:46 --> Loader Class Initialized
+DEBUG - 2014-05-18 20:55:46 --> Helper loaded: url_helper
+DEBUG - 2014-05-18 20:55:46 --> Controller Class Initialized
+DEBUG - 2014-05-18 20:55:46 --> Database Driver Class Initialized
+DEBUG - 2014-05-18 20:55:47 --> File loaded: application/views/header.php
+DEBUG - 2014-05-18 20:55:47 --> File loaded: application/views/SparkPlugView.php
+DEBUG - 2014-05-18 20:55:47 --> File loaded: application/views/footer.php
+DEBUG - 2014-05-18 20:55:47 --> Final output sent to browser
+DEBUG - 2014-05-18 20:55:47 --> Total execution time: 3.3815
+DEBUG - 2014-05-18 20:55:49 --> Config Class Initialized
+DEBUG - 2014-05-18 20:55:49 --> Hooks Class Initialized
+DEBUG - 2014-05-18 20:55:49 --> Utf8 Class Initialized
+DEBUG - 2014-05-18 20:55:49 --> UTF-8 Support Enabled
+DEBUG - 2014-05-18 20:55:49 --> URI Class Initialized
+DEBUG - 2014-05-18 20:55:49 --> Router Class Initialized
+ERROR - 2014-05-18 20:55:49 --> 404 Page Not Found --> favicon.ico
+DEBUG - 2014-05-18 20:55:53 --> Config Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Hooks Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Utf8 Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> UTF-8 Support Enabled
+DEBUG - 2014-05-18 20:55:53 --> URI Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Router Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Output Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Security Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Input Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-05-18 20:55:53 --> Language Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Loader Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Helper loaded: url_helper
+DEBUG - 2014-05-18 20:55:53 --> Controller Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Helper loaded: file_helper
+DEBUG - 2014-05-18 20:55:53 --> Config Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Hooks Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Utf8 Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> UTF-8 Support Enabled
+DEBUG - 2014-05-18 20:55:53 --> URI Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Router Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Output Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Security Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Input Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-05-18 20:55:53 --> Language Class Initialized
+DEBUG - 2014-05-18 20:55:53 --> Loader Class Initialized
+DEBUG - 2014-05-18 20:55:54 --> Helper loaded: url_helper
+DEBUG - 2014-05-18 20:55:54 --> Controller Class Initialized
+DEBUG - 2014-05-18 20:55:54 --> Database Driver Class Initialized
+DEBUG - 2014-05-18 20:55:54 --> Helper loaded: security_helper
+DEBUG - 2014-05-18 20:55:54 --> XSS Filtering completed
+DEBUG - 2014-05-18 20:55:54 --> Session Class Initialized
+DEBUG - 2014-05-18 20:55:54 --> Helper loaded: string_helper
+DEBUG - 2014-05-18 20:55:54 --> A session cookie was not found.
+DEBUG - 2014-05-18 20:55:54 --> Session routines successfully run
+DEBUG - 2014-05-18 20:55:54 --> Helper loaded: form_helper
+DEBUG - 2014-05-18 20:55:54 --> XSS Filtering completed
+DEBUG - 2014-05-18 20:55:54 --> XSS Filtering completed
+ERROR - 2014-05-18 20:55:55 --> Severity: Warning  --> mkdir(): File exists /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 982
+DEBUG - 2014-05-18 20:55:55 --> Final output sent to browser
+DEBUG - 2014-05-18 20:55:55 --> Total execution time: 1.7884
+DEBUG - 2014-05-18 20:55:57 --> Config Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Hooks Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Utf8 Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> UTF-8 Support Enabled
+DEBUG - 2014-05-18 20:55:57 --> URI Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Router Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Output Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Security Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Input Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> XSS Filtering completed
+DEBUG - 2014-05-18 20:55:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-05-18 20:55:57 --> Language Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Loader Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Helper loaded: url_helper
+DEBUG - 2014-05-18 20:55:57 --> Controller Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Helper loaded: security_helper
+DEBUG - 2014-05-18 20:55:57 --> Encrypt Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Database Driver Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Model Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Encrypt class already loaded. Second attempt ignored.
+DEBUG - 2014-05-18 20:55:57 --> Helper loaded: form_helper
+DEBUG - 2014-05-18 20:55:57 --> Session Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Helper loaded: string_helper
+DEBUG - 2014-05-18 20:55:57 --> Session routines successfully run
+DEBUG - 2014-05-18 20:55:57 --> Pagination Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Form Validation Class Initialized
+DEBUG - 2014-05-18 20:55:57 --> Encrypt class already loaded. Second attempt ignored.
+DEBUG - 2014-05-18 20:55:57 --> File loaded: application/views/header.php
+DEBUG - 2014-05-18 20:55:57 --> XSS Filtering completed
+DEBUG - 2014-05-18 20:55:57 --> File loaded: application/views/fixture_table/list.php
+DEBUG - 2014-05-18 20:55:57 --> File loaded: application/views/footer.php
+DEBUG - 2014-05-18 20:55:57 --> Final output sent to browser
+DEBUG - 2014-05-18 20:55:57 --> Total execution time: 0.1176
+DEBUG - 2014-05-18 20:56:12 --> Config Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Hooks Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Utf8 Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> UTF-8 Support Enabled
+DEBUG - 2014-05-18 20:56:12 --> URI Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Router Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Output Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Security Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Input Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> XSS Filtering completed
+DEBUG - 2014-05-18 20:56:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-05-18 20:56:12 --> Language Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Loader Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Helper loaded: url_helper
+DEBUG - 2014-05-18 20:56:12 --> Controller Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Helper loaded: security_helper
+DEBUG - 2014-05-18 20:56:12 --> Encrypt Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Database Driver Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Model Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Encrypt class already loaded. Second attempt ignored.
+DEBUG - 2014-05-18 20:56:12 --> Helper loaded: form_helper
+DEBUG - 2014-05-18 20:56:12 --> Session Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Helper loaded: string_helper
+DEBUG - 2014-05-18 20:56:12 --> Session routines successfully run
+DEBUG - 2014-05-18 20:56:12 --> Pagination Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Form Validation Class Initialized
+DEBUG - 2014-05-18 20:56:12 --> Encrypt class already loaded. Second attempt ignored.
+DEBUG - 2014-05-18 20:56:12 --> File loaded: application/views/header.php
+DEBUG - 2014-05-18 21:30:32 --> Config Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> URI Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Router Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Output Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Security Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Input Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> XSS Filtering completed
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Language Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Loader Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Controller Class Initialized
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> fopen(/Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/controllers/CaptchaController.php): failed to open stream: Permission denied /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/helpers/file_helper.php 90
+DEBUG - 2014-05-18 21:30:32 --> Final output sent to browser
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:30:32 --> Total execution time: 0.0543
+ERROR - 2014-05-18 21:30:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Config Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> URI Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Router Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Output Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Security Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Input Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> XSS Filtering completed
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Language Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Loader Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Controller Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Config Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> URI Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Router Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Output Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Security Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Input Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> XSS Filtering completed
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Language Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Loader Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Controller Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:31:32 --> XSS Filtering completed
+ERROR - 2014-05-18 21:31:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Config Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> URI Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Router Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Output Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Security Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Input Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> XSS Filtering completed
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Language Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Loader Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Controller Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Config Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> URI Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Router Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Output Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Security Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Input Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> XSS Filtering completed
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Language Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Loader Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Controller Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:33:30 --> XSS Filtering completed
+ERROR - 2014-05-18 21:33:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Config Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> URI Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Router Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Output Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Security Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Input Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> XSS Filtering completed
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Language Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Loader Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Controller Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:34:37 --> XSS Filtering completed
+ERROR - 2014-05-18 21:34:37 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Config Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> URI Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Router Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Output Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Security Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Input Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> XSS Filtering completed
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Language Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Loader Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Controller Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> XSS Filtering completed
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Session Class Initialized
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Session routines successfully run
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> XSS Filtering completed
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> XSS Filtering completed
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> DB Transaction Failure
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:35:19 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '. '' at line 1
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:35:19 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:35:19 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php:969) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 21:36:38 --> Config Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> URI Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Router Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Output Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Security Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Input Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> XSS Filtering completed
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Language Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Loader Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Controller Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> XSS Filtering completed
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Session Class Initialized
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Session routines successfully run
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> XSS Filtering completed
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:38 --> XSS Filtering completed
+ERROR - 2014-05-18 21:36:38 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1030
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1033
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1030
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1033
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1030
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1033
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1030
+ERROR - 2014-05-18 21:36:38 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1033
+DEBUG - 2014-05-18 21:36:39 --> Final output sent to browser
+ERROR - 2014-05-18 21:36:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:36:39 --> Total execution time: 0.2457
+ERROR - 2014-05-18 21:36:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:54 --> Config Class Initialized
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:54 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:54 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:54 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:54 --> URI Class Initialized
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:54 --> Router Class Initialized
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:37:54 --> 404 Page Not Found --> Captcha
+ERROR - 2014-05-18 21:37:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Config Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> URI Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Router Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Output Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Security Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Input Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Language Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Loader Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Controller Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Config Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> URI Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Router Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Output Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Security Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Input Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Language Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Loader Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Controller Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Session Class Initialized
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Session routines successfully run
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:37:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:37:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> fopen(/Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/controllers/CaptchaController.php): failed to open stream: Permission denied /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/helpers/file_helper.php 90
+DEBUG - 2014-05-18 21:39:04 --> Final output sent to browser
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:04 --> Total execution time: 0.0503
+ERROR - 2014-05-18 21:39:04 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Session Class Initialized
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Session routines successfully run
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:16 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:16 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:17 --> Final output sent to browser
+ERROR - 2014-05-18 21:39:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:17 --> Total execution time: 0.1533
+ERROR - 2014-05-18 21:39:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Model Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Session Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Session routines successfully run
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> File loaded: application/views/captcha/list.php
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Final output sent to browser
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:18 --> Total execution time: 0.0899
+ERROR - 2014-05-18 21:39:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Model Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Session Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Session routines successfully run
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> File loaded: application/views/captcha/edit.php
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Final output sent to browser
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:24 --> Total execution time: 0.0859
+ERROR - 2014-05-18 21:39:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Model Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Session Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Session routines successfully run
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> File loaded: application/views/captcha/list.php
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Final output sent to browser
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:27 --> Total execution time: 0.1082
+ERROR - 2014-05-18 21:39:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Config Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> URI Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Router Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Output Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Security Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Input Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> XSS Filtering completed
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Language Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Loader Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Controller Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Model Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Session Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Session routines successfully run
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:39:29 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:39:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Config Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> URI Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Router Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Output Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Security Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Input Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> XSS Filtering completed
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Language Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Loader Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Controller Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Config Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> URI Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Router Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Output Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Security Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Input Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> XSS Filtering completed
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Language Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Loader Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Controller Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> XSS Filtering completed
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Session Class Initialized
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Session routines successfully run
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> XSS Filtering completed
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> XSS Filtering completed
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:44:10 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1034
+ERROR - 2014-05-18 21:44:10 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1034
+ERROR - 2014-05-18 21:44:10 --> Severity: Notice  --> Trying to get property of non-object /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/libraries/SparkPlug.php 1034
+DEBUG - 2014-05-18 21:44:10 --> Final output sent to browser
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:44:10 --> Total execution time: 0.1221
+ERROR - 2014-05-18 21:44:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Config Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> URI Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Router Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Output Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Security Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Input Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Language Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Loader Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Controller Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Config Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> URI Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Router Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Output Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Security Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Input Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Language Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Loader Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Controller Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Session Class Initialized
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Session routines successfully run
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Final output sent to browser
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:22 --> Total execution time: 0.1261
+ERROR - 2014-05-18 21:49:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Config Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> URI Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Router Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Output Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Security Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Input Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Language Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Loader Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Controller Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Model Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Session Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Session routines successfully run
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> File loaded: application/views/captcha/list.php
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Final output sent to browser
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:49:24 --> Total execution time: 0.0911
+ERROR - 2014-05-18 21:49:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Config Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> URI Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Router Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Output Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Security Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Input Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Language Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Loader Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Controller Class Initialized
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> fopen(/Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/controllers/CaptchaController.php): failed to open stream: Permission denied /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/helpers/file_helper.php 90
+DEBUG - 2014-05-18 21:55:31 --> Final output sent to browser
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:31 --> Total execution time: 0.0402
+ERROR - 2014-05-18 21:55:31 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Config Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> URI Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Router Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Output Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Security Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Input Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Language Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Loader Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Controller Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Config Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> URI Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Router Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Output Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Security Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Input Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Language Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Loader Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Controller Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Session Class Initialized
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Session routines successfully run
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Final output sent to browser
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:47 --> Total execution time: 0.1289
+ERROR - 2014-05-18 21:55:47 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Config Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> URI Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Router Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Output Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Security Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Input Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Language Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Loader Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Controller Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Model Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Session Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Session routines successfully run
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> XSS Filtering completed
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> File loaded: application/views/captcha/list.php
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Final output sent to browser
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:55:49 --> Total execution time: 0.1171
+ERROR - 2014-05-18 21:55:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Config Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> URI Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Router Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Output Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Security Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Input Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Language Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Loader Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Controller Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Helper loaded: file_helper
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Config Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> URI Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Router Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:57 --> Output Class Initialized
+ERROR - 2014-05-18 21:57:57 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Security Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Input Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Language Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Loader Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Controller Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Session Class Initialized
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Session routines successfully run
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Final output sent to browser
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:58 --> Total execution time: 0.2165
+ERROR - 2014-05-18 21:57:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Config Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> URI Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Router Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Output Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Security Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Input Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Language Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Loader Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Controller Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Model Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Session Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Session routines successfully run
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> XSS Filtering completed
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Final output sent to browser
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:57:59 --> Total execution time: 0.0856
+ERROR - 2014-05-18 21:57:59 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Config Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> URI Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Router Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Output Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Security Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Input Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Language Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Loader Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Controller Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Model Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Session Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Session routines successfully run
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Final output sent to browser
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:20 --> Total execution time: 0.0929
+ERROR - 2014-05-18 21:59:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Config Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Hooks Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Utf8 Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> URI Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Router Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Output Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Security Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Input Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Language Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Loader Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Helper loaded: url_helper
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Controller Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Helper loaded: security_helper
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Encrypt Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Database Driver Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Model Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Helper loaded: form_helper
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Session Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Helper loaded: string_helper
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Session routines successfully run
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Pagination Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Form Validation Class Initialized
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 21:59:24 --> XSS Filtering completed
+ERROR - 2014-05-18 21:59:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 21:59:24 --> Severity: Notice  --> Undefined variable: primary_key /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/application/models/fixture_table.php 331
+DEBUG - 2014-05-18 22:01:50 --> Config Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> URI Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Router Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Output Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Security Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Input Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Language Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Loader Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Controller Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Helper loaded: file_helper
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Config Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> URI Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Router Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Output Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Security Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Input Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Language Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Loader Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Controller Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Session Class Initialized
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Session routines successfully run
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Final output sent to browser
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:50 --> Total execution time: 0.4406
+ERROR - 2014-05-18 22:01:50 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Config Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> URI Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Router Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Output Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Security Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Input Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Language Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Loader Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Controller Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Model Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Session Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Session routines successfully run
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Final output sent to browser
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:52 --> Total execution time: 0.0773
+ERROR - 2014-05-18 22:01:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Config Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> URI Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Router Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Output Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Security Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Input Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Language Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Loader Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Controller Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Model Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Session Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Session routines successfully run
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Final output sent to browser
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:54 --> Total execution time: 0.0877
+ERROR - 2014-05-18 22:01:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Config Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> URI Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Router Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Output Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Security Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Input Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Language Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Loader Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Controller Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Model Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Session Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Session routines successfully run
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:01:58 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:01:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Config Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> URI Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Router Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Output Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Security Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Input Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Language Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Loader Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Controller Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Helper loaded: file_helper
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Config Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> URI Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Router Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Output Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Security Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Input Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Language Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Loader Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Controller Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Session Class Initialized
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Session routines successfully run
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Final output sent to browser
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:23 --> Total execution time: 0.2442
+ERROR - 2014-05-18 22:20:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Config Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> URI Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Router Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Output Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Security Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Input Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Language Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Loader Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:20:24 --> Controller Class Initialized
+ERROR - 2014-05-18 22:20:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Config Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> URI Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Router Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Output Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Security Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Input Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Language Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Loader Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Controller Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Helper loaded: file_helper
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Config Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> URI Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Router Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Output Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Security Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Input Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Language Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Loader Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Controller Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Session Class Initialized
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Session routines successfully run
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:08 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:08 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:09 --> Final output sent to browser
+ERROR - 2014-05-18 22:25:09 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:09 --> Total execution time: 0.1766
+ERROR - 2014-05-18 22:25:09 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Config Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> URI Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Router Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Output Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Security Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Input Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Language Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Loader Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Controller Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Model Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Session Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Session routines successfully run
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Final output sent to browser
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:10 --> Total execution time: 0.0868
+ERROR - 2014-05-18 22:25:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Config Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> URI Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Router Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Output Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Security Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Input Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Language Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Loader Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Controller Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Model Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Session Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Session routines successfully run
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Final output sent to browser
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:17 --> Total execution time: 0.0905
+ERROR - 2014-05-18 22:25:17 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:20 --> Config Class Initialized
+ERROR - 2014-05-18 22:25:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:20 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:25:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:20 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> URI Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Router Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Output Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Security Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Input Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Language Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Loader Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Controller Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Model Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Session Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Session routines successfully run
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> XSS Filtering completed
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:25:21 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:25:21 --> DB Transaction Failure
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:25:21 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:25:21 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:25:21 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:26:34 --> Config Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> URI Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Router Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Output Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Security Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Input Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Language Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Loader Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Controller Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Helper loaded: file_helper
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Config Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> URI Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Router Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Output Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Security Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Input Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Language Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Loader Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Controller Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Session Class Initialized
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Session routines successfully run
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:34 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:34 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:35 --> Final output sent to browser
+ERROR - 2014-05-18 22:26:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:35 --> Total execution time: 0.1811
+ERROR - 2014-05-18 22:26:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Config Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> URI Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Router Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Output Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Security Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Input Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Language Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Loader Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Controller Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Model Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Session Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Session routines successfully run
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Final output sent to browser
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:36 --> Total execution time: 0.1226
+ERROR - 2014-05-18 22:26:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Config Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> URI Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Router Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Output Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Security Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Input Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Language Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Loader Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Controller Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Model Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Session Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Session routines successfully run
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Final output sent to browser
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:39 --> Total execution time: 0.0933
+ERROR - 2014-05-18 22:26:39 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Config Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> URI Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Router Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Output Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Security Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Input Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Language Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Loader Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Controller Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Model Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Session Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Session routines successfully run
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:41 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:41 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> XSS Filtering completed
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:26:42 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:26:42 --> DB Transaction Failure
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:26:42 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:26:42 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:26:42 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:28:27 --> Config Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> URI Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Router Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Output Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Security Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Input Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Language Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Loader Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Controller Class Initialized
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:27 --> Helper loaded: file_helper
+ERROR - 2014-05-18 22:28:27 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Config Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> URI Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Router Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Output Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Security Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Input Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Language Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Loader Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Controller Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Session Class Initialized
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Session routines successfully run
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Final output sent to browser
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:28 --> Total execution time: 0.5144
+ERROR - 2014-05-18 22:28:28 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> Config Class Initialized
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> URI Class Initialized
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> Router Class Initialized
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:29 --> Output Class Initialized
+ERROR - 2014-05-18 22:28:29 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Security Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Input Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Language Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Loader Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Controller Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Model Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Session Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Session routines successfully run
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Final output sent to browser
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:30 --> Total execution time: 0.0849
+ERROR - 2014-05-18 22:28:30 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Config Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> URI Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Router Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Output Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Security Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Input Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Language Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Loader Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Controller Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Model Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Session Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Session routines successfully run
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Final output sent to browser
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:32 --> Total execution time: 0.0858
+ERROR - 2014-05-18 22:28:32 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Config Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> URI Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Router Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Output Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Security Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Input Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Language Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Loader Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Controller Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Model Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Session Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Session routines successfully run
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:35 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:35 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> XSS Filtering completed
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:28:36 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:28:36 --> DB Transaction Failure
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:28:36 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:28:36 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:28:36 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:29:22 --> Config Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> URI Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Router Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Output Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Security Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Input Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Language Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Loader Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Controller Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Model Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Session Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Session routines successfully run
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Final output sent to browser
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:22 --> Total execution time: 0.0845
+ERROR - 2014-05-18 22:29:22 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Config Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> URI Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Router Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Output Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Security Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Input Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Language Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Loader Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Controller Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Model Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Session Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Session routines successfully run
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> XSS Filtering completed
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:29:24 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:29:24 --> DB Transaction Failure
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:29:24 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:29:24 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:29:24 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:30:18 --> Config Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> URI Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Router Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Output Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Security Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Input Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Language Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Loader Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Controller Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Model Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Session Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Session routines successfully run
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Final output sent to browser
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:18 --> Total execution time: 0.1165
+ERROR - 2014-05-18 22:30:18 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Config Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> URI Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Router Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Output Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Security Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Input Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Language Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Loader Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Controller Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Model Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Session Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Session routines successfully run
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:20 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:30:20 --> DB Transaction Failure
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:20 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:20 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:20 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:30:44 --> Config Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> URI Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Router Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Output Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Security Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Input Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Language Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Loader Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Controller Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Model Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Session Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Session routines successfully run
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:44 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:30:44 --> DB Transaction Failure
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:44 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:44 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:44 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:30:49 --> Config Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> URI Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Router Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Output Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Security Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Input Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Language Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Loader Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Controller Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Model Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Session Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Session routines successfully run
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Final output sent to browser
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:49 --> Total execution time: 0.0844
+ERROR - 2014-05-18 22:30:49 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Config Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> URI Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Router Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Output Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Security Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Input Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Language Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Loader Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Controller Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Model Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Session Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Session routines successfully run
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> XSS Filtering completed
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:52 --> Severity: Notice  --> Array to string conversion /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/database/drivers/mysqli/mysqli_driver.php 612
+DEBUG - 2014-05-18 22:30:52 --> DB Transaction Failure
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:52 --> Query error: Unknown column '0' in 'field list'
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:30:52 --> Language file loaded: language/english/db_lang.php
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+ERROR - 2014-05-18 22:30:52 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Exceptions.php:185) /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/core/Common.php 442
+DEBUG - 2014-05-18 22:32:54 --> Config Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> URI Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Router Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Output Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Security Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Input Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Language Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Loader Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Controller Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Helper loaded: file_helper
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Config Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> URI Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Router Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Output Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Security Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Input Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Language Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Loader Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Controller Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Session Class Initialized
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Session routines successfully run
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Final output sent to browser
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:54 --> Total execution time: 0.1912
+ERROR - 2014-05-18 22:32:54 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Config Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> URI Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Router Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Output Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Security Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Input Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Language Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Loader Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Controller Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Model Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Session Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Session routines successfully run
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Final output sent to browser
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:56 --> Total execution time: 0.0860
+ERROR - 2014-05-18 22:32:56 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Config Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> URI Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Router Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Output Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Security Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Input Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Language Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Loader Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Controller Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Model Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Session Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Session routines successfully run
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> XSS Filtering completed
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Final output sent to browser
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:32:58 --> Total execution time: 0.0884
+ERROR - 2014-05-18 22:32:58 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Config Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> URI Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Router Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Output Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Security Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Input Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Language Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Loader Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Controller Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Model Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Session Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Session routines successfully run
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:01 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:01 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Config Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> URI Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Router Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Output Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Security Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Input Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Language Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Loader Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Controller Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Model Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Session Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Session routines successfully run
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Final output sent to browser
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:02 --> Total execution time: 0.0885
+ERROR - 2014-05-18 22:33:02 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Config Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> URI Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Router Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Output Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Security Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Input Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Language Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Loader Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Controller Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Model Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Session Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Session routines successfully run
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> File loaded: application/views/fixture_table/edit.php
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Final output sent to browser
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:10 --> Total execution time: 0.0933
+ERROR - 2014-05-18 22:33:10 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Config Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> URI Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Router Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Output Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Security Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Input Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Language Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Loader Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Controller Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Model Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Session Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Session routines successfully run
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Config Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Hooks Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Utf8 Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> UTF-8 Support Enabled
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> URI Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Router Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Output Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Security Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Input Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Global POST and COOKIE data sanitized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Language Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Loader Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: url_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Controller Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: security_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Encrypt Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Database Driver Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Model Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: form_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Session Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Helper loaded: string_helper
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Session routines successfully run
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Pagination Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Form Validation Class Initialized
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Encrypt class already loaded. Second attempt ignored.
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> File loaded: application/views/header.php
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> XSS Filtering completed
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> File loaded: application/views/fixture_table/list.php
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> File loaded: application/views/footer.php
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Final output sent to browser
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
+DEBUG - 2014-05-18 22:33:23 --> Total execution time: 0.0778
+ERROR - 2014-05-18 22:33:23 --> Severity: Warning  --> chmod(): Operation not permitted /Users/Arbeit/var/www/myProject.01.proto.oauth.my/https_docs/system/libraries/Log.php 106
