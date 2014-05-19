@@ -1085,12 +1085,22 @@ class SparkPlug
 
         //getters and setters
         $get_set  = "\n";
+        $index3= 0;
         foreach ($fields as $field) {
             $get_set .= $indent . '/**'."\n";
             $get_set .= $indent . '*'."\n";
             $get_set .= $indent . '*/'."\n";
+
             $get_set .= $indent . 'public function set' . ucfirst($field) . '($name) {'."\n";
-            $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+            switch ($meta_arr[$index3]) {
+                case 'tinyint';
+                    $get_set .= $indent .$indent . '$this->'.$field.'= $name[0];'."\n";
+                break;
+                default:
+                    $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+               break;
+            }
+
             $get_set .= $indent . '}'."\n";
 
             $get_set .= $indent . '/**'."\n";
@@ -1099,6 +1109,8 @@ class SparkPlug
             $get_set .= $indent . 'public function get' . ucfirst($field) . '() {'."\n";
             $get_set .= $indent . $indent .'return $this->'.$field.';'."\n";
             $get_set .= $indent . '}'."\n";
+
+            $index3++;
         }
 
         $model_text = str_replace("{get_set_methods}\n", $get_set, $model_text);
@@ -1584,30 +1596,43 @@ $options_' . $field->name . ' = array(
                     break;
                 case 'tinyint':
                 case 'boolean':
-                $form_markup .= '?><div class=\'radio\'><?php ';
+                $form_markup .= '
+                if($result[\'' . $field->name . '\']== 1) {
+                    $checked_01 = TRUE;
+                    $checked_02 = FALSE;
+                }else {
+                    $checked_01 = FALSE;
+                    $checked_02 = TRUE;
+                }
+                '."\n";
+                $form_markup .= '?>'."\n";
+                $form_markup .='<div class=\'radio\'><?php '."\n";
                     $form_markup .= '$options_' . $field->name . '01 = array(
 
     \'name\'        => \'' . $field->name . '[]\',
     \'id\'          => \'' . $field->name . '\',
     \'value\'       => \'1\',
-    \'checked\'     => TRUE,
-    \'style\'       => \'margin:10px\'
-                    );';
-                $form_markup .= '?><label for=\''.$field->name.'01\'><?php ';
-                $form_markup .= 'echo form_radio(\'' . $field->name . '[]\',0,\'\',\'id="'.$field->name.'01"\')';
+    \'checked\'     => $checked_01,
+    \'style\'       => \'margin-right:10px\',
+    \'id\'          =>\'is_active01\'
+                    );'."\n";
+                $form_markup .= '?><label for=\''.$field->name.'01\'><?php '."\n";
+                $form_markup .= 'echo form_radio($options_' . $field->name . '01)';
                 $form_markup .= '?>True';
-                $form_markup .= '</label><?php ';
+                $form_markup .= '</label><?php '."\n";
 
                 $form_markup .= '$options_' . $field->name . '02 = array(
 
     \'name\'        => \'' . $field->name . '[]\',
     \'id\'          => \'' . $field->name . '\',
     \'value\'       => \'0\',
-    \'checked\'     => FALSE,
-    \'style\'       => \'margin:10px\'
+    \'checked\'     => $checked_02,
+    \'style\'       => \'margin:10px\',
+    \'style\'       => \'margin-right:10px\',
+    \'id\'          =>\'is_active02\'
                     );';
-                $form_markup .= '?><label for=\''.$field->name.'02\'><?php ';
-                $form_markup .= 'echo form_radio(\'' . $field->name . '[]\',0,\'\',\'id="'.$field->name.'02"\')';
+                $form_markup .= '?><label for=\''.$field->name.'02\'><?php '."\n";
+                $form_markup .= 'echo form_radio($options_' . $field->name . '02)';
                 $form_markup .= '?>False';
                 $form_markup .= '</label>';
 
@@ -2138,10 +2163,12 @@ class {ucf_controller} extends CI_Controller {
             $this->CI =& get_instance();
             $this->CI->load->helper(array("security"));
             $this->CI->load->library(array("encrypt"));
+            if($_POST) {
+                {setter_variables_from_post}
+            }
         }
         {get_set_methods}
         public function facadeSetGet() {
-            {setter_variables_from_post}
             {set_variables_from_post}
             return $data;
         }
