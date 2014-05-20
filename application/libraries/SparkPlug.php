@@ -1137,9 +1137,9 @@ class SparkPlug
         $var_set2 = '';
         foreach ($fields as $field) {
             if ($field == "password") {
-                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '($this->CI->encrypt->sha1(xss_clean($this->CI->input->post("password",TRUE))));' . "\n";
+                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post("password",TRUE)));' . "\n";
             } elseif ($field == "passconf") {
-                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '($this->CI->encrypt->sha1(xss_clean($this->CI->input->post("passconf",TRUE))));' . "\n";
+                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post("passconf",TRUE)));' . "\n";
 
             } else {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));' . "\n";
@@ -1650,6 +1650,18 @@ $options_' . $field->name . ' = array(
                 case 'string':
                     $name = strtolower($field->name);
                     switch ($name) :
+                        case preg_match('/file/',$name) || preg_match('/path/',$name):
+                            $form_markup .= '$options_' . $field->name . '= array(
+\'name\' => \'' . $field->name . '\',
+\'id\' => \'' . $field->name . '\',
+\'size\' => \'50\',
+\'style\' => \'width:100%\',
+\'class\' => \'form-control\',
+\'type\' => \'file\',
+\'required\' => \'\');
+';
+                            $form_markup .= 'echo form_upload($options_' . $field->name . ');';
+                        break;
                         case 'email':
                             $form_markup .= '$options_' . $field->name . ' = array(
 \'name\' => \'' . $field->name . '\',
@@ -1939,6 +1951,21 @@ class {ucf_controller} extends CI_Controller {
 
     }
 
+    function upload($view = \'edit\') {
+        $config[\'upload_path\'] = \'./uploads/\';
+        $config[\'allowed_types\'] = \'gif|jpg|png\';
+        $config[\'max_size\'] = \'100\';
+        $this->load->library(\'upload\', $config);
+
+        if (!$this->upload->do_upload()) { // Upload error,display form & errors
+            $this->session->set_flashdata(\'msg\', $this->upload->display_errors());
+        } else { // Success, display success message
+            $this->session->set_flashdata(\'msg\', \'Upload Success!\'.\'<br/>\'.var_dump($this->upload->data()));
+            $data[\'upload_data\'] = $this->upload->data();
+            $data[\'success\'] = TRUE;
+        }
+    }
+
     public function show_list() {
 
         $config[\'base_url\'] = $this->config->item(\'base_url\')."/{controller}/show_list";
@@ -2051,6 +2078,7 @@ class {ucf_controller} extends CI_Controller {
 
     public function update() {
         {set_rules}
+        $upload_msg = $this->upload(\'edit\');
         $id = (int) xss_clean($this->input->post(\''.$this->getPrimaryKeyFieldName().'\',TRUE));
         if ($this->form_validation->run() == FALSE)
         {
@@ -2372,7 +2400,7 @@ endif;
         <div class="clearfix"></div>
     </div>
 <?php endif; ?>
-<?php echo form_open(\''.$this->model_name.'/update/\',\'formnovalidate=formnovalidate\'); ?>
+<?php echo form_open_multipart(\''.$this->model_name.'/update/\',\'formnovalidate=formnovalidate\'); ?>
 {form_fields_update}
 <p>
 <br />
