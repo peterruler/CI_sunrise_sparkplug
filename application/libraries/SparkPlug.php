@@ -1090,7 +1090,6 @@ class SparkPlug
             $get_set .= $indent . '/**'."\n";
             $get_set .= $indent . '*'."\n";
             $get_set .= $indent . '*/'."\n";
-
             $get_set .= $indent . 'public function set' . ucfirst($field) . '($name) {'."\n";
             switch ($meta_arr[$index3]) {
                 case 'tinyint';
@@ -1101,7 +1100,24 @@ class SparkPlug
                     }'."\n";
                 break;
                 default:
-                    $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                    if ( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
+                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                    } else if(preg_match('/(.*)(password)(.*)/',strtolower($field))){
+                        $get_set .= 'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {
+                                $name = $this->CI->encrypt->sha1($name);
+                                }';
+                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;';
+                    } else if( preg_match('/(.*)(file)(.*)/',strtolower($field)) || preg_match('/(.*)(path)(.*)/',strtolower($field))) {
+                            $get_set .= 'if(!empty($name)) {
+                                $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
+                                }';
+                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                    } else {
+                        $get_set .= 'if(!empty($name)) {
+                            $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
+                            }';
+                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                    }
                break;
             }
 
@@ -1110,25 +1126,14 @@ class SparkPlug
             $get_set .= $indent . '/**'."\n";
             $get_set .= $indent . '*'."\n";
             $get_set .= $indent . '*/'."\n";
+
             $get_set .= $indent . 'public function get' . ucfirst($field) . '() {'."\n";
 
             if ( preg_match('/(.*)(time)(.*)/',strtolower($field)) ) {
                 $get_set .= $indent . $indent .'return \'0000-00-00 \'.$this->'.$field.';'."\n";
             } else if( $meta_arr[$index3] == 'datetime' && !preg_match('/(.*)(time)(.*)/',strtolower($field)) ) {
                 $get_set .= $indent . $indent .'return $this->'.$field.'.\' 00:00:00\';'."\n";
-            } else if( preg_match('/(.*)(password)(.*)/',strtolower($field)) ) {
-                $get_set .= $indent . $indent .'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {
-                    $name = $this->CI->encrypt->sha1($name);
-                }
-                    $this->'.$field.'= $name;
-                    '."\n";
-            } else if ( preg_match('/(.*)(file)(.*)/',strtolower($field)) || preg_match('/(.*)(path)(.*)/',strtolower($field))) {
-                $get_set .= 'if(!empty($name)) {
-                    $name = base_url().\'uploads\'.DIRECTORY_SEPARATOR.$name[\'file_name\'];
-                }
-                $this->'.$field.'= $name;'."\n";
-            }
-            else {
+            } else {
                 $get_set .= $indent . $indent .'return $this->'.$field.';'."\n";
             }
 
@@ -1145,7 +1150,8 @@ class SparkPlug
 
         $var_set = $indent . '$data=array();'."\n";
         foreach ($fields as $field) {
-                $var_set .= $indent . '$data[\''.$field.'\'] = $this->get' . ucfirst($field) . '(\''.$field.'\');' . "\n";
+            $var_set .= $indent . '$data[\''.$field.'\'] = $this->get' . ucfirst($field) . '(\''.$field.'\');' . "\n";
+
         }
         $model_text = str_replace("{set_variables_from_post}\n", $var_set, $model_text);
 
@@ -1157,8 +1163,17 @@ class SparkPlug
             } elseif ($field == "passconf") {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post("passconf",TRUE)));' . "\n";
 
-            } else {
+            } else  if( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));' . "\n";
+            } else{
+                $var_set2 .= $indent . '
+                if(xss_clean($this->CI->input->post(\''.$field.'\',true)==\'\')) {
+                    //do nothing, keep in db $this->set' . ucfirst($field) . '();
+                } else {//get from post
+                    $this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));
+                }
+                ' . "\n";
+
             }
         }
         $model_text = str_replace("{setter_variables_from_post}\n", $var_set2, $model_text);
@@ -1710,7 +1725,35 @@ $options_' . $field->name . ' = array(
         ';
                             $form_markup .= 'echo form_input($options_' . $field->name . ');';
                         case 'password':
-                            $form_markup .= '$options_' . $field->name . ' = array(
+
+                            $form_markup .= '
+        echo form_label(\'<br />Encrypt Password for reset?\', \'encryp_password\');
+        $checked_encrypt_password01 = \'\';
+        $checked_encrypt_password02 = \'ckecked\';
+        ?>
+        <div class=\'radio\'><?php
+        $options_encrypt_password01 = array(
+        \'name\'        => \'encrypt_password[]\',
+        \'id\'          => \'encrypt_password01\',
+        \'value\'       => \'1\',
+        \'checked\'     => $checked_encrypt_password01,
+        \'style\'       => \'margin-right:10px\'
+        );?>
+        <label for=\'encrypt_password01\'><?php
+        echo form_radio($options_encrypt_password01)?>True</label>
+        <?php
+        $options_encrypt_password02 = array(
+        \'name\'        => \'encrypt_password[]\',
+        \'id\'          => \'encrypt_password02\',
+        \'value\'       => \'0\',
+        \'checked\'     => $checked_encrypt_password02,
+        \'style\'       => \'margin:10px\',
+        \'style\'       => \'margin-right:10px\'
+        );?><label for=\'encrypt_password02\'>
+        <?php
+        echo form_radio($options_encrypt_password02)?>False</label></div>'."\n";
+        $form_markup .= '<?php
+        $options_' . $field->name . ' = array(
         \'name\' => \'' . $field->name . '\',
         \'id\' => \'' . $field->name . '\',
         \'value\' => set_value(\'' . $field->name . '\', $result[\'' . $field->name . '\']),
@@ -1880,8 +1923,10 @@ $options_' . $field->name . ' = array(
         $html = "";
         $rules = "\n\r";
         $indent = "\t";
-        foreach ($fields as $field) :
-            switch ($field->type) :
+
+    foreach ($fields as $field) :
+        if( !preg_match('/(.*)(file)(.*)/',strtolower($field->name)) || !preg_match('/(.*)(path)(.*)/',strtolower($field->name))) :
+        switch ($field->type) :
                 case "varchar" :
                     switch ($field->name) :
                         case "email" :
@@ -1895,7 +1940,7 @@ $options_' . $field->name . ' = array(
                             $rules .= $indent .'$this->form_validation->set_rules(\'passconf\', \'passconf\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');';
                             break;
                         default:
-                            $rules .= '$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
+                            $rules .= $indent .'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|required|min_length[5]|max_length[' . $field->max_length . ']|xss_clean\');' . "\n";
                             break;
                     endswitch;
                     break;
@@ -1915,6 +1960,7 @@ $options_' . $field->name . ' = array(
                     $rules .= $indent .'$this->form_validation->set_rules(\'' . $field->name . '\', \'' . $field->name . '\', \'trim|xss_clean\');' . "\n";
                     break;
             endswitch;
+        endif;
         endforeach;
         return $rules;
     }
@@ -2116,15 +2162,19 @@ class {ucf_controller} extends CI_Controller {
 
         $this->load->library(\'upload\', $config);
         @chmod(\'./uploads\',0777);
-        $this->upload->do_upload();
+        $upload_success_data = array();
+
+        foreach($_FILES as $name => $value) :
+            $this->upload->do_upload(xss_clean($name));
+            $upload_success_data[] = $this->upload->data();
+        endforeach;
 
         if ($this->form_validation->run() == FALSE)
         {
             $res = $this->{uc_model_name}->get($id);
             $data["result"] = $res[0];
 
-            $upload_errors = \'<br />\';
-            $upload_errors .= implode(\'<br />\'.$this->upload->display_errors());
+            $upload_errors = \'<br />\'.$this->upload->display_errors();
 
             if(count($upload_errors) <= 0) {
                 $this->session->set_flashdata(\'msg\', \'Error\');
@@ -2138,14 +2188,13 @@ class {ucf_controller} extends CI_Controller {
         }
         else
         {
-            if(is_null($this->upload->data())) {
-                $this->session->set_flashdata(\'msg\', \'Entry Updated\');
-                $this->Fixture_table->update(null);
+            if(empty($upload_success_data[count($upload_success_data)-1][\'file_name\'])) {
+                $this->session->set_flashdata(\'msg\', \'Update success\');
+
+                $this->'.strtolower($this->model_name).'->update(null);
             } else {
-                $upload_data = implode(\'<br />\'.$this->upload->data());
-                $data[\'success\'] = TRUE;
-                $this->session->set_flashdata(\'msg\', \'Upload Success!\'.\'<br/>\'.$upload_data);
-                $this->Fixture_table->update($this->upload->data());
+                $this->session->set_flashdata(\'msg\', \'Update/Upload Success!\'.\'<br/> img name: \'.serialize($upload_success_data));
+                $this->'.strtolower($this->model_name).'->update($upload_success_data);
             }
             redirect(\'{controller}/show_list\');
         }
@@ -2206,7 +2255,7 @@ class {model_name} {
         $this->CI->load->helper(array("security"));
         $this->CI->load->library(array("encrypt"));
         if(xss_clean($this->CI->input->post(\'submit\',true))) {
-            {setter_variables_from_post}
+        {setter_variables_from_post}
         }
     }
 
@@ -2246,14 +2295,22 @@ class {model_name} {
     }
 
     public function update($upload_data=null) {
-        if(empty($upload_data)) {
-            $this->setFilepath(xss_clean($this->CI->input->post(\'userfile\',TRUE)));
-        } else {
-            $this->upload_data = $upload_data;
-            $this->setFilepath(xss_clean($this->upload_data));
-        }
-
-        $data = $this->facadeSetGet();
+            if(!is_null($upload_data)) {
+                $hash = 1;
+                foreach($upload_data as $index => $val) {
+                        $fp = "setFilepath$hash";
+                        //print_r($upload_data[$index][\'file_name\'].\'<br>\');
+                        $this->$fp(xss_clean($upload_data[xss_clean($index)][\'file_name\']));
+                    $hash++;
+                }
+            }
+            $data = $this->facadeSetGet();
+            if(is_null($upload_data)) {
+                $this->upload_data = $upload_data;
+                foreach($_FILES as $name => $value) :
+                    unset($data["$name"]);
+                endforeach;
+            }
         $this->CI->db->where( \''.$this->getPrimaryKeyFieldName().'\' ,$this->get'.ucfirst($this->getPrimaryKeyFieldName()).'());//@FIMXE sec? $this->$primary_key
         $this->CI->db->update(\'{table}\', $data);
     }
@@ -2389,16 +2446,20 @@ class {model_name} {
             </div>
         <p>
             <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
+            <div class=\'glyphicon\'>
             <?php
-                echo form_submit(\'submit\', \'<span class="glyphicon-search"></span>\', "formnovalidate  class=\'btn btn-md btn-default btn-block glyphicon\'");
+                echo form_submit(\'submit\', \'\', "formnovalidate  class=\'btn btn-md btn-default btn-block glyphicon-search\'");
             ?>
+            </div>
             </div>
         </p>
         <p>
             <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
+            <div class="glyphicon">
         <?php
-           echo form_submit(\'reset\', \'<span class="glyphicon-refresh"></span>\',\'formnovalidate="formnovalidate", id="reset" class="btn btn-md btn-default btn-block glyphicon"\');
+           echo form_submit(\'reset\', \'\',\'formnovalidate="formnovalidate", id="reset" class="btn btn-md btn-default btn-block glyphicon-refresh"\');
         ?>
+        </div>
             </div>
         </p>
         <?php
