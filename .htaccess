@@ -10,6 +10,6 @@ RewriteEngine on
 #     RewriteCond !{HTTPS} off
 #     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI]
 
-RewriteCond $1 !^(index\.php|images|robots\.txt|bower_components|assets)
+RewriteCond $1 !^(index\.php|images|uploads|robots\.txt|bower_components|assets)
 RewriteRule ^(.*)$ index.php/$1 [L]
 </ifModule>
