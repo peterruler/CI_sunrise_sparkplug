@@ -363,12 +363,12 @@ class SparkPlug
         $form_markup .= '\n\t';
         $form_markup = '$size = 50;';
         $form_markup .= '\n\t';
-        $form_markup = '$style = \'width:100%;\'';
+        $form_markup = '$style = \'width:100%;\';';
         $form_markup .= '\n\t';
-        $form_markup = '$css-class = \'form-control\'';
+        $form_markup = '$css-class = \'form-control\';';
         $form_markup .= '\n\t';
         $form_markup .= '\n\t';
-        $form_markup = '$cols = $size';
+        $form_markup = '$cols = $size;';
         $form_markup .= '\n\t';
         $form_markup = '$rows = 20';
         $form_markup .= '\n\t';
@@ -636,12 +636,12 @@ class SparkPlug
         $form_markup .= '\n\t';
         $form_markup = '$style = \'width:100%;\'';
         $form_markup .= '\n\t';
-        $form_markup = '$css-class = \'form-control\'';
+        $form_markup = '$css-class = \'form-control\';';
         $form_markup .= '\n\t';
         $form_markup .= '\n\t';
-        $form_markup = '$cols = $size';
+        $form_markup = '$cols = $size;';
         $form_markup .= '\n\t';
-        $form_markup = '$rows = 20';
+        $form_markup = '$rows = 20;';
         $form_markup .= '\n\t';
         if ($field->primary_key) {
             $form_markup .= 'echo form_hidden(' . $field->name . ', \'\')';
@@ -1297,206 +1297,372 @@ class SparkPlug
      */
     function _getMarkup($field)
     {
-        $form_markup = '<?php';
-        $form_markup .= "\n\t";
 
+        $form_markup = '<?php ';
         if ($field->primary_key) {
-            $form_markup .= '$hidden_' . $field->name . ' = array(
-             \'' . $field->name . '\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))));';
-            $form_markup .= "\n\t";
-            $form_markup .= 'echo form_hidden($hidden_' . $field->name . ');';
+            $form_markup .= 'echo form_hidden(\'' . $field->name . '\', \'\')';
             $form_markup .= "\n\t";
         } else {
             if ($field->type != 'boolean') {
                 $form_markup .= "\n\t";
-                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\', \'' . $field->name . '\');';
+                $form_markup .= '?><p><?php ';
+                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
                 $form_markup .= "\n\t";
+                $form_markup .= '?><br/><?php ';
             } else if ($field->type == 'boolean') {
                 $form_markup .= "\n\t";
-                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\', \'' . $field->name . '\');';
+                $form_markup .= '?><p><?php ';
+                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . $field->name . '\')';
                 $form_markup .= "\n\t";
-                $form_markup .= 'echo form_label(\'' . ucfirst('true') . '\', \'' . $field->name . '\');';
+                $form_markup .= '?><p><?php ';
+                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('true') . '\')';
+                $form_markup .= '?><p><?php';
+                $form_markup .= 'echo form_label(\'' . ucfirst($field->name) . '\',\'' . ucfirst('false') . '\')';
                 $form_markup .= "\n\t";
-                $form_markup .= 'echo form_label(\'' . ucfirst('false') . '\', \'' . $field->name . '\');';
-                $form_markup .= "\n\t";
+                $form_markup .= '?><br/><?php ';
             }
+
             switch ($field->type) {
+                case 'enum' :
+                    $arr = array();
+                    $options = array();
+
+                    //get the enum values
+                    $query = $this->CI->db->query("SELECT SUBSTRING(COLUMN_TYPE,5)
+                    FROM information_schema.COLUMNS
+                    WHERE TABLE_SCHEMA='{$this->CI->db->database}'
+                        AND TABLE_NAME='{$this->table}'
+                        AND COLUMN_NAME='{$field->name}'");
+                    $row = $query->row();
+                    //var_dump($row);exit;
+
+                    foreach($row as $value) {
+                        $row = $value;
+                    }
+                    $row = preg_replace('/\'/','',$row);
+                    $row = preg_replace('/\(/','',$row);
+                    $row = preg_replace('/\)/','',$row);
+                    $arr  = explode(',',$row);
+                    $n = 0;
+                    foreach ($arr as $value) {
+                        $options[$value] = ucfirst($value);
+                        $form_markup .= '$options_' . $field->name . '[\''.$value.'\']= \''.ucfirst($value).'\';';
+                    }
+                    //get the default value of row
+                    $query = $this->CI->db->query("SELECT COLUMN_DEFAULT FROM
+                    information_schema.columns
+                    WHERE TABLE_SCHEMA='{$this->CI->db->database}'
+                        AND TABLE_NAME='{$this->table}'
+                        AND COLUMN_NAME='{$field->name}'");
+
+                    $row = $query->row();
+                    foreach($row as $value) {
+                        $default = $value;
+                    }
+                    $form_markup .= "\n".'$default_' . $field->name . ' = \'\'';
+
+                    $form_markup .= ' ?><br /><?php echo form_dropdown(\'' . $field->name . '\', $options_' . $field->name . ', $default_' . $field->name . ');';
+                    $form_markup .= ' ?><br /><?php ';
+                    //$enum = str_getcsv($matches[1], ",", "'");
+                    break;
                 case 'int':
                     $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'number\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required\');
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'number\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
 ';
                     switch ($field->primary_key) :
                         case 'id':
-                            $form_markup .= 'echo form_input( $options_' . $field->name . ' );';
+                            $form_markup .= 'echo form_input($options_' . $field->name . ');';
                             break;
                         default:
-                            $form_markup .= 'echo form_input(  $options_' . $field->name . ' );';
+                            $form_markup .= 'echo form_input($options_' . $field->name . ');';
                             break;
                     endswitch;
+                    break;
+
+                case 'decimal':
+                    $form_markup .= '$options_' . $field->name . ' = array(
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'number\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+';
+                    $form_markup .= 'echo form_input($options_' . $field->name . ');';
+                    break;
+                case 'tinyint':
+                case 'boolean':
+                    $form_markup .= '
+                    $checked_01 = FALSE;
+                    $checked_02 = TRUE;'."\n";
+                    $form_markup .= '?>'."\n";
+                    $form_markup .='<div class=\'radio\'><?php '."\n";
+                    $form_markup .= '$options_' . $field->name . '01 = array(
+
+            \'name\'        => \'' . $field->name . '[]\',
+            \'id\'          => \'' . $field->name . '\',
+            \'value\'       => \'1\',
+            \'checked\'     => $checked_01,
+            \'style\'       => \'margin-right:10px\',
+            \'id\'          =>\'is_active01\'
+            );'."\n";
+                    $form_markup .= '?><label for=\''.$field->name.'01\'><?php '."\n";
+                    $form_markup .= 'echo form_radio($options_' . $field->name . '01)';
+                    $form_markup .= '?>True';
+                    $form_markup .= '</label><?php '."\n";
+
+                    $form_markup .= '$options_' . $field->name . '02 = array(
+
+            \'name\'        => \'' . $field->name . '[]\',
+            \'id\'          => \'' . $field->name . '\',
+            \'value\'       => \'0\',
+            \'checked\'     => $checked_02,
+            \'style\'       => \'margin:10px\',
+            \'style\'       => \'margin-right:10px\',
+            \'id\'          =>\'is_active02\'
+             );';
+                    $form_markup .= '?><label for=\''.$field->name.'02\'><?php '."\n";
+                    $form_markup .= 'echo form_radio($options_' . $field->name . '02)';
+                    $form_markup .= '?>False';
+                    $form_markup .= '</label>';
+
+                    $form_markup .= '</div><?php ';
                     break;
                 case 'varchar':
                 case 'string':
                     $name = strtolower($field->name);
                     switch ($name) :
+                        case preg_match('/file/',$name) || preg_match('/path/',$name):
+                            $form_markup .= '$options_' . $field->name . '= array(
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'file\',
+        \'required\' => \'\');
+        ';
+                            $form_markup .= 'echo form_upload($options_' . $field->name . ');';
+                            break;
                         case 'email':
                             $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'email\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required\');
-';
-                            $form_markup .= 'echo form_input( $options_' . $field->name . ' );';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'email\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+        ';
+                            $form_markup .= 'echo form_input($options_' . $field->name . ');';
                             break;
                         case 'url':
                             $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'url\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required");
-$form_markup .= form_input($options_' . $field->name . ');
-break;
-';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\',
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'url\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required");
+        $form_markup .= form_input($options_' . $field->name . ');
+        break;
+        ';
                             $form_markup .= 'echo form_input($options_' . $field->name . ');';
                         case 'password':
-                            $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size" => \'50\',
-\'style" => \'width:100%\',
-\'class" => \'form-control\',
-\'type" => \'password\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => "required");';
-                            $form_markup .= 'echo form_password($options_' . $field->name . ');';
 
-                            $form_markup .= "\n\t";
-                            $form_markup .= 'echo form_label(\'Password Repeat\', \'Password repeat\');';
                             $form_markup .= '
-$options_' . $field->name . ' = array(
-\'name\' => \'passconf\',
-\'id\' => \'passconf\',
-\'value\' => set_value(\'' . $field->name . '\',\'passconf\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'password\',
-\'placeholder\' => \'passconf\',
-\'required\' => \'required");
-';
+        echo form_label(\'<br />Encrypt Password for reset?\', \'encryp_password\');
+        $checked_encrypt_password01 = \'ckecked\';
+        $checked_encrypt_password02 = \'\';
+        ?>
+        <div class=\'radio\'><?php
+        $options_encrypt_password01 = array(
+        \'name\'        => \'encrypt_password[]\',
+        \'id\'          => \'encrypt_password01\',
+        \'value\'       => \'1\',
+        \'checked\'     => $checked_encrypt_password01,
+        \'style\'       => \'margin-right:10px\'
+        );?>
+        <label for=\'encrypt_password01\'><?php
+        echo form_radio($options_encrypt_password01)?>True</label>
+        <?php
+        $options_encrypt_password02 = array(
+        \'name\'        => \'encrypt_password[]\',
+        \'id\'          => \'encrypt_password02\',
+        \'value\'       => \'0\',
+        \'checked\'     => $checked_encrypt_password02,
+        \'style\'       => \'margin:10px\',
+        \'style\'       => \'margin-right:10px\'
+        );?><label for=\'encrypt_password02\'>
+        <?php
+        echo form_radio($options_encrypt_password02)?>False</label></div>'."\n";
+                            $form_markup .= '<?php
+        $options_' . $field->name . ' = array(
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'password\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => "required");
+        ';
+                            $form_markup .= 'echo form_password($options_' . $field->name . ');';
+                            $form_markup .= "\n\t";
+                            $form_markup .= 'echo form_label(\'Password repeat\', \'passconf\');';
+                            $form_markup .= '$options_' . $field->name . ' = array(
+        \'name\' => \'passconf\',
+        \'id\' => \'passconf\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'password\',
+        \'placeholder\' => \'passconf\',
+        \'required\' => \'required\');
+        ';
                             $form_markup .= 'echo form_password($options_' . $field->name . ');';
                             break;
                         case 'phone':
                             $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'tel\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required\');
-';
-                            $form_markup .= 'echo form_input( $options_' . $field->name . ');';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'tel\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+        ';
+                            $form_markup .= 'echo form_input($options_' . $field->name . ');';
                             break;
                         default:
                             $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'text\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required\');
-';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\',\'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'text\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+        ';
                             $form_markup .= 'echo form_input($options_' . $field->name . ');';
                             break;
                     endswitch;
                     break;
                 case 'text':
-                case 'blob':
                     $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'cols\' => 50,
-\'row\' => 20,
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required\');
-';
-                    $form_markup .= 'echo form_textarea($options_' . $field->name . ')';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'cols\' => 50,
+        \'row\' => 20,
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+        ';
+                    $form_markup .= 'echo form_textarea($options_' . $field->name . ');';
+                    break;
+                case 'blob':
+                case 'bloblong':/*@todo fileupload*/
+                    $form_markup .= '$options_' . $field->name . ' = array(
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'cols\' => 50,
+        \'row\' => 20,
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+        ';
+                    $form_markup .= 'echo form_textarea($options_' . $field->name . ');';
                     break;
                 case 'datetime' :
-                    $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'date\',
-\'placeholder\' => \'' . $field->name . '\');
-';
+                    if(strstr($field->name,'time')) :/*is time*/
+                        $form_markup .= '$options_' . $field->name . ' = array(
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'time\',
+        \'placeholder\' => \'' . $field->name . '\');
+        ';
+                    else :/*is datetime*/
+                        $form_markup .= '$date_'.$field->name.' = date(\'Y-m-d\', strtotime(\'\'));';
+                        $form_markup .= '$options_' . $field->name . ' = array(
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'date\',
+        \'placeholder\' => \'' . $field->name . '\');
+        ';
+                    endif;
+
                     $form_markup .= 'echo form_input($options_' . $field->name . ');';
                     break;
-                case 'boolean' :
+                case 'timestamp' :
+                    $form_markup .= '$last_updated_'.$field->name.' = new \DateTime();'."\n";
                     $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'radio\',
-\'checked\' => FALSE,
-\'style\' => \'margin:10px\',
-\'required\' =>  \'required\');
-';
-                    $form_markup .= 'echo form_radio($options_' . $field->name . ');';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'datetime\',
+        \'placeholder\' => \'' . $field->name . '\');
+        ';
+
+                    $form_markup .= 'echo form_input($options_' . $field->name . ');';
+
                     break;
                 default :
                     $form_markup .= '$options_' . $field->name . ' = array(
-\'name\' => \'' . $field->name . '\',
-\'id\' => \'' . $field->name . '\',
-\'value\' => set_value(\'' . $field->name . '\',xss_clean($this->input->post(\'' . $field->name . '\'))),
-\'maxlength\' => ' . $field->max_length . ',
-\'size\' => \'50\',
-\'style\' => \'width:100%\',
-\'class\' => \'form-control\',
-\'type\' => \'text\',
-\'placeholder\' => \'' . $field->name . '\',
-\'required\' => \'required\');
-';
+        \'name\' => \'' . $field->name . '\',
+        \'id\' => \'' . $field->name . '\',
+        \'value\' => set_value(\'' . $field->name . '\', \'\'),
+        \'maxlength\' => ' . $field->max_length . ',
+        \'size\' => \'50\',
+        \'style\' => \'width:100%\',
+        \'class\' => \'form-control\',
+        \'type\' => \'text\',
+        \'placeholder\' => \'' . $field->name . '\',
+        \'required\' => \'required\');
+        ';
                     $form_markup .= 'echo form_input($options_' . $field->name . ');';
                     break;
             }
