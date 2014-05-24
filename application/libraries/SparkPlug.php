@@ -1102,23 +1102,24 @@ class SparkPlug
                 default:
                     if ( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
                         $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
-                    } else if(preg_match('/(.*)(password)(.*)/',strtolower($field))){
-                        $get_set .= 'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {
-                                $name = $this->CI->encrypt->sha1($name);
-                                }';
-                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;';
                     } else if( preg_match('/(.*)(file)(.*)/',strtolower($field)) || preg_match('/(.*)(path)(.*)/',strtolower($field))) {
-                            $get_set .= 'if(!empty($name)) {
-                                $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
-                                }';
-                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
-                    } else {
-                        $get_set .= 'if(!empty($name)) {
+                            $get_set .= $indent.'if(!empty($name)) {
                             $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
                             }';
                         $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                    } else if('password' != strtolower($field)){
+                        $get_set .= $indent.'if(!empty($name)) {
+                        $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
+                        }';
+                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
                     }
-               break;
+                    if('password' == strtolower($field)){
+                        $get_set .= 'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {
+                        $name = $this->CI->encrypt->sha1($name);
+                        }';
+                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;';
+                    }
+                    break;
             }
 
             $get_set .= $indent . '}'."\n";
@@ -2308,7 +2309,7 @@ class {model_name} {
             if(is_null($upload_data)) {
                 $this->upload_data = $upload_data;
                 foreach($_FILES as $name => $value) :
-                    unset($data["$name"]);
+                    unset($data[xss_clean($name)]);
                 endforeach;
             }
         $this->CI->db->where( \''.$this->getPrimaryKeyFieldName().'\' ,$this->get'.ucfirst($this->getPrimaryKeyFieldName()).'());//@FIMXE sec? $this->$primary_key
@@ -2446,20 +2447,30 @@ class {model_name} {
             </div>
         <p>
             <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
-            <div class=\'glyphicon\'>
             <?php
-                echo form_submit(\'submit\', \'\', "formnovalidate  class=\'btn btn-md btn-default btn-block glyphicon-search\'");
+            $options_button_search = array(
+                \'name\'=>\'submit\',
+                \'content\'=>\'<i class="glyphicon glyphicon-search"></i>  search\',
+                \'type\'=>\'submit\',
+                \'class\'=>\'btn btn-md btn-primary\'
+            );
+            echo form_button($options_button_search);
             ?>
-            </div>
             </div>
         </p>
         <p>
             <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
-            <div class="glyphicon">
-        <?php
-           echo form_submit(\'reset\', \'\',\'formnovalidate="formnovalidate", id="reset" class="btn btn-md btn-default btn-block glyphicon-refresh"\');
+             <?php
+        $options_button_reset = array(
+            \'name\'=>\'reset\',
+            \'content\'=>\'<i class="glyphicon glyphicon-refresh"></i>  reload\',
+            \'type\'=>\'submit\',
+            \'id\'=>\'reset\',
+            \'class\'=>\'btn btn-md btn-warning\'
+        );
+        echo form_button($options_button_reset);
         ?>
-        </div>
+
             </div>
         </p>
         <?php
@@ -2486,7 +2497,7 @@ endif;
     <br />
 </div><br />
 <div class="col-lg-1 col-md-2 col-sm-12">
-<?php echo anchor("Fixture_table/new_entry/", \'<span class="glyphicon"><span class="glyphicon-plus"></span>Add</span>\', "class=\'btn btn-lg btn-default btn-block \'"); ?>
+<?php echo anchor("Fixture_table/new_entry/", \'<span class="glyphicon"><span class="glyphicon-plus"></span>Add</span>\', "class=\'btn btn-lg btn-success btn-block \'"); ?>
 </div>
 ';
     }
