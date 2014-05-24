@@ -20,6 +20,11 @@ and a changed version of the sparkplug, rails inspired crud scaffolding.
 * alternatively usage of [sparks Codeigniter package manager](http://getsparks.org/)
 
 ## Changes are
+* ***[NEW]*** Fileupload for multiple files (plain old html fileupload), naming convention something like %myfileANDOR%path%NR
+* ***[NEW]*** type tinyint for boolean radio buttons
+* ***[NEW]*** On demand password reset with or without password hashing, fieldname musst be exactly 'password'
+* ***[NEW]*** hardcoded ID and use of getters and setters in model
+* ***[BUGFIX]*** edit view update not working, post var not set
 * twitter bootstrap 3 markup (buttons, alerts, tables, flashmessages, fixed navtop layout sample by twitter bootstrap)
 * html5 form elements markup
 * serverside validation
