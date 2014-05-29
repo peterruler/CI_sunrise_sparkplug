@@ -33,4 +33,8 @@ application/views/*
 header.php
 footer.php
 tests/scaffold/fixtures/*
+uploads
+fixture_table.sql
+users.sql
+mysql.sock
 
