@@ -1040,38 +1040,37 @@ class SparkPlug
                 $var_init .= $indent . '* @'.$this->getPrimaryKeyFieldName().' @Column(type="integer") @GeneratedValue'."\n";
             } else {
                 switch ($meta_arr[$index2]) {
-                    case 'int';
+                    case 'int':
                         $var_init .= $indent . '*@Column(type="integer")'."\n";
                         $var_init .= $indent . '*@var int'."\n";
                     break;
-                    case 'smallint';
+                    case 'smallint':
+                    case 'tinyint':
                         $var_init .= $indent . '*@Column(type="smallint")'."\n";
                         $var_init .= $indent . '*@var smallint'."\n";
                         break;
-                    case 'bigint';
+                    case 'bigint':
                         $var_init .= $indent . '*@Column(type="bigint")'."\n";
                         $var_init .= $indent . '*@var bigint'."\n";
                         break;
-                    case 'string';
-                    case 'text';
-                    case 'varchar';
-                    case 'timestamp';
-                    case 'enum';
+                    case 'string':
+                    case 'text':
+                    case 'varchar':
+                    case 'timestamp':
+                    case 'blob':
+                    case 'enum':
                         $var_init .= $indent . '*@Column(type="string")'."\n";
                         $var_init .= $indent . '*@var string'."\n";
                         break;
-                    case 'datetime';
+                    case 'datetime':
                         $var_init .= $indent . '*@Column(type="datetime")'."\n";
                         $var_init .= $indent . '*@var DateTime'."\n";
                     break;
-                        $var_init .= $indent . '*@Column(type="string")'."\n";
-                        $var_init .= $indent . '*@var string'."\n";
-                    break;
-                    case 'decimal';
+                    case 'decimal':
                         $var_init .= $indent . '*@Column(type="decimal")'."\n";
                         $var_init .= $indent . '*@var decimal'."\n";
                     break;
-                    case 'boolean';
+                    case 'boolean':
                         $var_init .= $indent . '*@Column(type="boolean")'."\n";
                         $var_init .= $indent . '*@var boolean'."\n";
                     break;
@@ -1093,31 +1092,31 @@ class SparkPlug
             $get_set .= $indent . 'public function set' . ucfirst($field) . '($name) {'."\n";
             switch ($meta_arr[$index3]) {
                 case 'tinyint';
-                    $get_set .= $indent .$indent . 'if(!is_array($name)) {
-                        $this->'.$field.'= $name;
-                    } else {
-                        $this->'.$field.'= $name[0];
-                    }'."\n";
+                    $get_set .= $indent .'if(!is_array($name)) {';
+                    $get_set .= $indent .' $this->'.$field.'= $name;';
+                    $get_set .= $indent .'} else {';
+                    $get_set .= $indent .' $this->'.$field.'= $name[0];';
+                    $get_set .= $indent .'}'."\n";
                 break;
                 default:
                     if ( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
                         $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
                     } else if( preg_match('/(.*)(file)(.*)/',strtolower($field)) || preg_match('/(.*)(path)(.*)/',strtolower($field))) {
-                            $get_set .= $indent.'if(!empty($name)) {
-                            $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
-                            }';
-                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                        $get_set .= $indent.'if(!empty($name)) {';
+                        $get_set .= $indent.' $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;';
+                        $get_set .= $indent.'}'."\n";
+                        $get_set .= $indent .'$this->'.$field.'= $name;'."\n";
                     } else if('password' != strtolower($field)){
-                        $get_set .= $indent.'if(!empty($name)) {
-                        $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;
-                        }';
-                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
+                        $get_set .= $indent.'if(!empty($name)) {';
+                        $get_set .= $indent.' $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;';
+                        $get_set .= $indent.'}'."\n";
+                        $get_set .= $indent .'$this->'.$field.'= $name;'."\n";
                     }
                     if('password' == strtolower($field)){
-                        $get_set .= 'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {
-                        $name = $this->CI->encrypt->sha1($name);
-                        }';
-                        $get_set .= $indent .$indent . '$this->'.$field.'= $name;';
+                        $get_set .= $indent.'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {';
+                        $get_set .= $indent.' $name = $this->CI->encrypt->sha1($name);';
+                        $get_set .= $indent.'}'."\n";
+                        $get_set .= $indent.'$this->'.$field.'= $name;';
                     }
                     break;
             }
@@ -1131,11 +1130,11 @@ class SparkPlug
             $get_set .= $indent . 'public function get' . ucfirst($field) . '() {'."\n";
 
             if ( preg_match('/(.*)(time)(.*)/',strtolower($field)) ) {
-                $get_set .= $indent . $indent .'return \'0000-00-00 \'.$this->'.$field.';'."\n";
+                $get_set .= $indent  .'return \'0000-00-00 \'.$this->'.$field.';'."\n";
             } else if( $meta_arr[$index3] == 'datetime' && !preg_match('/(.*)(time)(.*)/',strtolower($field)) ) {
-                $get_set .= $indent . $indent .'return $this->'.$field.'.\' 00:00:00\';'."\n";
+                $get_set .= $indent  .'return $this->'.$field.'.\' 00:00:00\';'."\n";
             } else {
-                $get_set .= $indent . $indent .'return $this->'.$field.';'."\n";
+                $get_set .= $indent .'return $this->'.$field.';'."\n";
             }
 
             $get_set .= $indent . '}'."\n";
@@ -1167,14 +1166,11 @@ class SparkPlug
             } else  if( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));' . "\n";
             } else{
-                $var_set2 .= $indent . '
-                if(xss_clean($this->CI->input->post(\''.$field.'\',true)==\'\')) {
-                    //do nothing, keep in db $this->set' . ucfirst($field) . '();
-                } else {//get from post
-                    $this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));
-                }
-                ' . "\n";
-
+                $var_set2 .= 'if(xss_clean($this->CI->input->post(\''.$field.'\',true)==\'\')) {';
+                $var_set2 .= '//do nothing, keep in db $this->set' . ucfirst($field) . '();';
+                $var_set2 .= '} else {//get from post';
+                $var_set2 .= '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));';
+                $var_set2 .= '}'."\n";
             }
         }
         $model_text = str_replace("{setter_variables_from_post}\n", $var_set2, $model_text);
@@ -2455,7 +2451,7 @@ class {model_name} {
         $this->CI->load->helper(array("security"));
         $this->CI->load->library(array("encrypt"));
         if(xss_clean($this->CI->input->post(\'submit\',true))) {
-        {setter_variables_from_post}
+         {setter_variables_from_post}
         }
     }
 
