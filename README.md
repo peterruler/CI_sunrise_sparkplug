@@ -20,6 +20,10 @@ and a changed version of the sparkplug, rails inspired crud scaffolding.
 * alternatively usage of [sparks Codeigniter package manager](http://getsparks.org/)
 
 ## Changes are
+* ***[COMMING SOON]*** hopefully some missing features,you're invited to contact me for help
+* ***[BUGFIX]*** layout: fileupload success msg, layout escaping
+* ***[BUGFIX]*** multi file upload something like file or path
+* ***[BUGFIX]*** robust filefield recognition instead of non sanitized post filename and setter call construction
 * ***[NEW]*** Fileupload for multiple files (plain old html fileupload), naming convention something like my%fileANDOR%path%NR
 * ***[NEW]*** type tinyint for boolean radio buttons
 * ***[NEW]*** On demand password reset with or without password hashing, fieldname must exactly be 'password'
