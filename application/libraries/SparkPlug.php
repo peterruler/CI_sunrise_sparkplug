@@ -1150,7 +1150,7 @@ class SparkPlug
 
         $var_set = $indent . '$data=array();'."\n";
         foreach ($fields as $field) {
-            $var_set .= $indent . '$data[\''.$field.'\'] = $this->get' . ucfirst($field) . '(\''.$field.'\');' . "\n";
+            $var_set .= $indent . '$data[\''.$field.'\'] = $this->get' . ucfirst($field) . '();' . "\n";
 
         }
         $model_text = str_replace("{set_variables_from_post}\n", $var_set, $model_text);
@@ -1163,12 +1163,12 @@ class SparkPlug
             } elseif ($field == "passconf") {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post("passconf",TRUE)));' . "\n";
 
-            } else  if( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
+            } else  if( !preg_match('/(.?)(file|path|pathfile|filepath)(.?)/',strtolower($field))) {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));' . "\n";
             } else{
                 $var_set2 .= 'if(xss_clean($this->CI->input->post(\''.$field.'\',true)==\'\')) {';
-                $var_set2 .= '//do nothing, keep in db $this->set' . ucfirst($field) . '();';
-                $var_set2 .= '} else {//get from post';
+                $var_set2 .= '/*do nothing, keep in db $this->set' . ucfirst($field) . '();*/'."\n";
+                $var_set2 .= '} else {/*get from post*/'."\n";
                 $var_set2 .= '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));';
                 $var_set2 .= '}'."\n";
             }
@@ -2087,9 +2087,8 @@ class SparkPlug
         $html = "";
         $rules = "\n\r";
         $indent = "\t";
-
     foreach ($fields as $field) :
-        if( !preg_match('/(.*)(file)(.*)/',strtolower($field->name)) || !preg_match('/(.*)(path)(.*)/',strtolower($field->name))) :
+        if( !preg_match('/(.?)(file|path|pathfile|filepath)(.?)/',strtolower($field->name))) :
         switch ($field->type) :
                 case "varchar" :
                     switch ($field->name) :
@@ -2165,12 +2164,10 @@ class SparkPlug
     }
 
     public function setControllerFilePathText() {
-        $text = '';
-        foreach($this->getFilePathFields() as $k => $post_field) :
-            $text .= '$this->upload->do_upload(xss_clean("$post_field->name"));';
-            $text .= '$upload_success_data[] = $this->upload->data();';
-        endforeach;
-        return $text;
+        $text = 'foreach($this->getFilePathFields() as $k => $post_field) :';
+        $text .= '$this->upload->do_upload(xss_clean("$post_field->name"));';
+        $text .= '$upload_success_data[] = $this->upload->data();';
+        return $text.'endforeach;';
     }
 
     function _controller_text()
@@ -2333,6 +2330,22 @@ class {ucf_controller} extends CI_Controller {
         }
     }
 
+    public function filterNonPathFileFields($fields) {
+        $fields_file_path = array();
+        foreach($fields as $index => $field_name) {
+            if(strpos($field_name,\'file\') !== false || strpos($field_name,\'path\') !== false ) {
+                $fields_file_path[] = $field_name;
+            }
+        }
+        return $fields_file_path;
+    }
+
+    public function getFilePathFields() {
+        $fields = $this->CI->db->field_data(\''.$this->table.'\');
+        //remove non matching fields from array
+        return array_filter($fields,array($this,\'filterNonPathFileFields\'));
+    }
+
     public function update() {
         {set_rules}
         $upload_msg = $this->upload(\'edit\');
@@ -2353,17 +2366,10 @@ class {ucf_controller} extends CI_Controller {
         $this->upload->set_allowed_types($allowed_types);
 
         $this->load->library(\'upload\', $config);
-        @chmod(\'./uploads\',0777);
+        //@chmod(\'./uploads\',0777);
         $upload_success_data = array();
 
         {file_path_fields_from_files_array}
-
-        /*
-        foreach($_FILES as $name => $value) :
-            $this->upload->do_upload(xss_clean($name));
-            $upload_success_data[] = $this->upload->data();
-        endforeach;
-        */
 
         if ($this->form_validation->run() == FALSE)
         {
@@ -2389,7 +2395,13 @@ class {ucf_controller} extends CI_Controller {
 
                 $this->'.strtolower($this->model_name).'->update(null);
             } else {
-                $this->session->set_flashdata(\'msg\', \'Update/Upload Success!\'.\'<br/> img name: \'.serialize($upload_success_data));
+                $success_msg = \'\';
+                foreach($upload_success_data as $index => $value):
+                    $success_msg .= \' img name: \'.$upload_success_data[$index][\'file_name\']."<br />";
+                    $success_msg .= \' img size: \'.$upload_success_data[$index][\'file_size\']."MB<br />";
+                endforeach;
+
+                $this->session->set_flashdata(\'msg\', \'Update/Upload Success!\'.\'<br/> img name: \'.$success_msg);
                 $this->'.strtolower($this->model_name).'->update($upload_success_data);
             }
             redirect(\'{controller}/show_list\');
@@ -2490,24 +2502,41 @@ class {model_name} {
         return $this->CI->db->field_data(\'{table}\');
     }
 
+    public function filterNonPathFileFields($fields) {
+        $fields_file_path = array();
+        foreach($fields as $k => $field_name) {
+            //echo $name;
+            if(strpos($field_name,\'file\') !== false || strpos($field_name,\'path\') !== false ) {
+                $fields_file_path[] = $field_name;
+            }
+        }
+        return $fields_file_path;
+    }
+
+    public function getFilePathFields() {
+        //$this->CI->db->field_data(\'{table}\');
+        $fields = $this->CI->db->field_data(\''.$this->table.'\');
+        //remove non matching fields from array
+        return array_filter($fields,array($this,\'filterNonPathFileFields\'));
+    }
+
     public function update($upload_data=null) {
-            if(!is_null($upload_data)) {
-                $hash = 1;
-                foreach($upload_data as $index => $val) {
-                        $fp = "setFilepath$hash";
-                        //print_r($upload_data[$index][\'file_name\'].\'<br>\');
-                        $this->$fp(xss_clean($upload_data[xss_clean($index)][\'file_name\']));
-                    $hash++;
-                }
-            }
+        if(!is_null($upload_data)) {
+            $index= 0;
+            foreach($this->getFilePathFields() as $post_field) :
+                //call setter with uploadpath info to db
+                $fp = "set".ucfirst($post_field->name);
+                $this->$fp(xss_clean($upload_data[$index][\'file_name\']));
+                $index++;
+            endforeach;
             $data = $this->facadeSetGet();
-            if(is_null($upload_data)) {
-                $this->upload_data = $upload_data;
-                foreach($_FILES as $name => $value) :
-                    unset($data[xss_clean($name)]);
-                endforeach;
-            }
-        $this->CI->db->where( \''.$this->getPrimaryKeyFieldName().'\' ,$this->get'.ucfirst($this->getPrimaryKeyFieldName()).'());//@FIMXE sec? $this->$primary_key
+        } else {
+            $data = $this->facadeSetGet();
+            foreach($this->getFilePathFields() as $post_field) :
+                unset($data[$post_field->name]);
+            endforeach;
+        }
+        $this->CI->db->where( \''.$this->getPrimaryKeyFieldName().'\' ,$this->get'.ucfirst($this->getPrimaryKeyFieldName()).'());
         $this->CI->db->update(\'{table}\', $data);
     }
 
