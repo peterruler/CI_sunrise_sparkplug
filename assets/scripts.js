@@ -1,3 +1,19 @@
+var myList = {};
+myList.reorderList = function(filter_by) {
+    console.log('reorder');
+    var sortByID = document.getElementsByName('filter_by');
+    sortByID.value = filter_by;
+
+    var dirID = document.getElementsByName('direction')
+    var dirValue = dirID.value;
+    if(dirValue == 'ASC') {
+        dirID.value = "DESC";
+    } else{
+        dirID.value = "ASC";
+    }
+    console.log( $('#listForm').attr('name'));
+    $("#listForm").submit();
+}
 $(document).ready( function() {
     if ($("#searchForm") != 'undefined') {
         $("body").find("#reset").on("click",function (e){//@todo
@@ -7,18 +23,12 @@ $(document).ready( function() {
             //$( "form" ).first().submit();
         });
     }
-
+$('.order_list').each( function(index,elem) {
+    $(this).on('click', function(evt) {
+        console.log('clicked');
+        evt.preventDefault();
+        var name = $(this).attr('name');
+        myList.reorderList(name);
+    });
+    });
 });
-function reorderList(link, order_by) {
-    var sortByID = document.getElementsByName('sort_by');
-    sortByID.value = order_by;
-
-    var dirID = document.getElementsByName('direction')
-    var dirValue = dirID.value;
-    if(dirValue == 'ASC') {
-        dirID.value = "DESC";
-    } else{
-        dirID.value = "ASC";
-    }
-    document.listForm.submit();
-}
