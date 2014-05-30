@@ -20,11 +20,7 @@ and a changed version of the sparkplug, rails inspired crud scaffolding.
 * alternatively usage of [sparks Codeigniter package manager](http://getsparks.org/)
 
 ## Changes are
-<<<<<<< HEAD
-* ***[COMMING SOON]*** hopefully some missing features,you're invited to contact me for free help
-=======
 * ***[COMMING SOON]*** hopefully some missing features,you're invited to contact me for help
->>>>>>> 511dfb30adb1e7bb0154d50ed10ca99e3091b980
 * ***[BUGFIX]*** layout: fileupload success msg, layout escaping
 * ***[BUGFIX]*** multi file upload something like file or path
 * ***[BUGFIX]*** robust filefield recognition instead of non sanitized post filename and setter call construction
