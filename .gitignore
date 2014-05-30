@@ -17,6 +17,9 @@ composer.phar
 #ignore all files
 application/controllers/*
 #but not
+!TestModelController.php
+!TestControllerController.php
+!TestSparkPlugLibraryController.php
 !index.html
 !SparkPlugController.php
 !welcome.php
