@@ -11,8 +11,9 @@ myList.reorderList = function(filter_by) {
     } else{
         dirID.value = "ASC";
     }
-    console.log( $('#listForm').attr('name'));
-    $("#listForm").submit();
+    if ($("#listForm") != 'undefined') {
+        //$("#listForm").submit();
+    }
 }
 $(document).ready( function() {
     if ($("#searchForm") != 'undefined') {
@@ -20,13 +21,14 @@ $(document).ready( function() {
             //e.preventDefault();
             //alert( $( "form[name='searchForm']" ).attr("name"));
             $('#filter_value').value ='';
+            //$("#searchForm").reset();
             //$( "form" ).first().submit();
         });
     }
 $('.order_list').each( function(index,elem) {
     $(this).on('click', function(evt) {
         console.log('clicked');
-        evt.preventDefault();
+        //evt.preventDefault();
         var name = $(this).attr('name');
         myList.reorderList(name);
     });

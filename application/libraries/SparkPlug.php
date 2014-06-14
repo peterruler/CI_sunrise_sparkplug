@@ -2206,10 +2206,25 @@ class {ucf_controller} extends CI_Controller {
 
     }
 
+    public function toggleDirection() {
+        $dir_session = \'\';
+        if(!empty($this->CI->session->flashdata(\'direction\'))):
+            $dir_session = $this->CI->session->flashdata(\'direction\');
+        endif;
+
+        if($dir_session == \'ASC\') :
+            $direction = \'DESC\';
+        else :
+            $direction = \'ASC\';
+        endif;
+        $this->CI->session->set_flashdata(\'direction\',$direction);
+        return $direction;
+    }
+
     public function show_list() {
 
         $config[\'base_url\'] = $this->config->item(\'base_url\')."/{controller}/show_list";
-        $config[\'total_rows\'] = $this->db->get("{model}")->num_rows();
+        $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
         $config[\'per_page\'] = 10;
         $config[\'full_tag_open\'] = \'<ul id="pagination">\';
         $config[\'full_tag_close\'] = \'</ul>\';
@@ -2222,20 +2237,39 @@ class {ucf_controller} extends CI_Controller {
         $filter_by = false;//@change
         $filter_value = false;//@change
         $direction = false;//@change
-        switch ($this->uri->total_segments()) {
-            case 3:
-            case 4:
+        if( false != $this->input->post(\'filter_by\',TRUE)
+            &&  false != $this->input->post(\'filter_value\',TRUE)
+            &&  false != $this->input->post(\'direction\',TRUE)) {
+                $offset = 0;
+                $filter_by = xss_clean($this->input->post(\'filter_by\',true));//@change
                 $direction = xss_clean($this->input->post(\'direction\',true));//@change
-                $filter_by= xss_clean($this->input->post(\'filter_by\',true));//@change
                 $filter_value = xss_clean($this->input->post(\'filter_value\',true));//@change
                 $offset = xss_clean($segments_array[2]);
-                break;
-            default:
-                $offset = 1;
-                break;
+
+                //@todo end search
+                $data[\'offset\'] = $offset;
+                $data[\'filter_value\'] = $filter_value;
+                $data[\'direction\'] = $direction;
+        } else if(isset($segments_array[5])) {
+            $offset = 0;
+            $filter_by = xss_clean($segments_array[5]);//@change
+            $direction = xss_clean($segments_array[6]);//@change
+            $filter_value = xss_clean($this->input->post(\'filter_value\',true));//@change
+            $offset = xss_clean($segments_array[2]);
+            //@todo end search
+            $data[\'offset\'] = 10;
+            $data[\'filter_value\'] = false;
+            $data[\'direction\'] = $this->toggleDirection();
+        } else {
+            $offset = 0;
+            //@todo end search
+            $data[\'offset\'] = 10;
+            $data[\'filter_value\'] = false;
+            $data[\'direction\'] = $this->toggleDirection();
         }
+        //@todo filter url vars
         $this->pagination->initialize($config);
-        $data[\'results\'] = $this->{uc_model_name}->get_all("{model}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
+        $data[\'results\'] = $this->{controller}->get_all("{controller}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
 
         $index = 0;
         if(!isset($data["results"][0]["id"])) {
@@ -2245,9 +2279,9 @@ class {ucf_controller} extends CI_Controller {
                 $index++;
             }
         }
-        //@todo end search
+
         $this->load->view(\'header\');
-        $this->load->view(\'{view_folder}/list\', $data);
+        $this->load->view(\'{controller}/list\', $data);
         $this->load->view(\'footer\');
     }
 
@@ -2484,13 +2518,14 @@ class {model_name} {
         $query = $this->CI->db->get_where(\'{table}\', array(\''.$this->getPrimaryKeyFieldName().'\' => (int) xss_clean($id)));
         return $query->result_array();
     }
-
-    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by, $filter_value, $direction ) {//@todo search
+    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by=\'id\', $filter_value=\'id\', $direction=\'ASC\' ) {//@todo search
 
         $this->CI->db->limit($limit_per_page, $offset_limit);
         //@todo search
         if( $filter_by!=false && $filter_value != false && $direction != false ) {
             $this->CI->db->like($filter_by, strtolower($filter_value));//@change
+            $this->CI->db->order_by($filter_by, $direction);//@change
+        } else if( $filter_by != false && $direction != false && $filter_value == false ) {
             $this->CI->db->order_by($filter_by, $direction);//@change
         }
         //@todo search end
@@ -2563,169 +2598,212 @@ class {model_name} {
     }
 
     /* LIST */
-    function _list_view()
-    {
+    function _list_view() {
         return '<h1>List ' . (string)$this->table . '</h1>
-        <p>
-        <?php
-        if ($this->session->flashdata("msg") != ""):
+<p>
+    <?php
+    if ($this->session->flashdata("msg") != ""):
         ?>
         <div class="alert alert-success has-error has-feedback">
-        <?= $this->session->flashdata("msg") ?>
-        <span class="alert glyphicon glyphicon-ok"></span>
+            <?php
+            $this->session->flashdata("msg")
+            ?>
+            <span class="alert glyphicon glyphicon-ok"></span>
         </div>
-        <?php endif; ?>
-        </p>
-        <div class="table-responsive">
-        <table class="table table table-bordered table-striped table-hover">
-            <tr>
+    <?php
+    endif;
+?>
+</p>
+<div class="table-responsive">
+    <?php
+    $options = array(
+        \'name\' => \'searchForm\',
+        \'method\' => \'post\'
+    );
+    echo form_open(\''.$this->model_name.'/show_list/10/filter\', $options);
+    ?>
+    <?php
+    $options_select = array();
+    if (count($results) != 0) :
+        foreach (array_keys($results[0]) as $key):
+            $options_select[$key] = ucfirst($key);
+            ?>
         <?php
-        $options_select = array();
-        if(count($results) != 0) :
-        foreach(array_keys($results[0]) as $key):
-            $options_select[$key] = ucfirst($key);//@todo search
-        ?>
-            <th>
-            <?php echo ucfirst($key); ?>
-            </th>
-        <?php endforeach;
-        endif;
-        ?>
-        <th>View</th>
-        <th>Edit</th>
-        <th>Delete</th>
-        </tr>
-            <p>Apply a filter</p>
-        <?php
-        //@change foreach fields
-        $js = \'
-            this.onclick = function() {
-                document.searchForm.submit();
-            };
-        \';
-        $options = array(
-            \'name\'=> \'searchForm\',
-             \'formnovalidate\'=>\'formnovalidate\'
-             );
-        echo form_open(\''.$this->model_name.'/show_list/10/filter\',$options);
-        ?>
-        <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+        endforeach;
+    endif;
+    ?>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
         <p>
             <?php
-                echo form_dropdown(\'filter_by\', $options_select, "", \'class="form-control"\');
+            echo form_dropdown(\'filter_by\', $options_select, "", \'class="form-control"\');
             ?>
         </p>
-            </div>
-        <div class="col-lg-2 col-md-2 col-sm-12">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12">
         <p>
-        <?php
-        $options_search_field = array(
-            \'name\'=>\'filter_value\',
-            \'id\'=>\'filter_value\',
-            \'value\'=> xss_clean($this->input->post(\'filter_value\')),
-            \'maxlength\'=>20,
-            \'size\'=>50,
-            \'style\'=>\'width:100%\',
-            \'type\'=>\'search\',
-            \'class\'=>\'form-control\',
-            \'placeholder\'=>\'filter_value\'
-        );
-        echo form_input($options_search_field);
-        ?>
+            <?php
+            $options_search_field = array(
+                \'name\' => \'filter_value\',
+                \'id\' => \'filter_value\',
+                \'value\' => xss_clean($this->input->post(\'filter_value\')),
+                \'maxlength\' => 20,
+                \'size\' => 50,
+                \'style\' => \'width:100%\',
+                \'type\' => \'search\',
+                \'class\' => \'form-control\',
+                \'placeholder\' => \'filter_value\'
+            );
+            echo form_input($options_search_field);
+            ?>
         </p>
-            </div>
-        <p>
-        <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+    </div>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
         <div class=\'radio\'>
             <label for=\'direction01\'>
-            <?php
-            $options_radio_direction01 = array(
-                \'name\'=>\'direction\',
-                \'id\' =>\'direction01\',
-                \'value\'=>\'ASC\',
-                \'checked\'=>true,
-                \'style\' =>\'margin-right:0px;\'
-            );
+                <?php
+                $options_radio_direction01 = array(
+                    \'name\' => \'direction\',
+                    \'id\' => \'direction01\',
+                    \'value\' => \'ASC\',
+                    \'checked\' => true,
+                    \'style\' => \'margin-right:0px;\'
+                );
                 echo form_radio($options_radio_direction01);
-            ?>
-            order asc.
+                ?>
+                order asc.
             </label>
-            </div>
-            </div>
-        <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+        </div>
+    </div>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
         <div class=\'radio\'>
             <label for="direction02">
-        <?php
-            $options_radio_direction02 = array(
-                \'name\'=>\'direction\',
-                \'id\' =>\'direction02\',
-                \'value\' => \'DESC\',
-                \'checked\' => false,
-                \'style\'=>\'margin-right:0px;\'
-            );
-        echo form_radio($options_radio_direction02);
-        ?>
+                <?php
+                $options_radio_direction02 = array(
+                    \'name\' => \'direction\',
+                    \'id\' => \'direction02\',
+                    \'value\' => \'DESC\',
+                    \'checked\' => false,
+                    \'style\' => \'margin-right:0px;\'
+                );
+                echo form_radio($options_radio_direction02);
+                ?>
                 order desc.
             </label>
-            </div>
-            </div>
-        <p>
-            <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
-            <?php
-            $options_button_search = array(
-                \'name\'=>\'submit\',
-                \'content\'=>\'<i class="glyphicon glyphicon-search"></i>  search\',
-                \'type\'=>\'submit\',
-                \'class\'=>\'btn btn-md btn-primary\'
-            );
-            echo form_button($options_button_search);
-            ?>
-            </div>
-        </p>
-        <p>
-            <div class=\'col-lg-2 col-md-2 col-sm-12\'\>
-             <?php
+        </div>
+    </div>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+        <?php
+        $options_button_search = array(
+            \'name\' => \'submit\',
+            \'content\' => \'<i class="glyphicon glyphicon-search"></i>  search\',
+            \'type\' => \'submit\',
+            \'class\' => \'btn btn-md btn-primary\'
+        );
+        echo form_button($options_button_search);
+        ?>
+    </div>
+    <div class=\'col-lg-2 col-md-2 col-sm-12\'>
+        <?php
         $options_button_reset = array(
-            \'name\'=>\'reset\',
-            \'content\'=>\'<i class="glyphicon glyphicon-refresh"></i>  reload\',
-            \'type\'=>\'submit\',
-            \'id\'=>\'reset\',
-            \'class\'=>\'btn btn-md btn-warning\'
+            \'name\' => \'reset\',
+            \'content\' => \'<i class="glyphicon glyphicon-refresh"></i>  reload\',
+            \'type\' => \'submit\',
+            \'id\' => \'reset\',
+            \'class\' => \'btn btn-md btn-warning\',
+            \'onClick\' => "$(\'#filter_value\').val(\'\');"
         );
         echo form_button($options_button_reset);
         ?>
-
-            </div>
-        </p>
-        <?php
-        form_close();
-?>
-<?php
-if(count($results) != 0) :
-foreach ($results as $row):
+    </div>
+    <?php
+    echo form_close();
     ?>
-    <tr>
-    <? foreach ($row as $field_value): ?>
-        <td><?= $field_value ?></td>
-    <? endforeach; ?>
-        <td> <?php echo anchor("'.$this->model_name.'/show/".$row[\'id\'], \'<span class="glyphicon-eye-open"></span>\', "class=\'btn btn-sm btn-success glyphicon\'"); ?></td>
+</div>
+<div class="table-responsive">
+    <?php
+    $options = array(
+        \'name\' => \'listForm\',
+        \'id\' => \'listForm\',
+        \'method\' => \'post\'
+    );
+    echo form_open(\''.$this->model_name.'/show_list/\', $options);
+    ?>
+    <table class="table table table-bordered table-striped table-hover">
+        <tr>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <?php
+            $options_select = array();
+            if (count($results) != 0) :
+                foreach (array_keys($results[0]) as $key):
+                    $options_select[$key] = ucfirst($key); //@todo search
+                    $title_row = \'\';
+                    $key_words = \'\';
+                    $words = explode("_", $key);
+                    if (count($words) >= 1) {
+                        foreach ($words as $k => $v):
+                            $title_row .= ucfirst($v);
+                        endforeach;
+                    } else {
+                        $title_row = ucfirst(str_replace(\'_\', \'\', $key_words));
+                    }
+                    ?>
+                    <th>
+                        <?php
+                        $filter_by = $key;
+                        echo anchor("'.$this->model_name.'/show_list/filter/$offset/$filter_by/$direction", \'<span style="text-decoration:none;" class="glyphicon-sort-by-attributes"> \' . $title_row . \' </span><span class="glyphicon-sort-by-attributes-alt"></span>\', " style=\'text-decoration:none;\' class=\'order_list btn btn-sm btn-success glyphicon\'");
+                        ?>
+                    </th>
+                <?php endforeach;
+            endif;
+            ?>
+            <?php
+            if (count($results) != 0) :
+            foreach ($results as $row):
+            ?>
+        <tr>
+            <td> <?php echo anchor("'.$this->model_name.'/show/".$row[\'id\'], \'<span class="glyphicon-eye-open"></span>\', "class=\'btn btn-sm btn-success glyphicon\'"); ?></td>
         <td> <?php echo anchor("'.$this->model_name.'/edit/".$row[\'id\'], \'<span class="glyphicon-pencil"></span>\', "class=\'btn btn-sm btn-warning glyphicon\'"); ?></td>
         <td> <?php echo anchor("'.$this->model_name.'/delete/".$row[\'id\'], \'<span class="glyphicon-trash"></span>\', "class=\'btn btn-sm btn-danger glyphicon\'"); ?></td>
-    </tr>
-<?php endforeach;
-endif;
-?>
-</table>
-<br />
-    <?php echo $this->pagination->create_links();?>
-    <br />
-</div><br />
+    <?php
+            foreach ($row as $field_value):
+                ?>
+                <td>
+                    <?php
+                    echo $field_value;
+                    echo form_hidden(\'direction\', \'ASC\');
+                    echo form_hidden(\'filter_by\', \'id\');
+                    ?>
+                </td>
+            <?php
+            endforeach;
+            ?>
+        </tr>
+        <?php
+        endforeach;
+        ?>
+        <?php
+        endif;
+        ?>
+    </table>
+    <?php
+    echo form_close();
+    ?>
+</div>
+<?php
+//@todo more than 10 fixture mock datasets to check pagination
+echo $this->pagination->create_links();?>
+
 <div class="col-lg-1 col-md-2 col-sm-12">
-<?php echo anchor("Fixture_table/new_entry/", \'<span class="glyphicon"><span class="glyphicon-plus"></span>Add</span>\', "class=\'btn btn-lg btn-success btn-block \'"); ?>
+    <?php
+    echo anchor("'.$this->model_name.'/new_entry/", \'<span class="glyphicon"><span class="glyphicon-plus"></span>Add</span>\', "class=\'btn btn-lg btn-success btn-block \'");
+    ?>
 </div>
 ';
     }
 
+/*
     /* SHOW */
     function _show_view()
     {

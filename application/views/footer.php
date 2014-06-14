@@ -35,6 +35,5 @@
 <script>
     tinymce.init({selector:'textarea'});
 </script>
-</head>
 </body>
 </html>

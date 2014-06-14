@@ -9,16 +9,15 @@
 <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow"/>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <meta name="author" content="">
-
-  <title></title>
-    <link rel="stylesheet" href="<?php echo base_url('assets/font-awesome.css'); ?>">
-  <link href="<?php echo base_url('assets/styles.css'); ?>" rel="stylesheet">
-
-    <script src="/../../bower_components/modernizr/dist/modernizr.js"></script>
+  <meta name="author" content="peter ruler"/>
+  <title>Codeignier CRUD generation with twitter bootstrap</title>
+  <link rel="stylesheet" href="<?php echo base_url('assets/font-awesome.css'); ?>"/>
+  <link href="<?php echo base_url('assets/styles.css'); ?>" rel="stylesheet"/>
+  <script src="/../../bower_components/modernizr/dist/modernizr.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
