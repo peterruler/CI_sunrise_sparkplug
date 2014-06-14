@@ -3,7 +3,6 @@
 A changed version of the ci sunrise  (Codeigniter and twitter bootstrap 3)
 and a changed version of the sparkplug, rails inspired crud scaffolding.
 
-
 ## DEPENDENCIES
 * nodejs.org win/mac installer, [nodejs server](http://nodejs.org)
 * run npm init
