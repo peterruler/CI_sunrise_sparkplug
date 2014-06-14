@@ -20,6 +20,7 @@ and a changed version of the sparkplug, rails inspired crud scaffolding.
 * alternatively usage of [sparks Codeigniter package manager](http://getsparks.org/)
 
 ## Changes are
+* ***[NEW]*** listview added per column ordering
 * ***[COMMING SOON]*** hopefully some missing features,you're invited to contact me for help
 * ***[BUGFIX]*** layout: fileupload success msg, layout escaping
 * ***[BUGFIX]*** multi file upload something like file or path
