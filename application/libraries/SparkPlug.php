@@ -1092,31 +1092,31 @@ class SparkPlug
             $get_set .= $indent . 'public function set' . ucfirst($field) . '($name) {'."\n";
             switch ($meta_arr[$index3]) {
                 case 'tinyint';
-                    $get_set .= $indent .'if(!is_array($name)) {';
-                    $get_set .= $indent .' $this->'.$field.'= $name;';
-                    $get_set .= $indent .'} else {';
-                    $get_set .= $indent .' $this->'.$field.'= $name[0];';
+                    $get_set .= $indent .'if(!is_array($name)) {'."\n";
+                    $get_set .= $indent .' $this->'.$field.'= $name;'."\n";
+                    $get_set .= $indent .'} else {'."\n";
+                    $get_set .= $indent .' $this->'.$field.'= $name[0];'."\n";
                     $get_set .= $indent .'}'."\n";
                 break;
                 default:
                     if ( !preg_match('/(.*)(file)(.*)/',strtolower($field)) || !preg_match('/(.*)(path)(.*)/',strtolower($field))) {
                         $get_set .= $indent .$indent . '$this->'.$field.'= $name;'."\n";
                     } else if( preg_match('/(.*)(file)(.*)/',strtolower($field)) || preg_match('/(.*)(path)(.*)/',strtolower($field))) {
-                        $get_set .= $indent.'if(!empty($name)) {';
-                        $get_set .= $indent.' $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;';
+                        $get_set .= $indent.'if(!empty($name)) {'."\n";
+                        $get_set .= $indent.' $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;'."\n";
                         $get_set .= $indent.'}'."\n";
                         $get_set .= $indent .'$this->'.$field.'= $name;'."\n";
                     } else if('password' != strtolower($field)){
-                        $get_set .= $indent.'if(!empty($name)) {';
-                        $get_set .= $indent.' $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;';
+                        $get_set .= $indent.'if(!empty($name)) {'."\n";
+                        $get_set .= $indent.' $name = \'uploads\'.DIRECTORY_SEPARATOR.$name;'."\n";
                         $get_set .= $indent.'}'."\n";
                         $get_set .= $indent .'$this->'.$field.'= $name;'."\n";
                     }
                     if('password' == strtolower($field)){
-                        $get_set .= $indent.'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {';
-                        $get_set .= $indent.' $name = $this->CI->encrypt->sha1($name);';
+                        $get_set .= $indent.'if(xss_clean($this->CI->input->post(\'encrypt_password\',true)[0])==1) {'."\n";
+                        $get_set .= $indent.' $name = $this->CI->encrypt->sha1($name);'."\n";
                         $get_set .= $indent.'}'."\n";
-                        $get_set .= $indent.'$this->'.$field.'= $name;';
+                        $get_set .= $indent.'$this->'.$field.'= $name;'."\n";
                     }
                     break;
             }
@@ -1130,11 +1130,11 @@ class SparkPlug
             $get_set .= $indent . 'public function get' . ucfirst($field) . '() {'."\n";
 
             if ( preg_match('/(.*)(time)(.*)/',strtolower($field)) ) {
-                $get_set .= $indent  .'return \'0000-00-00 \'.$this->'.$field.';'."\n";
+                $get_set .= $indent  .$indent.'return \'0000-00-00 \'.$this->'.$field.';'."\n";
             } else if( $meta_arr[$index3] == 'datetime' && !preg_match('/(.*)(time)(.*)/',strtolower($field)) ) {
-                $get_set .= $indent  .'return $this->'.$field.'.\' 00:00:00\';'."\n";
+                $get_set .= $indent  .$indent.'return $this->'.$field.'.\' 00:00:00\';'."\n";
             } else {
-                $get_set .= $indent .'return $this->'.$field.';'."\n";
+                $get_set .= $indent .$indent.'return $this->'.$field.';'."\n";
             }
 
             $get_set .= $indent . '}'."\n";
@@ -1155,7 +1155,6 @@ class SparkPlug
         }
         $model_text = str_replace("{set_variables_from_post}\n", $var_set, $model_text);
 
-
         $var_set2 = '';
         foreach ($fields as $field) {
             if ($field == "password") {
@@ -1166,11 +1165,11 @@ class SparkPlug
             } else  if( !preg_match('/(.?)(file|path|pathfile|filepath)(.?)/',strtolower($field))) {
                 $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));' . "\n";
             } else{
-                $var_set2 .= 'if(xss_clean($this->CI->input->post(\''.$field.'\',true)==\'\')) {';
-                $var_set2 .= '/*do nothing, keep in db $this->set' . ucfirst($field) . '();*/'."\n";
-                $var_set2 .= '} else {/*get from post*/'."\n";
-                $var_set2 .= '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));';
-                $var_set2 .= '}'."\n";
+                $var_set2 .= $indent . 'if(xss_clean($this->CI->input->post(\''.$field.'\',true)==\'\')) {'."\n";
+                $var_set2 .= $indent . '/*do nothing, keep in db $this->set' . ucfirst($field) . '();*/'."\n";
+                $var_set2 .= $indent . '} else {/*get from post*/'."\n";
+                $var_set2 .= $indent . '$this->set' . ucfirst($field) . '(xss_clean($this->CI->input->post(\''.$field.'\',TRUE)));'."\n";
+                $var_set2 .= $indent . '}'."\n";
             }
         }
         $model_text = str_replace("{setter_variables_from_post}\n", $var_set2, $model_text);
@@ -2203,7 +2202,6 @@ class {ucf_controller} extends CI_Controller {
         $this->load->model(\'{uc_model_name}\');
         $this->load->helper(array(\'form\',\'url\',\'security\'));
         $this->load->library(array(\'session\', \'pagination\', \'form_validation\',\'encrypt\'));
-
     }
 
     public function toggleDirection() {
@@ -2222,7 +2220,6 @@ class {ucf_controller} extends CI_Controller {
     }
 
     public function show_list() {
-
         $config[\'base_url\'] = $this->config->item(\'base_url\')."/{controller}/show_list";
         $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
         $config[\'per_page\'] = 10;
@@ -2231,7 +2228,6 @@ class {ucf_controller} extends CI_Controller {
 
         $config[\'next_link\'] = \'&gt;\';
         $config[\'prev_link\'] = \'&lt;\';
-        //@todo search
         $segments_array = $this->uri->segment_array();//@change
 
         $filter_by = false;//@change
@@ -2270,7 +2266,6 @@ class {ucf_controller} extends CI_Controller {
         //@todo filter url vars
         $this->pagination->initialize($config);
         $data[\'results\'] = $this->{controller}->get_all("{controller}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
-
         $index = 0;
         if(!isset($data["results"][0]["id"])) {
             foreach($data["results"] as $row) {
@@ -2279,36 +2274,30 @@ class {ucf_controller} extends CI_Controller {
                 $index++;
             }
         }
+        $data[\'crud_html\'] = $this->load->view(\'{controller}/list\', $data, false);
+        $this->load->view(\'base_template\', $data);
 
-        $this->load->view(\'header\');
-        $this->load->view(\'{controller}/list\', $data);
-        $this->load->view(\'footer\');
     }
 
     public function show($id) {
         $data[\'result\'] = $this->{uc_model_name}->get($id);
-
         if(!isset($data["result"]["id"])) {
             foreach($data["result"] as $row) {
                 //add record primary key assigned to id
                 $data["result"]["id"] = current($row);
             }
         }
-
-        $this->load->view(\'header\');
-        $this->load->view(\'{view_folder}/show\', $data);
-        $this->load->view(\'footer\');
+        $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', $data, false);
+        $this->load->view(\'base_template\', $data);
     }
 
     public function new_entry() {
-        {set_rules}
-        if ($this->form_validation->run() == FALSE) {
-
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/new\');
-                    $this->load->view(\'footer\');
+            {set_rules}
+            if ($this->form_validation->run() == FALSE) {
+            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/new\', \'\', false);
+            $this->load->view(\'base_template\', $data);
         } else {
-                    redirect(\'{controller}/show_list\');
+            redirect(\'{controller}/show_list\');
        }
     }
 
@@ -2316,9 +2305,8 @@ class {ucf_controller} extends CI_Controller {
         {set_rules}
         if ($this->form_validation->run() == FALSE) {
                 $this->session->set_flashdata(\'msg\', \'Error\');
-                $this->load->view(\'header\');
-                $this->load->view(\'{view_folder}/new\');
-                $this->load->view(\'footer\');
+                $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', \'\', false);
+                $this->load->view(\'base_template\', $data);
             } else {
                 $this->{uc_model_name}->insert();
                 $this->session->set_flashdata(\'msg\', \'Entry Created\');
@@ -2327,7 +2315,6 @@ class {ucf_controller} extends CI_Controller {
     }
 
     public function edit($id) {
-
         $res = $this->{uc_model_name}->get($id);
         $data[\'result\'] = $res[0];
         if(!isset($data[\'result\'][\'id\'])) {
@@ -2337,13 +2324,11 @@ class {ucf_controller} extends CI_Controller {
             }
         }
         {set_rules}
-
         if ($this->form_validation->run() == FALSE) {
-                    $this->load->view(\'header\');
-                    $this->load->view(\'{view_folder}/edit\', $data);
-                    $this->load->view(\'footer\');
+            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/edit\', $data, false);
+            $this->load->view(\'base_template\', $data);
         } else {
-                    redirect(\'{controller}/show_list\');
+            redirect(\'{controller}/show_list\');
         }
     }
 
@@ -2417,16 +2402,13 @@ class {ucf_controller} extends CI_Controller {
             } else {
                 $this->session->set_flashdata(\'msg\', \'Error\'.$upload_errors);
             }
-
-            $this->load->view(\'header\');
-            $this->load->view(\'{view_folder}/edit\', $data);
-            $this->load->view(\'footer\');
+            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/edit\', $data, false);
+            $this->load->view(\'base_template\', $data);
         }
         else
         {
             if(empty($upload_success_data[count($upload_success_data)-1][\'file_name\'])) {
                 $this->session->set_flashdata(\'msg\', \'Update success\');
-
                 $this->'.strtolower($this->model_name).'->update(null);
             } else {
                 $success_msg = \'\';
@@ -2444,7 +2426,6 @@ class {ucf_controller} extends CI_Controller {
 
     public function delete($id) {
         $this->{uc_model_name}->delete($id);
-
         $this->session->set_flashdata(\'msg\', \'Entry Deleted\');
         redirect(\'{controller}/show_list\');
     }
@@ -2458,7 +2439,6 @@ class {ucf_controller} extends CI_Controller {
         }
     }
 }';
-
         return $html;
     }
 
@@ -2497,7 +2477,7 @@ class {model_name} {
         $this->CI->load->helper(array("security"));
         $this->CI->load->library(array("encrypt"));
         if(xss_clean($this->CI->input->post(\'submit\',true))) {
-         {setter_variables_from_post}
+        {setter_variables_from_post}
         }
     }
 
@@ -2509,7 +2489,6 @@ class {model_name} {
     }
     public function insert() {
         $data = $this->facadeSetGet();
-
         $this->CI->db->insert(\'{table}\', $data);
     }
 
@@ -2518,17 +2497,14 @@ class {model_name} {
         $query = $this->CI->db->get_where(\'{table}\', array(\''.$this->getPrimaryKeyFieldName().'\' => (int) xss_clean($id)));
         return $query->result_array();
     }
-    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by=\'id\', $filter_value=\'id\', $direction=\'ASC\' ) {//@todo search
-
+    public function get_all($table="{table}", $limit_per_page=10, $offset_limit=1, $filter_by=\'id\', $filter_value=\'id\', $direction=\'ASC\' ) {
         $this->CI->db->limit($limit_per_page, $offset_limit);
-        //@todo search
         if( $filter_by!=false && $filter_value != false && $direction != false ) {
             $this->CI->db->like($filter_by, strtolower($filter_value));//@change
             $this->CI->db->order_by($filter_by, $direction);//@change
         } else if( $filter_by != false && $direction != false && $filter_value == false ) {
             $this->CI->db->order_by($filter_by, $direction);//@change
         }
-        //@todo search end
         $query = $this->CI->db->get(\'{table}\');
         return $query->result_array();
     }
