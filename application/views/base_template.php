@@ -22,7 +22,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="author" content="peter ruler"/>
-    <title>Codeignier CRUD generation with twitter bootstrap</title>
+    <title>Codeigniter CRUD generation with twitter bootstrap</title>
     <link rel="stylesheet" href="<?php echo base_url('assets/font-awesome.css'); ?>"/>
     <link href="<?php echo base_url('assets/styles.css'); ?>" rel="stylesheet"/>
     <script src="/../../bower_components/modernizr/dist/modernizr.js"></script>

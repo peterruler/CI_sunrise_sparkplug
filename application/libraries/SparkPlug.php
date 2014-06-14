@@ -2274,7 +2274,7 @@ class {ucf_controller} extends CI_Controller {
                 $index++;
             }
         }
-        $data[\'crud_html\'] = $this->load->view(\'{controller}/list\', $data, false);
+        $data[\'crud_html\'] = $this->load->view(\'{controller}/list\', $data, true);
         $this->load->view(\'base_template\', $data);
 
     }
@@ -2287,14 +2287,14 @@ class {ucf_controller} extends CI_Controller {
                 $data["result"]["id"] = current($row);
             }
         }
-        $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', $data, false);
+        $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', $data, true);
         $this->load->view(\'base_template\', $data);
     }
 
     public function new_entry() {
             {set_rules}
             if ($this->form_validation->run() == FALSE) {
-            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/new\', \'\', false);
+            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/new\', \'\', true);
             $this->load->view(\'base_template\', $data);
         } else {
             redirect(\'{controller}/show_list\');
@@ -2305,7 +2305,7 @@ class {ucf_controller} extends CI_Controller {
         {set_rules}
         if ($this->form_validation->run() == FALSE) {
                 $this->session->set_flashdata(\'msg\', \'Error\');
-                $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', \'\', false);
+                $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', \'\', true);
                 $this->load->view(\'base_template\', $data);
             } else {
                 $this->{uc_model_name}->insert();
@@ -2325,7 +2325,7 @@ class {ucf_controller} extends CI_Controller {
         }
         {set_rules}
         if ($this->form_validation->run() == FALSE) {
-            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/edit\', $data, false);
+            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/edit\', $data, true);
             $this->load->view(\'base_template\', $data);
         } else {
             redirect(\'{controller}/show_list\');
@@ -2402,7 +2402,7 @@ class {ucf_controller} extends CI_Controller {
             } else {
                 $this->session->set_flashdata(\'msg\', \'Error\'.$upload_errors);
             }
-            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/edit\', $data, false);
+            $data[\'crud_html\'] = $this->load->view(\'{view_folder}/edit\', $data, true);
             $this->load->view(\'base_template\', $data);
         }
         else
@@ -2844,7 +2844,7 @@ echo $this->pagination->create_links();?>
         <div class="clearfix"></div>
     </div>
 <?php endif; ?>
-<?php echo form_open(\''.$this->model_name.'/create\',"formnovalidate"); ?>
+<?php echo form_open(\''.$this->model_name.'/create\'); ?>
 {form_fields_create}
 <p>
     <?= form_submit(\'submit\', \'Create\', "formnovalidate  class=\'btn btn-lg btn-default btn-block\'"); ?>
