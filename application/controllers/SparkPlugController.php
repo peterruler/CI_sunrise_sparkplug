@@ -13,9 +13,8 @@ class SparkPlugController extends CI_Controller
         $sql = "SHOW TABLES FROM $dbname";
         $query = $this->db->query($sql);
         $data['tables'] = $query->result();
-        $this->load->view('header');
-        $this->load->view('SparkPlugView', $data);
-        $this->load->view('footer');
+        $data['crud_html'] = $this->load->view('SparkPlugView', $data, true);
+        $this->load->view('base_template',$data);
     }
 
     function generateController($table)

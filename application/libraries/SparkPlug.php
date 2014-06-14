@@ -2223,11 +2223,9 @@ class {ucf_controller} extends CI_Controller {
         $config[\'base_url\'] = $this->config->item(\'base_url\')."/{controller}/show_list";
         $config[\'total_rows\'] = $this->db->get("{controller}")->num_rows();
         $config[\'per_page\'] = 10;
-        $config[\'full_tag_open\'] = \'<ul id="pagination">\';
+        $config[\'full_tag_open\'] = \'<ul class="clearfix" id="pagination">\';
         $config[\'full_tag_close\'] = \'</ul>\';
 
-        $config[\'next_link\'] = \'&gt;\';
-        $config[\'prev_link\'] = \'&lt;\';
         $segments_array = $this->uri->segment_array();//@change
 
         $filter_by = false;//@change
@@ -2256,14 +2254,17 @@ class {ucf_controller} extends CI_Controller {
             $data[\'offset\'] = 10;
             $data[\'filter_value\'] = false;
             $data[\'direction\'] = $this->toggleDirection();
+        } else if(isset($segments_array[3])) {
+            $offset = $segments_array[3];
+            $data[\'offset\'] = 10;
+            $data[\'filter_value\'] = false;
+            $data[\'direction\'] = $this->toggleDirection();
         } else {
             $offset = 0;
-            //@todo end search
             $data[\'offset\'] = 10;
             $data[\'filter_value\'] = false;
             $data[\'direction\'] = $this->toggleDirection();
         }
-        //@todo filter url vars
         $this->pagination->initialize($config);
         $data[\'results\'] = $this->{controller}->get_all("{controller}",$config[\'per_page\'],$offset, $filter_by, $filter_value, $direction);//@change
         $index = 0;
@@ -2276,7 +2277,6 @@ class {ucf_controller} extends CI_Controller {
         }
         $data[\'crud_html\'] = $this->load->view(\'{controller}/list\', $data, true);
         $this->load->view(\'base_template\', $data);
-
     }
 
     public function show($id) {
@@ -2305,7 +2305,7 @@ class {ucf_controller} extends CI_Controller {
         {set_rules}
         if ($this->form_validation->run() == FALSE) {
                 $this->session->set_flashdata(\'msg\', \'Error\');
-                $data[\'crud_html\'] = $this->load->view(\'{view_folder}/show\', \'\', true);
+                $data[\'crud_html\'] = $this->load->view(\'{view_folder}/new\', \'\', true);
                 $this->load->view(\'base_template\', $data);
             } else {
                 $this->{uc_model_name}->insert();
@@ -2739,9 +2739,9 @@ class {model_name} {
             foreach ($results as $row):
             ?>
         <tr>
-            <td> <?php echo anchor("'.$this->model_name.'/show/".$row[\'id\'], \'<span class="glyphicon-eye-open"></span>\', "class=\'btn btn-sm btn-success glyphicon\'"); ?></td>
-        <td> <?php echo anchor("'.$this->model_name.'/edit/".$row[\'id\'], \'<span class="glyphicon-pencil"></span>\', "class=\'btn btn-sm btn-warning glyphicon\'"); ?></td>
-        <td> <?php echo anchor("'.$this->model_name.'/delete/".$row[\'id\'], \'<span class="glyphicon-trash"></span>\', "class=\'btn btn-sm btn-danger glyphicon\'"); ?></td>
+            <td> <?php echo anchor("'.$this->model_name.'/show/".$row[\'id\'], \'<span style="text-decoration:none;" class="glyphicon-eye-open"></span>\', "class=\'btn btn-sm btn-success glyphicon\'"); ?></td>
+        <td> <?php echo anchor("'.$this->model_name.'/edit/".$row[\'id\'], \'<span style="text-decoration:none;" class="glyphicon-pencil"></span>\', "class=\'btn btn-sm btn-warning glyphicon\'"); ?></td>
+        <td> <?php echo anchor("'.$this->model_name.'/delete/".$row[\'id\'], \'<span style="text-decoration:none;" class="glyphicon-trash"></span>\', "class=\'btn btn-sm btn-danger glyphicon\'"); ?></td>
     <?php
             foreach ($row as $field_value):
                 ?>
